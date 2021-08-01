@@ -1,0 +1,23 @@
+{
+  "name": "dental-clinic",
+  "version": "1.0.0",
+  "description": "Dental Clinic (Center) Vita Dent",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+   "scss": "node-sass -watch scss/mainStyles.scss -o mainStyles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DariaShvydka/dental-clinic.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DariaShvydka/dental-clinic/issues"
+  },
+  "homepage": "https://github.com/DariaShvydka/dental-clinic#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
