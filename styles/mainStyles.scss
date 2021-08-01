@@ -15,15 +15,12 @@ body{
 @import './_colors';
 @import './_typography';
 
-
 // sections
-@import './_navbar';
+@import './_header';
 @import './_footer';
 
 // pages
 @import './_home';
-@import './_about';
-
 
 .mob_hidden{
     display: block;
