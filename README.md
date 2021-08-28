@@ -1,2 +1,6 @@
-# dental-clinic
-Dental Clinic (Center) Vita Dent
+# Dental Clinic (Center) Vita Dent
+
+### Helpers
+
+* *run* *`sass --watch`*: 
+> `npm run scss`

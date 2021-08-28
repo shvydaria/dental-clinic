@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-   "scss": "node-sass -watch scss/mainStyles.scss -o mainStyles.css"
+    "scss": "sass --watch styles/mainStyles.scss styles/mainStyles.css"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,8 @@
   "homepage": "https://github.com/DariaShvydka/dental-clinic#readme",
   "dependencies": {
     "node-sass": "^6.0.1"
+  },
+  "devDependencies": {
+    "sass": "^1.37.5"
   }
 }
