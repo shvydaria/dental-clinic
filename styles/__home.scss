@@ -1,0 +1,14 @@
+
+  .navbar-brand {
+    padding: 0;
+
+    img {
+      max-height: 48px;
+    }
+  }
+
+  .nav-item {
+    &:not(:last-child) {
+      margin-right: 5rem;
+    }
+  }

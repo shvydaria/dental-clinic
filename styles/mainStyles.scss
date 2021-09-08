@@ -11,16 +11,16 @@ body{
 
 
 @import './_responsive_mixins';
-@import './_fonts';
-@import './_colors';
-@import './_typography';
+@import './__fonts';
+@import './__colors';
+@import './__typography';
 
 // sections
-@import './_header';
-@import './_footer';
+@import './__header';
+@import './__footer';
 
 // pages
-@import './_home';
+@import './__home';
 
 .mob_hidden{
     display: block;
@@ -34,4 +34,19 @@ body{
     @include responsive_tab(){
         display: none;
     }
+}
+
+// buttons
+.btn {
+    border-radius: 30px;
+    padding: 14.5px 27.5px;
+    
+    &-outline-success {
+        border-color: $green;
+    }
+}
+
+i {
+    font-size: 40px;
+    color: $white;
 }

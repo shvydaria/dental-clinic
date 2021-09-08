@@ -6,27 +6,23 @@ body {
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @font-face {
-  font-family: 'Playfair_Regular';
+  font-family: "Playfair_Regular";
   src: url("/fonts/PlayfairDisplay-Regular.ttf") format("truetype");
 }
-
 @font-face {
-  font-family: 'Playfair_Medium';
+  font-family: "Playfair_Medium";
   src: url("/fonts/PlayfairDisplay-Medium.ttf") format("trueType");
 }
-
 @font-face {
-  font-family: 'Playfair_Bold';
+  font-family: "Playfair_Bold";
   src: url("/fonts/PlayfairDisplay-Bold.ttf") format("truetype");
 }
-
-.playfair_regular_base, .play_reg_26, .play_reg_22, .play_reg_16, .play_reg_12 {
-  font-family: 'Playfair_Regular';
+.playfair_regular_base, .play_reg_12, .play_reg_16, .play_reg_22, .play_reg_26 {
+  font-family: "Playfair_Regular";
   color: #62666C;
 }
 
@@ -50,8 +46,8 @@ body {
   color: #B7BCC6;
 }
 
-.playfair_medium_base, .play_med_26, .play_med_22, .play_med_16, .play_med_12 {
-  font-family: 'Playfair_Medium';
+.playfair_medium_base, .play_med_12, .play_med_16, .play_med_22, .play_med_26 {
+  font-family: "Playfair_Medium";
   color: #62666C;
 }
 
@@ -75,8 +71,8 @@ body {
   color: #B7BCC6;
 }
 
-.playfair_bold_base, .play_bold_26, .play_bold_22, .play_bold_16, .play_bold_12 {
-  font-family: 'Playfair_Bold';
+.playfair_bold_base, .play_bold_12, .play_bold_16, .play_bold_22, .play_bold_26 {
+  font-family: "Playfair_Bold";
   color: #62666C;
 }
 
@@ -100,10 +96,69 @@ body {
   color: #B7BCC6;
 }
 
+.header_wraper .navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  padding: 20px 0;
+  background: rgba(243, 243, 243, 0.6);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.header_wraper .navbar .navbar-brand {
+  padding: 0;
+}
+.header_wraper .navbar .navbar-brand img {
+  max-height: 48px;
+}
+.header_wraper .navbar .nav-link {
+  font-size: 16px;
+  font-family: "Playfair_Regular", sans-serif;
+  color: #333333;
+}
+.header_wraper .navbar .nav-link.active, .header_wraper .navbar .nav-link:hover, .header_wraper .navbar .nav-link:focus {
+  color: rgba(3, 125, 72, 0.7);
+  text-decoration: underline;
+}
+
+.video_header {
+  margin-top: 88px;
+}
+
+.footer_wraper .navbar {
+  position: relative;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  padding: 20px 0;
+  background: #333333;
+}
+.footer_wraper .navbar .nav-link {
+  font-size: 16px;
+  font-family: "Playfair_Regular", sans-serif;
+  color: #ffffff;
+}
+.footer_wraper .navbar .nav-link:hover {
+  color: rgba(3, 125, 72, 0.7);
+}
+
+.navbar-brand {
+  padding: 0;
+}
+.navbar-brand img {
+  max-height: 48px;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 5rem;
+}
+
 .mob_hidden {
   display: block;
 }
-
 @media only screen and (max-width: 767px) {
   .mob_hidden {
     display: none;
@@ -113,10 +168,23 @@ body {
 .tab_hidden {
   display: block;
 }
-
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .tab_hidden {
     display: none;
   }
 }
+
+.btn {
+  border-radius: 30px;
+  padding: 14.5px 27.5px;
+}
+.btn-outline-success {
+  border-color: rgba(3, 125, 72, 0.7);
+}
+
+i {
+  font-size: 40px;
+  color: #ffffff;
+}
+
 /*# sourceMappingURL=mainStyles.css.map */
