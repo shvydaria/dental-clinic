@@ -8,47 +8,11 @@
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/mainStyles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"> -->
 </head>
 <body>
-    <div class="header_wraper">
-        <!--* will load common header with js $().load() method -->
-        <nav class="navbar navbar-expand-lg">
-            <div class="container justify-content-between">
-              <a class="navbar-brand" href="/">
-                 <img src="img/logo/logo.png" alt="logo">
-              </a>
-        
-              <!-- mobile btn -->
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <!-- mobile btn -->
-        
-              <div class="collapse navbar-collapse justify-content-center" id="navbarScroll">
-                <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Головна</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Про нас</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Послуги</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Ціни</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Контакти</a>
-                  </li>
-                </ul>
-              </div>
-        
-              <button type="button" class="btn btn-outline-success">Зв’язатися з нами</button>
-            </div>
-          </nav>
-    </div>
+
+    <header-component></header-component>
 
     <section class="video_header">
         <div class="container-fluid">
@@ -61,50 +25,15 @@
     <!-- <div>
         <img class="img-fluid w-100" alt="mapbox" 
         src="https://api.mapbox.com/styles/v1/mapbox/dark-v10/static/pin-l+eb5757(31.3026047,51.4983)/31.3026,51.4983,20,0/1280x434?before_layer=ferry&access_token=pk.eyJ1IjoiZGFyaWFzaHZ5ZGthIiwiYSI6ImNrczBoNWR4MjBuZGUyb3BqNjg5bXB1dzQifQ.wooIER1z9EVAOc1ZDEa9GQ">
-
     </div> -->
-    <div class="footer_wraper">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container justify-content-between">
-              <a class="navbar-brand" href="/">
-                 <img src="img/logo/logo-white.png" alt="logo">
-              </a>
-        
-              <!-- mobile btn -->
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <!-- mobile btn -->
-        
-              <div class="collapse navbar-collapse justify-content-center" id="navbarScroll">
-                <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Головна</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Про нас</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Послуги</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Ціни</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Контакти</a>
-                  </li>
-                </ul>
-              </div>
-
-              <i class="bi bi-facebook me-4"></i>
-              <i class="bi bi-instagram"></i>
-            </div>
-          </nav>
-    </div>
+    
+    <footer-component></footer-component>
     
     <script src="/js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/esm/popper.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/mainFunctions.js"></script>
+    <script src="./js/header.js" type="text/javascript" defer></script>
+    <script src="./js/footer.js" type="text/javascript" defer></script>
 </body>
 </html>
