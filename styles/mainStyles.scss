@@ -21,6 +21,10 @@ body{
 // pages
 @import './__home';
 
+img {
+    width: 100%;
+}
+
 .mob_hidden{
     display: block;
     @include responsive_mobile(){

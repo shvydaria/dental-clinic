@@ -4,3 +4,8 @@ $(document).ready(() => {
     $('.footer_wraper').load('/components/footer.html');
     
 });
+
+// var result = sass.renderSync({
+//     file: "../scss/mainStyles.scss"
+//   });
+  
