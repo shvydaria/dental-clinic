@@ -1,0 +1,23 @@
+.heading {
+  color: $black;
+// my counts and God's bless: 4 equal to 40
+  &--type-1 {
+    font-size: 4em;
+    font-style: regular;
+  }
+  &--type-2 {
+    font-size: 4em;
+    font-style: italic;
+  }
+  &--type-3 {
+    font-size: 4.8em;
+    font-style: light;
+  }
+  &--type-4 {
+    font-size: 4em;
+    font-style: medium;
+  }
+  &--type-5 {
+    font-size: 3.2em;
+  }
+}
