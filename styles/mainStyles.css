@@ -224,12 +224,60 @@ body {
   font-weight: 100;
 }
 .heading--type-4 {
-  font-size: 4em;
+  font-size: 2.5em;
   font-weight: normal;
 }
 .heading--type-5 {
   font-size: 2em;
   color: #ffffff;
+}
+
+.ms-6 {
+  margin-left: 5rem !important;
+}
+
+.ms-7 {
+  margin-left: 6rem !important;
+}
+
+.ms-8 {
+  margin-left: 6.5rem !important;
+}
+
+.ms-9 {
+  margin-left: 6.9rem !important;
+}
+
+.mb-6 {
+  margin-bottom: 5rem !important;
+}
+
+.mb-7 {
+  margin-bottom: 6rem !important;
+}
+
+.mb-8 {
+  margin-bottom: 6.5rem !important;
+}
+
+.mb-9 {
+  margin-bottom: 6.9rem !important;
+}
+
+.mt-6 {
+  margin-top: 5rem !important;
+}
+
+.mt-7 {
+  margin-top: 6rem !important;
+}
+
+.mt-8 {
+  margin-top: 6.5rem !important;
+}
+
+.mt-9 {
+  margin-top: 6.9rem !important;
 }
 
 .header_wraper .navbar {
@@ -309,6 +357,41 @@ body {
 .collage__content p {
   color: #ffffff;
   font-size: 1.6em;
+}
+
+.accordion-button {
+  border-top: 1px solid #E8E7E6 !important;
+  border-radius: 10px !important;
+  box-shadow: 0px 4px 8px rgba(28, 37, 44, 0.08);
+  color: #333333;
+  background-color: #ffffff;
+}
+.accordion-button::after, .accordion-button:not(.collapsed)::after {
+  background-image: url("../img/icons/downarrow.png");
+}
+.accordion-button:not(.collapsed) {
+  color: #333333;
+  background-color: #ffffff;
+}
+.accordion-button:focus {
+  box-shadow: 0px 4px 8px rgba(28, 37, 44, 0.08);
+}
+.accordion-icon {
+  height: 30px;
+  width: 30px;
+  display: block;
+  margin-right: 32px;
+}
+.accordion-item {
+  border: 1px solid #E8E7E6 !important;
+  border-radius: 10px !important;
+  border-top: 0 !important;
+  margin-bottom: 16px;
+}
+.accordion-body {
+  color: #62666C;
+  border-radius: 10px !important;
+  box-shadow: 0px 4px 8px rgba(28, 37, 44, 0.08);
 }
 
 img {

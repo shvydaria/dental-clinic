@@ -34,3 +34,43 @@
       }
     }
   }
+
+  .accordion {
+    &-button{
+      border-top: 1px solid #E8E7E6!important;
+      border-radius: 10px!important;
+      box-shadow: 0px 4px 8px rgba(28, 37, 44, 0.08);
+      color: $black;
+      background-color: $white;
+
+      &::after, &:not(.collapsed)::after  {
+        background-image: url("../img/icons/downarrow.png")
+      }
+      &:not(.collapsed) {
+        color: $black;
+        background-color: $white;
+      }
+      &:focus {
+        box-shadow: 0px 4px 8px rgba(28, 37, 44, 0.08);
+      }
+
+    }
+    &-icon {
+      height: 30px;
+      width: 30px;
+      display: block;
+      margin-right: 32px;
+    }
+    &-item {
+      border: 1px solid #E8E7E6!important;
+      border-radius: 10px!important;
+      border-top: 0!important;
+      margin-bottom: 16px;
+    }
+
+    &-body {
+      color: $dark-gray;
+      border-radius: 10px!important;
+      box-shadow: 0px 4px 8px rgba(28, 37, 44, 0.08);
+    }
+  }
