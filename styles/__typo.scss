@@ -2,20 +2,23 @@
   color: $black;
 // my counts and God's bless: 4 equal to 40
   &--type-1 {
-    font-size: 4em;
-    font-style: regular;
+    font-size: 2.5em;
+    font-weight: 300;
   }
   &--type-2 {
-    font-size: 4em;
+    font-size: 2.5em;
     font-style: italic;
+    font-weight: 300;
+    opacity: 0.8;
+    margin: 0.4em 0 2.1em;
   }
   &--type-3 {
-    font-size: 4.8em;
-    font-style: light;
+    font-size: 3em;
+    font-weight: 100;
   }
   &--type-4 {
     font-size: 4em;
-    font-style: medium;
+    font-weight: normal;
   }
   &--type-5 {
     font-size: 3.2em;

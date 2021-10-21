@@ -10,9 +10,11 @@ body{
 }
 
 
-@import './_responsive_mixins';
 @import './__fonts';
 @import './__colors';
+@import './__typo';
+@import './_responsive_mixins';
+
 
 // sections
 @import './__header';

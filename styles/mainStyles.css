@@ -6,232 +6,229 @@ body {
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @font-face {
-  font-family: 'Playfair Display SC';
+  font-family: "Playfair Display SC";
   src: url("PlayfairDisplaySC-BlackItalic.eot");
   src: local("Playfair Display SC Black Italic"), local("PlayfairDisplaySC-BlackItalic"), url("PlayfairDisplaySC-BlackItalic.eot?#iefix") format("embedded-opentype"), url("PlayfairDisplaySC-BlackItalic.woff") format("woff"), url("PlayfairDisplaySC-BlackItalic.ttf") format("truetype");
   font-weight: 900;
   font-style: italic;
 }
-
 @font-face {
-  font-family: 'Playfair Display SC';
+  font-family: "Playfair Display SC";
   src: url("PlayfairDisplaySC-BoldItalic.eot");
   src: local("Playfair Display SC Bold Italic"), local("PlayfairDisplaySC-BoldItalic"), url("PlayfairDisplaySC-BoldItalic.eot?#iefix") format("embedded-opentype"), url("PlayfairDisplaySC-BoldItalic.woff") format("woff"), url("PlayfairDisplaySC-BoldItalic.ttf") format("truetype");
   font-weight: bold;
   font-style: italic;
 }
-
 @font-face {
-  font-family: 'Playfair Display SC';
+  font-family: "Playfair Display SC";
   src: url("PlayfairDisplaySC-Italic.eot");
   src: local("Playfair Display SC Italic"), local("PlayfairDisplaySC-Italic"), url("PlayfairDisplaySC-Italic.eot?#iefix") format("embedded-opentype"), url("PlayfairDisplaySC-Italic.woff") format("woff"), url("PlayfairDisplaySC-Italic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
 }
-
 @font-face {
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
   src: url("PlayfairDisplay-BoldItalic.eot");
   src: local("Playfair Display-Bold Italic"), local("PlayfairDisplay-BoldItalic"), url("PlayfairDisplay-BoldItalic.eot?#iefix") format("embedded-opentype"), url("PlayfairDisplay-BoldItalic.woff") format("woff"), url("PlayfairDisplay-BoldItalic.ttf") format("truetype");
   font-weight: bold;
   font-style: italic;
 }
-
 @font-face {
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
   src: url("PlayfairDisplay-Black.eot");
   src: local("Playfair Display Black"), local("PlayfairDisplay-Black"), url("PlayfairDisplay-Black.eot?#iefix") format("embedded-opentype"), url("PlayfairDisplay-Black.woff") format("woff"), url("PlayfairDisplay-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
   src: url("PlayfairDisplay-BlackItalic.eot");
   src: local("Playfair Display-Black Italic"), local("PlayfairDisplay-BlackItalic"), url("PlayfairDisplay-BlackItalic.eot?#iefix") format("embedded-opentype"), url("PlayfairDisplay-BlackItalic.woff") format("woff"), url("PlayfairDisplay-BlackItalic.ttf") format("truetype");
   font-weight: 900;
   font-style: italic;
 }
-
 @font-face {
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
   src: url("PlayfairDisplay-Regular.eot");
   src: local("Playfair Display Regular"), local("PlayfairDisplay-Regular"), url("PlayfairDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("PlayfairDisplay-Regular.woff") format("woff"), url("PlayfairDisplay-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
   src: url("PlayfairDisplay-Bold.eot");
   src: local("Playfair Display Bold"), local("PlayfairDisplay-Bold"), url("PlayfairDisplay-Bold.eot?#iefix") format("embedded-opentype"), url("PlayfairDisplay-Bold.woff") format("woff"), url("PlayfairDisplay-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Playfair Display SC';
+  font-family: "Playfair Display SC";
   src: url("PlayfairDisplaySC-Black.eot");
   src: local("Playfair Display SC Black"), local("PlayfairDisplaySC-Black"), url("PlayfairDisplaySC-Black.eot?#iefix") format("embedded-opentype"), url("PlayfairDisplaySC-Black.woff") format("woff"), url("PlayfairDisplaySC-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
   src: url("PlayfairDisplay-Italic.eot");
   src: local("Playfair Display-Italic"), local("PlayfairDisplay-Italic"), url("PlayfairDisplay-Italic.eot?#iefix") format("embedded-opentype"), url("PlayfairDisplay-Italic.woff") format("woff"), url("PlayfairDisplay-Italic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
 }
-
 @font-face {
-  font-family: 'Playfair Display SC';
+  font-family: "Playfair Display SC";
   src: url("PlayfairDisplaySC-Bold.eot");
   src: local("Playfair Display SC Bold"), local("PlayfairDisplaySC-Bold"), url("PlayfairDisplaySC-Bold.eot?#iefix") format("embedded-opentype"), url("PlayfairDisplaySC-Bold.woff") format("woff"), url("PlayfairDisplaySC-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Playfair Display SC';
+  font-family: "Playfair Display SC";
   src: url("PlayfairDisplaySC-Regular.eot");
   src: local("Playfair Display SC Regular"), local("PlayfairDisplaySC-Regular"), url("PlayfairDisplaySC-Regular.eot?#iefix") format("embedded-opentype"), url("PlayfairDisplaySC-Regular.woff") format("woff"), url("PlayfairDisplaySC-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Avenir Next Cyr';
+  font-family: "Avenir Next Cyr";
   src: url("AvenirNextCyr-BoldItalic.eot");
   src: local("Avenir Next Cyr Bold Italic"), local("AvenirNextCyr-BoldItalic"), url("AvenirNextCyr-BoldItalic.eot?#iefix") format("embedded-opentype"), url("AvenirNextCyr-BoldItalic.woff") format("woff"), url("AvenirNextCyr-BoldItalic.ttf") format("truetype");
   font-weight: bold;
   font-style: italic;
 }
-
 @font-face {
-  font-family: 'Avenir Next Cyr';
+  font-family: "Avenir Next Cyr";
   src: url("AvenirNextCyr-Light.eot");
   src: local("Avenir Next Cyr Light"), local("AvenirNextCyr-Light"), url("AvenirNextCyr-Light.eot?#iefix") format("embedded-opentype"), url("AvenirNextCyr-Light.woff") format("woff"), url("AvenirNextCyr-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Avenir Next Cyr';
+  font-family: "Avenir Next Cyr";
   src: url("AvenirNextCyr-Demi.eot");
   src: local("Avenir Next Cyr Demi"), local("AvenirNextCyr-Demi"), url("AvenirNextCyr-Demi.eot?#iefix") format("embedded-opentype"), url("AvenirNextCyr-Demi.woff") format("woff"), url("AvenirNextCyr-Demi.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Avenir Next Cyr';
+  font-family: "Avenir Next Cyr";
   src: url("AvenirNextCyr-ThinItalic.eot");
   src: local("Avenir Next Cyr Thin Italic"), local("AvenirNextCyr-ThinItalic"), url("AvenirNextCyr-ThinItalic.eot?#iefix") format("embedded-opentype"), url("AvenirNextCyr-ThinItalic.woff") format("woff"), url("AvenirNextCyr-ThinItalic.ttf") format("truetype");
   font-weight: 100;
   font-style: italic;
 }
-
 @font-face {
-  font-family: 'Avenir Next Cyr';
+  font-family: "Avenir Next Cyr";
   src: url("AvenirNextCyr-Italic.eot");
   src: local("Avenir Next Cyr Italic"), local("AvenirNextCyr-Italic"), url("AvenirNextCyr-Italic.eot?#iefix") format("embedded-opentype"), url("AvenirNextCyr-Italic.woff") format("woff"), url("AvenirNextCyr-Italic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
 }
-
 @font-face {
-  font-family: 'Avenir Next Cyr';
+  font-family: "Avenir Next Cyr";
   src: url("AvenirNextCyr-HeavyItalic.eot");
   src: local("Avenir Next Cyr Heavy Italic"), local("AvenirNextCyr-HeavyItalic"), url("AvenirNextCyr-HeavyItalic.eot?#iefix") format("embedded-opentype"), url("AvenirNextCyr-HeavyItalic.woff") format("woff"), url("AvenirNextCyr-HeavyItalic.ttf") format("truetype");
   font-weight: 900;
   font-style: italic;
 }
-
 @font-face {
-  font-family: 'Avenir Next Cyr';
+  font-family: "Avenir Next Cyr";
   src: url("AvenirNextCyr-MediumItalic.eot");
   src: local("Avenir Next Cyr Medium Italic"), local("AvenirNextCyr-MediumItalic"), url("AvenirNextCyr-MediumItalic.eot?#iefix") format("embedded-opentype"), url("AvenirNextCyr-MediumItalic.woff") format("woff"), url("AvenirNextCyr-MediumItalic.ttf") format("truetype");
   font-weight: 500;
   font-style: italic;
 }
-
 @font-face {
-  font-family: 'Avenir Next Cyr';
+  font-family: "Avenir Next Cyr";
   src: url("AvenirNextCyr-LightItalic.eot");
   src: local("Avenir Next Cyr Light Italic"), local("AvenirNextCyr-LightItalic"), url("AvenirNextCyr-LightItalic.eot?#iefix") format("embedded-opentype"), url("AvenirNextCyr-LightItalic.woff") format("woff"), url("AvenirNextCyr-LightItalic.ttf") format("truetype");
   font-weight: 300;
   font-style: italic;
 }
-
 @font-face {
-  font-family: 'Avenir Next Cyr';
+  font-family: "Avenir Next Cyr";
   src: url("AvenirNextCyr-Medium.eot");
   src: local("Avenir Next Cyr Medium"), local("AvenirNextCyr-Medium"), url("AvenirNextCyr-Medium.eot?#iefix") format("embedded-opentype"), url("AvenirNextCyr-Medium.woff") format("woff"), url("AvenirNextCyr-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Avenir Next Cyr Ultra';
+  font-family: "Avenir Next Cyr Ultra";
   src: url("AvenirNextCyr-UltraLightIt.eot");
   src: local("Avenir Next Cyr Ultra Light Italic"), local("AvenirNextCyr-UltraLightIt"), url("AvenirNextCyr-UltraLightIt.eot?#iefix") format("embedded-opentype"), url("AvenirNextCyr-UltraLightIt.woff") format("woff"), url("AvenirNextCyr-UltraLightIt.ttf") format("truetype");
   font-weight: 200;
   font-style: italic;
 }
-
 @font-face {
-  font-family: 'Avenir Next Cyr';
+  font-family: "Avenir Next Cyr";
   src: url("AvenirNextCyr-Regular.eot");
   src: local("Avenir Next Cyr Regular"), local("AvenirNextCyr-Regular"), url("AvenirNextCyr-Regular.eot?#iefix") format("embedded-opentype"), url("AvenirNextCyr-Regular.woff") format("woff"), url("AvenirNextCyr-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Avenir Next Cyr Ultra';
+  font-family: "Avenir Next Cyr Ultra";
   src: url("AvenirNextCyr-UltraLight.eot");
   src: local("Avenir Next Cyr Ultra Light"), local("AvenirNextCyr-UltraLight"), url("AvenirNextCyr-UltraLight.eot?#iefix") format("embedded-opentype"), url("AvenirNextCyr-UltraLight.woff") format("woff"), url("AvenirNextCyr-UltraLight.ttf") format("truetype");
   font-weight: 200;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Avenir Next Cyr';
+  font-family: "Avenir Next Cyr";
   src: url("AvenirNextCyr-Heavy.eot");
   src: local("Avenir Next Cyr Heavy"), local("AvenirNextCyr-Heavy"), url("AvenirNextCyr-Heavy.eot?#iefix") format("embedded-opentype"), url("AvenirNextCyr-Heavy.woff") format("woff"), url("AvenirNextCyr-Heavy.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Avenir Next Cyr';
+  font-family: "Avenir Next Cyr";
   src: url("AvenirNextCyr-Bold.eot");
   src: local("Avenir Next Cyr Bold"), local("AvenirNextCyr-Bold"), url("AvenirNextCyr-Bold.eot?#iefix") format("embedded-opentype"), url("AvenirNextCyr-Bold.woff") format("woff"), url("AvenirNextCyr-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Avenir Next Cyr';
+  font-family: "Avenir Next Cyr";
   src: url("AvenirNextCyr-DemiItalic.eot");
   src: local("Avenir Next Cyr Demi Italic"), local("AvenirNextCyr-DemiItalic"), url("AvenirNextCyr-DemiItalic.eot?#iefix") format("embedded-opentype"), url("AvenirNextCyr-DemiItalic.woff") format("woff"), url("AvenirNextCyr-DemiItalic.ttf") format("truetype");
   font-weight: bold;
   font-style: italic;
 }
-
 @font-face {
-  font-family: 'Avenir Next Cyr';
+  font-family: "Avenir Next Cyr";
   src: url("AvenirNextCyr-Thin.eot");
   src: local("Avenir Next Cyr Thin"), local("AvenirNextCyr-Thin"), url("AvenirNextCyr-Thin.eot?#iefix") format("embedded-opentype"), url("AvenirNextCyr-Thin.woff") format("woff"), url("AvenirNextCyr-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
+}
+.heading {
+  color: #333333;
+}
+.heading--type-1 {
+  font-size: 2.5em;
+  font-weight: 300;
+}
+.heading--type-2 {
+  font-size: 2.5em;
+  font-style: italic;
+  font-weight: 300;
+  opacity: 0.8;
+  margin: 0.4em 0 2.1em;
+}
+.heading--type-3 {
+  font-size: 3em;
+  font-weight: 100;
+}
+.heading--type-4 {
+  font-size: 4em;
+  font-weight: normal;
+}
+.heading--type-5 {
+  font-size: 3.2em;
 }
 
 .header_wraper .navbar {
@@ -245,19 +242,15 @@ body {
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
 }
-
 .header_wraper .navbar .navbar-brand {
   padding: 0;
 }
-
 .header_wraper .navbar .navbar-brand img {
   max-height: 48px;
 }
-
 .header_wraper .navbar .nav-link {
   color: #333333;
 }
-
 .header_wraper .navbar .nav-link.active, .header_wraper .navbar .nav-link:hover, .header_wraper .navbar .nav-link:focus {
   color: rgba(3, 125, 72, 0.7);
   text-decoration: underline;
@@ -276,11 +269,9 @@ body {
   padding: 20px 0;
   background: #333333;
 }
-
 .footer_wraper .navbar .nav-link {
   color: #ffffff;
 }
-
 .footer_wraper .navbar .nav-link:hover {
   color: rgba(3, 125, 72, 0.7);
 }
@@ -288,18 +279,22 @@ body {
 .navbar-brand {
   padding: 0;
 }
-
 .navbar-brand img {
   max-height: 48px;
 }
 
 .nav-link {
   font-size: 1rem;
-  font-family: 'Avenir Next Cyr';
+  font-family: "Avenir Next Cyr";
 }
 
 .nav-item:not(:last-child) {
   margin-right: 5rem;
+}
+
+.number {
+  height: 140px;
+  width: auto;
 }
 
 img {
@@ -309,7 +304,6 @@ img {
 .mob_hidden {
   display: block;
 }
-
 @media only screen and (max-width: 767px) {
   .mob_hidden {
     display: none;
@@ -319,7 +313,6 @@ img {
 .tab_hidden {
   display: block;
 }
-
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .tab_hidden {
     display: none;
@@ -330,7 +323,6 @@ img {
   border-radius: 30px;
   padding: 14.5px 27.5px;
 }
-
 .btn-outline-success {
   border-color: rgba(3, 125, 72, 0.7);
 }
@@ -339,4 +331,5 @@ i {
   font-size: 40px;
   color: #ffffff;
 }
+
 /*# sourceMappingURL=mainStyles.css.map */
