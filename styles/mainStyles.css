@@ -228,7 +228,8 @@ body {
   font-weight: normal;
 }
 .heading--type-5 {
-  font-size: 3.2em;
+  font-size: 2em;
+  color: #ffffff;
 }
 
 .header_wraper .navbar {
@@ -295,6 +296,19 @@ body {
 .number {
   height: 140px;
   width: auto;
+}
+
+.collage {
+  position: relative;
+}
+.collage__content {
+  position: absolute;
+  top: 120px;
+  left: 80px;
+}
+.collage__content p {
+  color: #ffffff;
+  font-size: 1.6em;
 }
 
 img {

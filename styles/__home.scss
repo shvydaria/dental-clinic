@@ -21,3 +21,16 @@
     height: 140px;
     width: auto;
   }
+
+  .collage {
+    position: relative;
+    &__content {
+      position: absolute;
+      top: 120px;
+      left: 80px;
+      p {
+        color: $white;
+        font-size: 1.6em;
+      }
+    }
+  }
