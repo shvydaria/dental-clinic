@@ -67,21 +67,24 @@ i {
 }
 
 .promo {
+  position: relative;
   margin-top: 95px;
   margin-bottom: 78px;
-  padding: 30px 80px;
-  height: 50vh;
-  display: flex;
-
-  align-items: flex-end;
-  background-size: cover;
-  background-image: url(../img/2_page_about_us/picture/1.jpg);
 
   &__text {
+    position: absolute;
+    bottom: 0;
+    padding: 30px 80px;
     font-family: "Avenir Next Cyr", sans-serif;
     font-size: 36px;
     font-weight: 500;
     color: $white;
+    @include responsive_tab() {
+      font-size: 28px;
+    }
+    @include responsive_mobile() {
+      font-size: 20px;
+    }
   }
 }
 
@@ -94,6 +97,15 @@ i {
     font-weight: 500;
     color: $dark-gray;
     white-space: nowrap;
+    @include responsive_mobile() {
+      font-size: 24px;
+    }
+
+    img {
+      margin-left: 18px;
+      width: auto;
+      max-height: 51px;
+    }
   }
 
   &__text {
@@ -103,6 +115,10 @@ i {
     line-height: 32px;
     letter-spacing: 0.02em;
     color: $dark-gray;
+    @include responsive_mobile() {
+      font-size: 18px;
+      line-height: 22px;
+    }
   }
 
   &__image {
@@ -309,20 +325,58 @@ i {
   justify-content: center;
   background-repeat: no-repeat;
   background-size: contain;
+  @include responsive(0px, 1384px) {
+    margin-bottom: 36px;
+    padding: 0;
+  }
 
   &--laboratory {
     background-image: url(../img/2_page_about_us/picture/4.jpg);
     background-position: left calc(50% + 300px) center;
+    @include responsive(0px, 1384px) {
+      background: none;
+    }
+
+    .advantage__paragraph {
+      @include responsive(0px, 1384px) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+          url(../img/else/mob/2_page_about_us/picture/Mask_Groupfon.jpg);
+        background-size: cover;
+      }
+    }
   }
 
   &--sterilization {
     background-image: url(../img/2_page_about_us/picture/3.jpg);
     background-position: right calc(50% + 300px) center;
+    @include responsive(0px, 1384px) {
+      background: none;
+    }
+
+    .advantage__paragraph {
+      @include responsive(0px, 1384px) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+          url(../img/else/mob/2_page_about_us/picture/Mask_Groupfon2.jpg);
+        background-size: cover;
+      }
+    }
   }
 
   &--orthodontics {
     background-image: url(../img/2_page_about_us/picture/2.jpg);
     background-position: left calc(50% + 300px) center;
+    @include responsive(0px, 1384px) {
+      background: none;
+    }
+
+    .advantage__paragraph {
+      @include responsive(0px, 1384px) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+          url(../img/else/mob/2_page_about_us/picture/Mask_Groupfon3.jpg);
+        background-size: cover;
+        background-position: 0 30%;
+      }
+    }
   }
 
   &__paragraph {
@@ -333,9 +387,17 @@ i {
     border-radius: 10px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
     transform: translateX(-300px);
+    @include responsive(0px, 1384px) {
+      color: $white;
+      background-color: rgba(0, 0, 0, 0.2);
+      transform: none;
+    }
 
     &--reverse {
       transform: translateX(300px);
+      @include responsive(0px, 1384px) {
+        transform: none;
+      }
     }
   }
 
@@ -344,6 +406,9 @@ i {
     font-weight: 500;
     letter-spacing: 0.04em;
     color: $dark-gray;
+    @include responsive(0px, 1384px) {
+      color: $white;
+    }
   }
 
   &__text {
@@ -351,6 +416,9 @@ i {
     line-height: 17px;
     letter-spacing: 0.04em;
     color: $black;
+    @include responsive(0px, 1384px) {
+      color: $white;
+    }
 
     li {
       padding: 8px 0;
@@ -358,6 +426,8 @@ i {
   }
 
   &__button {
+    display: block;
+    margin: 0 auto;
     padding: 5px 34px;
     font-size: 18px;
     font-weight: 500;
@@ -367,9 +437,17 @@ i {
     border-radius: 30px;
     box-shadow: 0 14px 23px rgba(28, 37, 44, 0.08);
     transition: background-color 0.3s;
+    @include responsive(0px, 1384px) {
+      color: $white;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
 
     &:hover {
       background-color: $beige;
+      @include responsive(0px, 1384px) {
+        color: $white;
+        background-color: rgba(0, 0, 0, 0.9);
+      }
     }
   }
 }
@@ -406,10 +484,24 @@ i {
 .map {
   padding: 50px 80px;
   background-image: url(../img/2_page_about_us/picture/7.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__form {
+    display: flex;
+    justify-content: flex-end;
+    @include responsive_mobile() {
+      justify-content: center;
+    }
+    @include responsive_tab() {
+      justify-content: center;
+    }
+  }
 }
 
 .feedback-form {
   padding: 88px 75px;
+  max-width: 628px;
   display: flex;
   flex-direction: column;
   align-items: center;

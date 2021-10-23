@@ -307,20 +307,28 @@ i {
 }
 
 .promo {
+  position: relative;
   margin-top: 95px;
   margin-bottom: 78px;
-  padding: 30px 80px;
-  height: 50vh;
-  display: flex;
-  align-items: flex-end;
-  background-size: cover;
-  background-image: url(../img/2_page_about_us/picture/1.jpg);
 }
 .promo__text {
+  position: absolute;
+  bottom: 0;
+  padding: 30px 80px;
   font-family: "Avenir Next Cyr", sans-serif;
   font-size: 36px;
   font-weight: 500;
   color: #ffffff;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .promo__text {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .promo__text {
+    font-size: 20px;
+  }
 }
 
 .team__title {
@@ -332,6 +340,16 @@ i {
   color: #62666C;
   white-space: nowrap;
 }
+@media only screen and (max-width: 767px) {
+  .team__title {
+    font-size: 24px;
+  }
+}
+.team__title img {
+  margin-left: 18px;
+  width: auto;
+  max-height: 51px;
+}
 .team__text {
   margin-bottom: 16px;
   font-family: "Avenir Next Cyr", sans-serif;
@@ -339,6 +357,12 @@ i {
   line-height: 32px;
   letter-spacing: 0.02em;
   color: #62666C;
+}
+@media only screen and (max-width: 767px) {
+  .team__text {
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 .team__image {
   margin-top: 32px;
@@ -522,17 +546,57 @@ i {
   background-repeat: no-repeat;
   background-size: contain;
 }
+@media only screen and (min-width: 0px) and (max-width: 1384px) {
+  .advantage {
+    margin-bottom: 36px;
+    padding: 0;
+  }
+}
 .advantage--laboratory {
   background-image: url(../img/2_page_about_us/picture/4.jpg);
   background-position: left calc(50% + 300px) center;
+}
+@media only screen and (min-width: 0px) and (max-width: 1384px) {
+  .advantage--laboratory {
+    background: none;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 1384px) {
+  .advantage--laboratory .advantage__paragraph {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/2_page_about_us/picture/Mask_Groupfon.jpg);
+    background-size: cover;
+  }
 }
 .advantage--sterilization {
   background-image: url(../img/2_page_about_us/picture/3.jpg);
   background-position: right calc(50% + 300px) center;
 }
+@media only screen and (min-width: 0px) and (max-width: 1384px) {
+  .advantage--sterilization {
+    background: none;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 1384px) {
+  .advantage--sterilization .advantage__paragraph {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/2_page_about_us/picture/Mask_Groupfon2.jpg);
+    background-size: cover;
+  }
+}
 .advantage--orthodontics {
   background-image: url(../img/2_page_about_us/picture/2.jpg);
   background-position: left calc(50% + 300px) center;
+}
+@media only screen and (min-width: 0px) and (max-width: 1384px) {
+  .advantage--orthodontics {
+    background: none;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 1384px) {
+  .advantage--orthodontics .advantage__paragraph {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/2_page_about_us/picture/Mask_Groupfon3.jpg);
+    background-size: cover;
+    background-position: 0 30%;
+  }
 }
 .advantage__paragraph {
   padding: 56px;
@@ -543,8 +607,20 @@ i {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   transform: translateX(-300px);
 }
+@media only screen and (min-width: 0px) and (max-width: 1384px) {
+  .advantage__paragraph {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.2);
+    transform: none;
+  }
+}
 .advantage__paragraph--reverse {
   transform: translateX(300px);
+}
+@media only screen and (min-width: 0px) and (max-width: 1384px) {
+  .advantage__paragraph--reverse {
+    transform: none;
+  }
 }
 .advantage__title {
   font-size: 20px;
@@ -552,16 +628,28 @@ i {
   letter-spacing: 0.04em;
   color: #62666C;
 }
+@media only screen and (min-width: 0px) and (max-width: 1384px) {
+  .advantage__title {
+    color: #ffffff;
+  }
+}
 .advantage__text {
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.04em;
   color: #333333;
 }
+@media only screen and (min-width: 0px) and (max-width: 1384px) {
+  .advantage__text {
+    color: #ffffff;
+  }
+}
 .advantage__text li {
   padding: 8px 0;
 }
 .advantage__button {
+  display: block;
+  margin: 0 auto;
   padding: 5px 34px;
   font-size: 18px;
   font-weight: 500;
@@ -572,8 +660,20 @@ i {
   box-shadow: 0 14px 23px rgba(28, 37, 44, 0.08);
   transition: background-color 0.3s;
 }
+@media only screen and (min-width: 0px) and (max-width: 1384px) {
+  .advantage__button {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
 .advantage__button:hover {
   background-color: #f3f3f3;
+}
+@media only screen and (min-width: 0px) and (max-width: 1384px) {
+  .advantage__button:hover {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
 }
 
 .advantage-modal__close-btn {
@@ -606,10 +706,27 @@ i {
 .map {
   padding: 50px 80px;
   background-image: url(../img/2_page_about_us/picture/7.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.map__form {
+  display: flex;
+  justify-content: flex-end;
+}
+@media only screen and (max-width: 767px) {
+  .map__form {
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .map__form {
+    justify-content: center;
+  }
 }
 
 .feedback-form {
   padding: 88px 75px;
+  max-width: 628px;
   display: flex;
   flex-direction: column;
   align-items: center;
