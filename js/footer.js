@@ -21,10 +21,10 @@ class Footer extends HTMLElement {
           <div class="collapse navbar-collapse justify-content-center" id="navbarScroll">
             <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Головна</a>
+                <a class="nav-link active" aria-current="page" href="./index.html">Головна</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Про нас</a>
+                <a class="nav-link" href="./about.html">Про нас</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Послуги</a>
@@ -46,5 +46,5 @@ class Footer extends HTMLElement {
     `;
   }
 }
-  
-  customElements.define('footer-component', Footer);
+
+customElements.define("footer-component", Footer);
