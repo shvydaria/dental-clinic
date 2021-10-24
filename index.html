@@ -10,8 +10,9 @@
   <link rel="stylesheet" href="styles/mainStyles.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
@@ -40,10 +41,10 @@
         <h3 class="heading heading--type-3 mb-5">Чому саме ми?</h3>
 
         <div class="col-6 d-flex">
-              <img class="number me-4" src="./img/1_page/illustration/1numbers.png">
-            <p>
-              Працюємо усією командою над wow-результатом
-            </p>
+          <img class="number me-4" src="./img/1_page/illustration/1numbers.png">
+          <p>
+            Працюємо усією командою над wow-результатом
+          </p>
         </div>
 
 
@@ -75,22 +76,121 @@
   <!-- positioning -->
   <section>
     <div class="collage">
-        <img src="./img/1_page/photos/46pic_1_1.jpg" alt>
-        <div class="collage__content">
-          <h5 class="heading heading--type-5 mb-5">Чому нам довіряють?</h5>
-          <p>
-            Ми створили простір, де у лікарів є<br> можливість бути частинкою<br> здійснення мрії кожного, хто<br> приходить до нас!
-          </p>
-        </div>
+      <img src="./img/1_page/photos/46pic_1_1.jpg" alt>
+      <div class="collage__content">
+        <h5 class="heading heading--type-5 mb-5">Чому нам довіряють?</h5>
+        <p>
+          Ми створили простір, де у лікарів є<br> можливість бути частинкою<br> здійснення мрії кожного, хто<br>
+          приходить до нас!
+        </p>
+      </div>
     </div>
   </section>
 
+  <!-- carousel -->
   <section>
-    <carousel></carousel>
-    <p>
-      Ми прогнозуємо, як будь-яке стоматологічне втручання вплине на зовнішність пацієнта, та підбираємо оптимальне
-      рішення, щоб зберегти Вашу привабливість та подарувати Вам здорову посмішку
-    </p>
+
+    <div class="row">
+      <div class="col-6">
+        <div id="carouselExampleIndicators" class="carousel slide p-5" data-bs-ride="carousel">
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/1_page/photos/teeth_1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/1_page/photos/teeth_2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/1_page/photos/teeth_3.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/1_page/photos/teeth_4.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <div class="mt-5">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="carousel-text">
+          <p>Ми прогнозуємо, як будь-яке стоматологічне втручання вплине на зовнішність пацієнта, та підбираємо
+            оптимальне рішення, щоб зберегти Вашу привабливість та подарувати Вам здорову посмішку</p>
+        </div>
+      </div>
+    </div>
+    <!-- 
+    <div id="carouselCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        
+        <div class="carousel-item active p-5">
+          <div class="row">
+
+            <div class="col-6">
+            <img src="./img/1_page/photos/teeth_1.png" class="d-block w-100" alt="...">
+            </div>
+
+            <div class="col-6">
+            <div class="carousel-text">
+              <p>Ми прогнозуємо, як будь-яке стоматологічне втручання вплине на зовнішність пацієнта, та підбираємо оптимальне рішення, щоб зберегти Вашу привабливість та подарувати Вам здорову посмішку</p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/1_page/photos/teeth_2.png" class="d-block w-50" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <p>Коррекция зубного ряда, имплантация, работа врачей-косметологов - так мы получаем легендарный киноеффект «до и после» в реальности, без Инста-фильтров и пластики.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/1_page/photos/teeth_3.png" class="d-block w-50" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <p>Коррекция зубного ряда, имплантация, работа врачей-косметологов - так мы получаем легендарный киноеффект «до и после» в реальности, без Инста-фильтров и пластики.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/1_page/photos/teeth_4.png" class="d-block w-50" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <p>Коррекция зубного ряда, имплантация, работа врачей-косметологов - так мы получаем легендарный киноеффект «до и после» в реальности, без Инста-фильтров и пластики.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+    </div> -->
   </section>
 
   <section>
@@ -101,120 +201,152 @@
           Посміхайтеся частіше, а ми<br> завжди допоможемо!
         </h5>
         <p>
-          Раді бачити Ваші усмішки, раді щирим<br> та приємним відгукам про нашу<br> команду, раді емоціям, які Ви нам<br> даруєте!
+          Раді бачити Ваші усмішки, раді щирим<br> та приємним відгукам про нашу<br> команду, раді емоціям, які Ви
+          нам<br> даруєте!
         </p>
       </div>
     </div>
 
   </section>
 
-  <section>
-    <span>
-      ----------- VDC обожнює Вашу посмішку -----------
-    </span>
-    <h4 class="heading heading--type-4">Наші досягнення</h4>
-    <div>
-      Інноваційні
-      <p>
-        Створюємо шедеври на обладнанні з Німеччини, США, Італії, Японії, Данії, Словакії 2015-2021 років виробництва.
+  <!-- cards -->
+  <section class="benefits">
+    <div class="container">
+      <p class="line">
+        <img src="./img/icons/line.png" height="1"> VDC обожнює Вашу посмішку <img src="./img/icons/line.png"
+          height="1">
       </p>
-    </div>
-    <div>
-      Працюємо по коханню
-      <p>
-        VDC — 18 фахівців з єдиною місією: щоб здорових, щасливих та відкритих посмішок стало якомога більше.
-      </p>
+      <h4 class="heading heading--type-4 text-center mb-5">Наші досягнення</h4>
+
+      <div class="row justify-content-evenly">
+        <div class="benefits__card col col-lg-3 mb-4">
+          <p class="title">Інноваційні</p>
+          <p>
+            Створюємо шедеври на обладнанні з Німеччини, США, Італії, Японії, Данії, Словакії 2015-2021 років
+            виробництва.
+          </p>
+        </div>
+        <div class="benefits__card col col-lg-3 mb-4">
+          <p class="title">Працюємо по коханню</p>
+          <p>
+            VDC — 18 фахівців з єдиною місією: щоб здорових, щасливих та відкритих посмішок стало якомога більше.
+          </p>
+        </div>
+        <div class="benefits__card col col-lg-3 mb-4">
+          <p class="title">Любимо вчитися</p>
+          <p>
+            За 5 років наші лікарі відвідали 50+ семінарів, конгресів та симпозіумів у 9 країнах світу.
+          </p>
+        </div>
+      </div>
+
+      <div class="row justify-content-evenly">
+        <div class="benefits__card col col-lg-3">
+          <p class="title">Креативні</p>
+          <p>
+            За останній рік зробили 200+ унікальних посмішок. Навіть коли казали «мабуть, неможливо», ми доводили, що
+            для
+            нас такого не існує!
+          </p>
+        </div>
+
+        <div class="benefits__card col col-lg-3">
+          <p class="title">У нас безпечно</p>
+          <p>
+            Стерильно, як в операційних. Та морально спокійно, бо ми створили атмосферу тотального розслаблення.
+          </p>
+        </div>
+
+        <div class="benefits__card col col-lg-3">
+          <p class="title">Є власна лабораторія</p>
+          <p>
+            Над вашою посмішкою працюють одразу й технік, й лікар. Контролюють увесь процес та разом втілюють кращий
+            результат.
+          </p>
+        </div>
+      </div>
 
     </div>
-    <div>
-      Любимо вчитися
-      <p>
-        За 5 років наші лікарі відвідали 50+ семінарів, конгресів та симпозіумів у 9 країнах світу.
-      </p>
 
-    </div>
-    <div>
-      Креативні
-      <p>
-        За останній рік зробили 200+ унікальних посмішок. Навіть коли казали «мабуть, неможливо», ми доводили, що для
-        нас такого не існує!
-      </p>
-
-    </div>
-    <div>
-      У нас безпечно
-      <p>
-        Стерильно, як в операційних. Та морально спокійно, бо ми створили атмосферу тотального розслаблення.
-      </p>
-
-    </div>
-    <div>
-      Є власна лабораторія
-      <p>
-        Над вашою посмішкою працюють одразу й технік, й лікар. Контролюють увесь процес та разом втілюють кращий
-        результат.
-      </p>
-    </div>
   </section>
 
   <section class="mb-9">
     <div class="collage">
       <img src="./img/1_page/photos/dentals.jpg" alt>
-      <div class="collage__content form">
-        <h5>
-          Залиште Ваші контактні дані, і наш адміністратор зв'яжеться з вами
-        </h5>
-        <input title="Ваше ім’я" type="text">
-        <input title="Номер телефону" type="tel">
-        <button type="button" class="btn btn-outline-success">
-          Зв’язатися з нами
-        </button>
+      <div class="form-container">
+        <div class="row form">
+          <div class="feedback-form col-12 col-lg-8 col-xl-6">
+            <h2 class="feedback-form__title">
+              Залиште Ваші контактні дані, і&nbsp;наш адміністратор зв'яжеться з&nbsp;вами
+            </h2>
+            <input name="name" type="text" class="feedback-form__input" placeholder="Ваше ім’я" />
+            <input name="phone" type="tel" class="feedback-form__input" placeholder="Номер телефону" />
+            <button type="button" class="feedback-form__submit">Зв’язатися з нами</button>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- accordion -->
   <section>
     <div class="container">
       <h4 class="heading heading--type-4 ms-8 mb-4">Питання та відповіді</h4>
       <div class="accordion open" id="accordionFlush">
         <div class="accordion-item">
           <h2 class="accordion-header" id="flush-headingOne">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
               <img class="accordion-icon" src="./img/icons/help.png" alt="question">Чи безпечне відбілювання зубів?
             </button>
           </h2>
-          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlush">
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlush">
             <div class="accordion-body">
-              Ми використовуємо безпечну та ефективну систему Magic Smile — це відбілювання зубів, яке забезпечує довготривалий ефект без пошкодження емалі. 
-              Жодних абразивів, кислот чи ультрафіолету, адже відбілювання відбувається за рахунок спеціального гелю та  LED-лампи. 
+              Ми використовуємо безпечну та ефективну систему Magic Smile — це відбілювання зубів, яке забезпечує
+              довготривалий ефект без пошкодження емалі.
+              Жодних абразивів, кислот чи ультрафіолету, адже відбілювання відбувається за рахунок спеціального гелю та
+              LED-лампи.
               Ця методика розроблена у США і вже понад 5 років активно застосовується у нашому центрі.
             </div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="flush-headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-              <img class="accordion-icon" src="./img/icons/help.png" alt="question">Як часто варто робити професійну чистку зубів?
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              <img class="accordion-icon" src="./img/icons/help.png" alt="question">Як часто варто робити професійну
+              чистку зубів?
             </button>
           </h2>
-          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlush">
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlush">
             <div class="accordion-body">
-              Професійна гігієна — ефективна профілактика карієсу, тому ця процедура має бути не рідше двох разів на рік. У нашому центрі ми пропонуємо комфортну та безпечну чистку Air Flow апаратом японської фірми Micron, який ідеально видаляє зубний наліт і робить Вашу усмішку бездоганною.
-              Ще одним ефективним та безпечним методом очищення ротової порожнини є ультразвукова чистка. 
-              Світова стоматологічна практика доводить, що сучасне ультразвукове видалення нальоту здатне запобігти великій кількості стоматологічних проблем і зменшити вірогідність захворювань.
+              Професійна гігієна — ефективна профілактика карієсу, тому ця процедура має бути не рідше двох разів на
+              рік. У нашому центрі ми пропонуємо комфортну та безпечну чистку Air Flow апаратом японської фірми Micron,
+              який ідеально видаляє зубний наліт і робить Вашу усмішку бездоганною.
+              Ще одним ефективним та безпечним методом очищення ротової порожнини є ультразвукова чистка.
+              Світова стоматологічна практика доводить, що сучасне ультразвукове видалення нальоту здатне запобігти
+              великій кількості стоматологічних проблем і зменшити вірогідність захворювань.
               Бережіть вашу посмішку — робіть професійну чистку регулярно!
             </div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="flush-headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-              <img class="accordion-icon" src="./img/icons/help.png" alt="question">Навіщо потрібне лікування під мікроскопом?
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              <img class="accordion-icon" src="./img/icons/help.png" alt="question">Навіщо потрібне лікування під
+              мікроскопом?
             </button>
           </h2>
-          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlush">
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlush">
             <div class="accordion-body">
-              Часто стоматологічну проблему не помітно неозброєним оком: зубні канали можуть приховувати багато неприємностей. І аби провести точну діагностику, оцінити ризики та планувати лікування, необхідно роздивитися проблему ближче —  за допомогою 25-кратного збільшення мікроскопа це більше, ніж реально. Основні переваги лікування під мікроскопом:
+              Часто стоматологічну проблему не помітно неозброєним оком: зубні канали можуть приховувати багато
+              неприємностей. І аби провести точну діагностику, оцінити ризики та планувати лікування, необхідно
+              роздивитися проблему ближче — за допомогою 25-кратного збільшення мікроскопа це більше, ніж реально.
+              Основні переваги лікування під мікроскопом:
               <ul>
                 <li>підвищений контроль маніпуляцій</li>
                 <li>точність та якість</li>
@@ -226,14 +358,21 @@
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="flush-heading4">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
-              <img class="accordion-icon" src="./img/icons/help.png" alt="question">Скільки коштує лікування брекет-системою?
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+              <img class="accordion-icon" src="./img/icons/help.png" alt="question">Скільки коштує лікування
+              брекет-системою?
             </button>
           </h2>
-          <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading4" data-bs-parent="#accordionFlush">
+          <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading4"
+            data-bs-parent="#accordionFlush">
             <div class="accordion-body">
-              Це найпопулярніше питання, на яке немає чіткої відповіді. Кожен пацієнт особливий і потребує індивідуального підходу. Перш за все перед початком лікування лікарю-ортодонту необхідно провести огляд, зняти відбитки з зубів, провести рентгенологічне дослідження, а також обов‘язкове фотографування пацієнта.
-              До того ж, поставити брекети можна тільки на здорові зуби, без карієсу і захворювань зі сторони ясен. Обов'язково необхідно провести професійну чистку зубів, видалення зубного каменю, при необхідності, зміцнення і фторування емалі.
+              Це найпопулярніше питання, на яке немає чіткої відповіді. Кожен пацієнт особливий і потребує
+              індивідуального підходу. Перш за все перед початком лікування лікарю-ортодонту необхідно провести огляд,
+              зняти відбитки з зубів, провести рентгенологічне дослідження, а також обов‘язкове фотографування пацієнта.
+              До того ж, поставити брекети можна тільки на здорові зуби, без карієсу і захворювань зі сторони ясен.
+              Обов'язково необхідно провести професійну чистку зубів, видалення зубного каменю, при необхідності,
+              зміцнення і фторування емалі.
               Після повної діагностики буде складений план лікування та підрахована вартість лікування.
               Пам’ятайте, VDC обожнює вашу посмішку!
             </div>
@@ -241,14 +380,19 @@
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="flush-heading5">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
-              <img class="accordion-icon" src="./img/icons/help.png" alt="question">Чому люди у всьому світі обирають безметалеві керамічні коронки?
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+              <img class="accordion-icon" src="./img/icons/help.png" alt="question">Чому люди у всьому світі обирають
+              безметалеві керамічні коронки?
             </button>
           </h2>
-          <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-heading5" data-bs-parent="#accordionFlush">
+          <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-heading5"
+            data-bs-parent="#accordionFlush">
             <div class="accordion-body">
-              Коли перед вами стає вибір між тим чи іншим видом коронок, ви хочете, щоб вони 
-              були міцними, надійними, довговічними, бездоганно виглядали, і щоб їх вартість при цьому була помірною. Останнім часом, поряд з традиційними металокерамічними коронками все більшої популярності набуває безметалева кераміка, що володіє всіма цими якостями. До того ж, такі коронки володіють рядом переваг:
+              Коли перед вами стає вибір між тим чи іншим видом коронок, ви хочете, щоб вони
+              були міцними, надійними, довговічними, бездоганно виглядали, і щоб їх вартість при цьому була помірною.
+              Останнім часом, поряд з традиційними металокерамічними коронками все більшої популярності набуває
+              безметалева кераміка, що володіє всіма цими якостями. До того ж, такі коронки володіють рядом переваг:
               <ul>
                 <li>при їх встановленні не потрібно депульповувати зуби. Вони залишаються живими і неушкодженими</li>
                 <li>обпилюється мінімальна товщина зубних тканин - 0,3-0,5 мм.
@@ -261,7 +405,8 @@
               </ul>
               Аби підкріпити Ваше рішення, варто сказати і про металокерамічні коронки:
               <ul>
-                <li>переважно у всіх випадках потрібно депульповувати зуби, які з часом стають крихкими і ненадійними</li>
+                <li>переважно у всіх випадках потрібно депульповувати зуби, які з часом стають крихкими і ненадійними
+                </li>
                 <li>зубні тканини обпилюються з усіх сторін до 2-3 мм. Що робить зуби не такими витривалими.</li>
                 <li>завжди з’являються потемніння в приясенній ділянці</li>
                 <li>є матове ядро з середини металевого каркасу</li>
@@ -273,18 +418,26 @@
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="flush-heading6">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapse6">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapse6">
               <img class="accordion-icon" src="./img/icons/help.png" alt="question">Що обрати: брекети чи вініри?
             </button>
           </h2>
-          <div id="flush-collapse6" class="accordion-collapse collapse" aria-labelledby="flush-heading6" data-bs-parent="#accordionFlush">
+          <div id="flush-collapse6" class="accordion-collapse collapse" aria-labelledby="flush-heading6"
+            data-bs-parent="#accordionFlush">
             <div class="accordion-body">
               <p>Усе залежить від початкового стану ваших зубів.
-                Неправильний прикус, розвернуті, скупчені або розташовані на значній відстані один від одного зуби можуть виправити тільки брекети. У такому разі не варто встановлювати вініри, адже це не додасть вам здоров’я. Допоможе тільки ортодонтичне лікування.
-                </p>
-                <p>А ось якщо потрібно вплинути на форму або колір, а це відіграє в усмішці не останню роль, то тут допоможуть тільки вініри.</p>
-                <p>У нашій клініці ми пропонуємо комбінацію двох підходів для досягнення неперевершеного результату —  це ідеальний вибір, який підходить для 95% пацієнтів.</p>
-                <p>Тут схема тільки одна: для початку все вирівняти, виправити прикус, а вже після цього має сенс коригувати форму, колір і інші нюанси. Пам’ятайте, що це не примха лікаря, а система, ЯКА ПРАЦЮЄ І РОБИТЬ ВАШУ УСМІШКУ ІДЕАЛЬНОЮ.</p>
+                Неправильний прикус, розвернуті, скупчені або розташовані на значній відстані один від одного зуби
+                можуть виправити тільки брекети. У такому разі не варто встановлювати вініри, адже це не додасть вам
+                здоров’я. Допоможе тільки ортодонтичне лікування.
+              </p>
+              <p>А ось якщо потрібно вплинути на форму або колір, а це відіграє в усмішці не останню роль, то тут
+                допоможуть тільки вініри.</p>
+              <p>У нашій клініці ми пропонуємо комбінацію двох підходів для досягнення неперевершеного результату — це
+                ідеальний вибір, який підходить для 95% пацієнтів.</p>
+              <p>Тут схема тільки одна: для початку все вирівняти, виправити прикус, а вже після цього має сенс
+                коригувати форму, колір і інші нюанси. Пам’ятайте, що це не примха лікаря, а система, ЯКА ПРАЦЮЄ І
+                РОБИТЬ ВАШУ УСМІШКУ ІДЕАЛЬНОЮ.</p>
             </div>
           </div>
         </div>
@@ -293,57 +446,66 @@
   </section>
 
   <section>
-    <div>
-      <p>Наші контакти</p>
-      <div>
-        <img src="./img/icons/Icons_contact/Group 35icon_contacts@3x.png">
-        <p>
-          пр-т Перемоги 119А
-          <br>
-          м. Чернігів
-        </p>
-      </div>
-      <div>
-        <img src="./img/icons/Icons_contact/Group 35icon_contacts@3x.png">
-        <p>
-          (0462)93-00-03
-          <br>
-          (073)030-71-71
-          <br>
-          (068)822-00-40
-          <br>
-        </p>
-      </div>
-      <div>
-        <img src="./img/icons/Icons_contact/Group 35icon_contacts@3x.png">
-        <p>
-          Запис до ортодонта
-          <br>
-          (0462)61-40-53
-        </p>
-      </div>
-      <div>
-        <img src="./img/icons/Icons_contact/Group 35icon_contacts@3x.png">
-        <p>
-          Працюємо щодня
-          <br>
-          Пн-Пт: 08:00 -19:00
-        </p>
-      </div>
-      <div>
-        <img src="./img/icons/Facebooklink_contact@3x.png">
-        <img src="./img/icons/Instagramlink_contact@3x.png">
+    <div class="position-relative">
+      <img class="img-fluid w-100" alt="mapbox"
+        src="https://api.mapbox.com/styles/v1/mapbox/dark-v10/static/pin-l+eb5757(31.3026047,51.4983)/31.3026,51.4983,20,0/1280x434?before_layer=ferry&access_token=pk.eyJ1IjoiZGFyaWFzaHZ5ZGthIiwiYSI6ImNrczBoNWR4MjBuZGUyb3BqNjg5bXB1dzQifQ.wooIER1z9EVAOc1ZDEa9GQ">
+
+      <div class="row form">
+        <div class="map-form col-12 col-lg-8 col-xl-6">
+          <h2 class="map-form__title">
+            Наші контакти
+          </h2>
+          <div class="d-flex w-100">
+            <img src="./img/icons/Icons_contact/map.png" alt="ico-form" class="map-form__icon me-4">
+            <p>
+              пр-т Перемоги 119А
+              <br>
+              м. Чернігів
+            </p>
+          </div>
+          <div class="d-flex w-100">
+            <img src="./img/icons/Icons_contact/phone.png" alt="ico-form" class="map-form__icon me-4">
+            <p>
+              (0462)93-00-03
+              <br>
+              (073)030-71-71
+              <br>
+              (068)822-00-40
+              <br>
+            </p>
+          </div>
+          <div class="d-flex w-100">
+            <img src="./img/icons/Icons_contact/pen.png" alt="ico-form" class="map-form__icon me-4">
+            <p>
+              Запис до ортодонта
+              <br>
+              (0462)61-40-53
+            </p>
+          </div>
+          <div class="d-flex w-100">
+            <img src="./img/icons/Icons_contact/timer.png" alt="ico-form" class="map-form__icon me-4">
+            <p>
+              Працюємо щодня
+              <br>
+              Пн-Пт: 08:00 -19:00
+            </p>
+          </div>
+          <div class="d-flex w-100">
+            <a href="https://www.instagram.com/vdc_dentistry/">
+              <img src="./img/icons/Icons_contact/inst.png" alt="ico-form" class="map-form__icon me-6">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100054469299460">
+              <img src="./img/icons/Icons_contact/fb.png" alt="ico-form" class="map-form__icon">
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-    <!-- <div>
-        <img class="img-fluid w-100" alt="mapbox" 
-        src="https://api.mapbox.com/styles/v1/mapbox/dark-v10/static/pin-l+eb5757(31.3026047,51.4983)/31.3026,51.4983,20,0/1280x434?before_layer=ferry&access_token=pk.eyJ1IjoiZGFyaWFzaHZ5ZGthIiwiYSI6ImNrczBoNWR4MjBuZGUyb3BqNjg5bXB1dzQifQ.wooIER1z9EVAOc1ZDEa9GQ">
-    </div> -->
   </section>
 
   <footer-component></footer-component>
 
- 
+
   <script src="/js/mainFunctions.js"></script>
   <script src="./js/header.js" type="text/javascript" defer></script>
   <script src="./js/footer.js" type="text/javascript" defer></script>
