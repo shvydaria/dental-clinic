@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>VDC</title>
+    <link rel="stylesheet" href="./styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="./styles/mainStyles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+  </head>
+  <body>
+    <header-component></header-component>
+
+    <section class="promo">
+      <img
+        srcset="
+          ./img/else/mob/2_page_about_us/picture/Mask_Groupph.jpg   1500w,
+          ./img/else/tablet/2_page_about_us/picture/Mask_Group1.jpg 2192w
+        "
+        src="./img/2_page_about_us/picture/1.jpg"
+      />
+      <p class="promo__text">
+        Ми задаємо стандарти лікування та&nbsp;дбаємо про&nbsp;своїх <br />
+        пацієнтів від&nbsp;першого візиту і&nbsp;назавжди
+      </p>
+    </section>
+
+    <!-- Про команду -->
+    <section class="container-fluid team">
+      <hgroup class="team__title">
+        <h1>Про нас та команду</h1>
+        <img src="./img/logo/Logo 3logo.png" />
+      </hgroup>
+
+      <p class="team__text">
+        Наш стоматологічний центр створений на&nbsp;основі 20-річного власного досвіду, навчання, роботи
+        і&nbsp;викладання, вивчення чужого досвіду, відвідування кращих європейських&nbsp;клінік.
+      </p>
+      <p class="team__text">
+        Але Vitadent Dental Clinic — це&nbsp;більше ніж&nbsp;просто стоматологічний центр. Це&nbsp;творча команда
+        експертів, в&nbsp;чиїх руках сучасне обладнання здійснює чудеса. Чому саме&nbsp;так? Бо&nbsp;для&nbsp;кожного
+        члена нашої команди стоматологія — це мистецтво, покликання і&nbsp;велика частина&nbsp;життя.
+      </p>
+    </section>
+
+    <img class="team__image" src="./img/2_page_about_us/picture/5.jpg" />
+
+    <section class="container-fluid team">
+      <p class="team__text">
+        У популярній книзі «Генії і&nbsp;аутсайдери. Чому одним&nbsp;все, а&nbsp;іншим нічого?» Малкольм Гладуелл
+        популяризував теорію: щоб&nbsp;стати професіоналом потрібно витратити на&nbsp;її&nbsp;вивчення близько
+        10&nbsp;тисяч&nbsp;годин. Згодні з&nbsp;ним на&nbsp;100%. Кожен фахівець нашої клініки пройшов цей&nbsp;шлях
+        і&nbsp;зараз займається улюбленою справою свого&nbsp;життя.
+      </p>
+      <p class="team__text">
+        Ми сильно прагнемо написати нову&nbsp;історію: коли&nbsp;похід до&nbsp;лікаря — це&nbsp;про&nbsp;відчуття
+        моменту, спокій та&nbsp;вдячність собі про&nbsp;своєчасну турботу. Тому, як&nbsp;завжди повторює головний
+        лікар&nbsp;VDC, лікуємо кожного, як&nbsp;свою&nbsp;маму.
+      </p>
+      <p class="team__text">Завжди раді вам та&nbsp;обіцяємо подарувати кращий результат з&nbsp;можливих!</p>
+
+      <div class="container-fluid doctors">
+        <div class="row">
+          <button type="button" class="doctor-card col-3" data-bs-toggle="modal" data-bs-target="#doctorModal1">
+            <img class="doctor-card__photo" src="./img/2_page_about_us/picture/Portraits/doc-2.jpg" />
+            <div class="doctor-card__annotation">
+              <h2 class="doctor-card__name">Кінішенко&nbsp;Олександр<br />Володимирович</h2>
+              <p class="doctor-card__spec">Лікар-ортодонт, засновник VDC</p>
+            </div>
+          </button>
+
+          <div id="doctorModal1" tabindex="-1" class="doctor-modal modal fade">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+              <div class="modal-content doctor-modal__content">
+                <button
+                  type="button"
+                  class="btn-close doctor-modal__close-btn"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+
+                <div class="modal-body doctor-modal__body">
+                  <div class="doctor-modal__article doctor-modal__article--1">
+                    <h3>
+                      Знайомтеся, засновник стоматологічної клініки Vitadent Dental Clinic — лікар-ортодонт вищої
+                      категорії.
+                    </h3>
+                    <p>
+                      Вітаю, я Кінішенко Олександр Володимирович. За 30-річну професійну практику я «запалив» тисячі
+                      посмішок на обличчях своїх пацієнтів. Постійно прагну вдосконалення: беру участь у конференціях,
+                      конгресах, наукових семінарах і симпозіумах.
+                    </p>
+                    <p>
+                      Вміло міксую у собі досвід, новітні практики та знання з психології. Вважаю, що життя ділиться на
+                      два етапи. До брекетів і після.
+                    </p>
+                    <p>
+                      До речі, я справжній майстер жартів, полюбляю кататися на лижах, ловлю вітер на віндсерфінгу і в
+                      захваті від тварин.
+                    </p>
+                  </div>
+                  <div class="doctor-modal__photo">
+                    <img class="" src="./img/2_page_about_us/picture/modal/doc1-4.jpg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button type="button" class="doctor-card col-3" data-bs-toggle="modal" data-bs-target="#doctorModal2">
+            <img class="doctor-card__photo" src="./img/2_page_about_us/picture/Portraits/doc.jpg" />
+            <div class="doctor-card__annotation">
+              <h2 class="doctor-card__name">Кінішенко&nbsp;Олексій<br />Олександрович</h2>
+              <p class="doctor-card__spec">Лікар-ортодонт</p>
+            </div>
+          </button>
+
+          <div id="doctorModal2" tabindex="-1" class="doctor-modal modal fade">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+              <div class="modal-content doctor-modal__content">
+                <button
+                  type="button"
+                  class="btn-close doctor-modal__close-btn"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+
+                <div class="modal-body doctor-modal__body">
+                  <div class="doctor-modal__article doctor-modal__article--2">
+                    <h3>Привіт. Я Олексій Кінішенко, лікар-ортодонт.</h3>
+                    <p>
+                      У чому мій секрет? Я сприймаю ортодонтію як мистецтво: в межах цієї професії можна створювати
+                      шедеври, яким респектнув би сам Да Вінчі.
+                    </p>
+                    <p>
+                      Я завжди у режимі натхнення й неабиякого бажання ще більше розвиватися, дарувати людям позитивні
+                      емоції, гарну посмішку, підіймати їх впевненість у собі.
+                    </p>
+                    <p>
+                      Адже, коли настає мить зняття брекет-системи, перша емоція викликає у деяких навіть сльози
+                      радості, вони посміхаються і не випускають дзеркало з рук! Це варто тих 1,5-2 років, які пацієнт
+                      проводить в брекетах. Результат приголомшливий, хоча і відстрочений!
+                    </p>
+                    <p>
+                      У пацієнтах мене цікавить не лише їхня ротова порожнина і рівні зуби, а й коннект, який виникає
+                      між нами.
+                    </p>
+                    <p>
+                      Майте на увазі: я завжди радий поговорити із вами на тему вегетаріанства, поділюся останніми
+                      новинами зі світу спорту і розповім про свої катання на сноуборді. На чому би ми врешті не
+                      зійшлися, обіцяю: усміхатися будете яскраво. Побачимось!
+                    </p>
+                  </div>
+                  <div class="doctor-modal__photo">
+                    <img class="" src="./img/2_page_about_us/picture/modal/doc1-7.jpg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button type="button" class="doctor-card col-3" data-bs-toggle="modal" data-bs-target="#doctorModal3">
+            <img class="doctor-card__photo" src="./img/2_page_about_us/picture/Portraits/doc-1.jpg" />
+            <div class="doctor-card__annotation">
+              <h2 class="doctor-card__name">Ткаченко&nbsp;Марина<br />Володимирівна</h2>
+              <p class="doctor-card__spec">Дитячий стоматолог-терапевт</p>
+            </div>
+          </button>
+
+          <div id="doctorModal3" tabindex="-1" class="doctor-modal modal fade">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+              <div class="modal-content doctor-modal__content">
+                <button
+                  type="button"
+                  class="btn-close doctor-modal__close-btn"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+
+                <div class="modal-body doctor-modal__body">
+                  <div class="doctor-modal__article doctor-modal__article--3">
+                    <h3>
+                      Мене звуть Ткаченко Марина Володимирівна. Я не просто дитячий стоматолог, а ще, за сумісництвом,
+                      зубна Фея.
+                    </h3>
+                    <p>
+                      Володію усіма чарівними навичками дитячого стоматолога, проводжу уроки гігієни, лікую малюків,
+                      адаптую їх, роблю естетичні реставрації. Маю в арсеналі справжню чарівну паличку, магічний
+                      ліхтарик і ще багато чого цікавого.
+                    </p>
+                    <p>
+                      Моя ціль — щоб батьки зі всього світу і їх діточки розуміли важливість лікування зубів з малого
+                      віку!
+                    </p>
+                    <p>Побудуємо команду «батьки-лікар-дитина» — і у каріозних монстрів не буде жодного шансу.</p>
+                    <p>
+                      Впевнена, що візити до стоматолога повинні бути веселими, цікавими і проходити на одній хвилі!
+                    </p>
+                  </div>
+                  <div class="doctor-modal__photo">
+                    <img class="" src="./img/2_page_about_us/picture/modal/doc1-1.jpg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button type="button" class="doctor-card col-3" data-bs-toggle="modal" data-bs-target="#doctorModal4">
+            <img class="doctor-card__photo" src="./img/2_page_about_us/picture/Portraits/doc-6.jpg" />
+            <div class="doctor-card__annotation">
+              <h2 class="doctor-card__name">Коваль&nbsp;Віталій<br />Сергійович</h2>
+              <p class="doctor-card__spec">Стоматолог-ортопед</p>
+            </div>
+          </button>
+
+          <div id="doctorModal4" tabindex="-1" class="doctor-modal modal fade">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+              <div class="modal-content doctor-modal__content">
+                <button
+                  type="button"
+                  class="btn-close doctor-modal__close-btn"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+
+                <div class="modal-body doctor-modal__body">
+                  <div class="doctor-modal__article doctor-modal__article--4">
+                    <h3>Усім привіт. Мене звати Коваль Віталій Сергійович.</h3>
+                    <p>Давайте познайомимося трохи ближче.</p>
+                    <p>
+                      Я лікар-стоматолог з досвідом роботи понад 10 років. Люблю, щоб усе було перфектно. І цей підхід
+                      втілюю не лише в стоматології, а й у своєму власному житті.
+                    </p>
+                    <p>
+                      Регулярно відвідую вітчизняні та міжнародні конгреси і семінари. А ще дбаю, щоб мої пацієнти були
+                      щасливими та зі здоровими посмішками!
+                    </p>
+                    <p>Тож гайда знайомитись і створювати Голлівуд разом.</p>
+                  </div>
+                  <div class="doctor-modal__photo">
+                    <img class="" src="./img/2_page_about_us/picture/modal/doc1.jpg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <button type="button" class="doctor-card col-3" data-bs-toggle="modal" data-bs-target="#doctorModal5">
+            <img class="doctor-card__photo" src="./img/2_page_about_us/picture/Portraits/doc-3.jpg" />
+            <div class="doctor-card__annotation">
+              <h2 class="doctor-card__name">Бугай&nbsp;Євген<br />Вячеславович</h2>
+              <p class="doctor-card__spec">Стоматолог-ортопед</p>
+            </div>
+          </button>
+
+          <div id="doctorModal5" tabindex="-1" class="doctor-modal modal fade">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+              <div class="modal-content doctor-modal__content">
+                <button
+                  type="button"
+                  class="btn-close doctor-modal__close-btn"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+
+                <div class="modal-body doctor-modal__body">
+                  <div class="doctor-modal__article doctor-modal__article--5">
+                    <h3>Вітаю! Я Бугай Євгеній, стоматолог-ортопед.</h3>
+                    <p>
+                      Я саме той стоматолог, якого ви так давно шукали. Бо моя суперсила — робити посмішки, які змінюють
+                      життя і вчать бути щирішими та відкритішими до цього прекрасного світу.
+                    </p>
+                    <p>
+                      А як взагалі це працює? Легко! Бо рівно за 1 сеанс я стану для вас хорошим товаришем, закохаюся у
+                      вашу унікальну особистість і перейматимуся її зубами, наче власними. Ну а далі — застосую всі свої
+                      медичні скіли, здобуті тяжкою працею.
+                    </p>
+                    <p>
+                      У кожного з нас свої бажання та, як стоматолог-ортопед, обіцяю: ідеальні зуби у наших планах
+                      гарантовані.
+                    </p>
+                  </div>
+                  <div class="doctor-modal__photo">
+                    <img src="./img/2_page_about_us/picture/modal/doc1-2.jpg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button type="button" class="doctor-card col-3" data-bs-toggle="modal" data-bs-target="#doctorModal6">
+            <img class="doctor-card__photo" src="./img/2_page_about_us/picture/Portraits/doc-7.jpg" />
+            <div class="doctor-card__annotation">
+              <h2 class="doctor-card__name">Моргунов&nbsp;Валерій<br />Юрійович</h2>
+              <p class="doctor-card__spec">Лікар-імплантолог</p>
+            </div>
+          </button>
+
+          <div id="doctorModal6" tabindex="-1" class="doctor-modal modal fade">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+              <div class="modal-content doctor-modal__content">
+                <button
+                  type="button"
+                  class="btn-close doctor-modal__close-btn"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+
+                <div class="modal-body doctor-modal__body">
+                  <div class="doctor-modal__article doctor-modal__article--6">
+                    <h3>Привіт, я стоматолог-хірург Валерій Моргунов. Працюю в Vitadent Dental Clinic.</h3>
+                    <p>
+                      «Та годі!, — скажете ви. — Сильно привітний і зовсім не схожий на суворого скептичного дядька з
+                      дрилем, яким має бути справжній хірург».
+                    </p>
+                    <p>
+                      Спокійно. Дриль у мене за спиною, сокира в кишені, і для підтвердження статусу ще мається кілька
+                      поінтів: спеціальність з хірургічної стоматології, численні курси, сотні симпозіумів.
+                    </p>
+                    <p>
+                      Моя мрія з малого віку — бути хірургом! Тож, про те, де у людини голова, зуби й менш помітні
+                      частини тіла, вивчив з найніжнішого віку.
+                    </p>
+                    <p>Я роблю людей добрішими. Бо з ранку до ночі випилюю їм кращі усмішки у світі.</p>
+                  </div>
+                  <div class="doctor-modal__photo">
+                    <img class="" src="./img/2_page_about_us/picture/modal/doc1-6.jpg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button type="button" class="doctor-card col-3" data-bs-toggle="modal" data-bs-target="#doctorModal7">
+            <img class="doctor-card__photo" src="./img/2_page_about_us/picture/Portraits/doc-5.jpg" />
+            <div class="doctor-card__annotation">
+              <h2 class="doctor-card__name">Сервінський&nbsp;Ілля<br />Ігорович</h2>
+              <p class="doctor-card__spec">Лікар-ортодонт</p>
+            </div>
+          </button>
+
+          <div id="doctorModal7" tabindex="-1" class="doctor-modal modal fade">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+              <div class="modal-content doctor-modal__content">
+                <button
+                  type="button"
+                  class="btn-close doctor-modal__close-btn"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+
+                <div class="modal-body doctor-modal__body">
+                  <div class="doctor-modal__article doctor-modal__article--7">
+                    <h3>Привіт. Я Сервінський Ілля, лікар-ортодонт.</h3>
+                    <p>
+                      Хочу познайомити вас зі своїм світом — ортодонтією! До речі, однією з найскладніших і найцікавіших
+                      наук стоматології. Посмішка — це, безперечно, важлива складова іміджу й здоров'я. Але рівні зуби —
+                      це не тільки про красу в Instagram, а ще й про функціональність і технологічність. Я, без
+                      перебільшень, допоможу змінити ваше життя на краще, у мене в арсеналі є безліч ефективних способів
+                      і методів.
+                    </p>
+                    <p>
+                      А ще я прагну досягти досконалості та піклуюся про ваш психологічний комфорт й довірчі відносини
+                      між нами! Тож давайте разом зі мною чаклувати над вашою посмішкою!
+                    </p>
+                  </div>
+                  <div class="doctor-modal__photo">
+                    <img class="" src="./img/2_page_about_us/picture/modal/doc1-3.jpg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button type="button" class="doctor-card col-3" data-bs-toggle="modal" data-bs-target="#doctorModal8">
+            <img class="doctor-card__photo" src="./img/2_page_about_us/picture/Portraits/doc-4.jpg" />
+            <div class="doctor-card__annotation">
+              <h2 class="doctor-card__name">В‘яла&nbsp;Аліна<br />Олександрівна</h2>
+              <p class="doctor-card__spec">Дитячий стоматолог-терапевт</p>
+            </div>
+          </button>
+
+          <div id="doctorModal8" tabindex="-1" class="doctor-modal modal fade">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+              <div class="modal-content doctor-modal__content">
+                <button
+                  type="button"
+                  class="btn-close doctor-modal__close-btn"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+
+                <div class="modal-body doctor-modal__body">
+                  <div class="doctor-modal__article doctor-modal__article--3">
+                    <h3>Мене звати Аліна В‘яла. І я дитячий лікар-стоматолог.</h3>
+                    <p>
+                      Згадаємо, як у вашому дитинстві проходив похід до стоматолога? Зізнайтеся, адже самому собі цей
+                      вчинок здавався героїчним: якісного знеболювання не було, апаратура мала страхітливий вигляд,
+                      стоматологи на дитячі крики тільки лякали своїх маленьких пацієнтів… На щастя, сучасна дитяча
+                      стоматологія та ортодонтія зазнала кардинальних змін!
+                    </p>
+                    <p>
+                      Чи знали ви, що молочні зуби важливі для здоров'я і розвитку мови у дитини? Вони допомагають їй
+                      жувати, говорити і посміхатися. Молочні зуби також зберігають місце в щелепах для постійних зубів,
+                      які з самого дитинства ростуть під яснами.
+                    </p>
+                    <p>
+                      Якщо молочний зуб видаляється занадто рано, постійні зуби можуть зайняти неправильне положення і
+                      заважати зростанню сусідніх зубів.
+                    </p>
+                    <p>
+                      Я справжнісінький фанат профілактики: вважаю, що краще попередити, ніж потім лікувати! Правильний
+                      догляд за порожниною рота — це найкраща профілактика карієсу і його ускладнень! Тож, гайда на
+                      профілактику!
+                    </p>
+                  </div>
+                  <div class="doctor-modal__photo">
+                    <img class="" src="./img/2_page_about_us/picture/modal/doc1-5.jpg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Наши сильные стороны -->
+    <section class="services container-fluid">
+      <h1 class="services__title">Наші сильні сторони</h1>
+
+      <div class="row justify-content-center gap-4 service-cards">
+        <div class="service-card col-6 col-lg-5 col-xl-3">
+          <h2 class="service-card__title">Ортодонтія</h2>
+          <p class="service-card__text">
+            21 століття, яка&nbsp;втілює мрії та&nbsp;гарантує wow-результат: естетичний та&nbsp;функціональний!
+          </p>
+        </div>
+
+        <div class="service-card col-6 col-lg-5 col-xl-3">
+          <h2 class="service-card__title">Стерилізація</h2>
+          <p class="service-card__text">
+            Кожен етап проводиться за&nbsp;правилами дезінфекції та&nbsp;стерилізації стоматологічних інструментів, які
+            регулюються МОЗ&nbsp;України.
+          </p>
+        </div>
+
+        <div class="service-card col-6 col-lg-5 col-xl-3">
+          <h2 class="service-card__title">Лабораторія</h2>
+          <p class="service-card__text">
+            Наші техніки та&nbsp;лікарі — це&nbsp;одна команда, яка&nbsp;просякнута загальною філософією, має&nbsp;одне
+            подання про&nbsp;естетику та&nbsp;націлена на&nbsp;кращий&nbsp;результат.
+          </p>
+        </div>
+      </div>
+
+      <div class="advantage advantage--laboratory">
+        <div class="advantage__paragraph">
+          <h2 class="advantage__title">Власна лабораторія</h2>
+          <p class="advantage__text">
+            Ми створили зуботехнічну лабораторію, у якій перетворюємо естетичну стоматологію у справжнісінький витвір
+            мистецтва!
+          </p>
+          <p class="advantage__text">
+            З огляду на те, що саме в лабораторії створюються вініри, власна лабораторія — це величезна перевага, адже:
+          </p>
+          <ul class="advantage__text">
+            <li>
+              наші техніки та лікарі — це одна команда, яка просякнута загальною філософією, має одне подання про
+              естетику й натуральність посмішки, та націлена на один результат
+            </li>
+            <li>
+              ми можемо створювати дійсно індивідуальні посмішки. А для цього потрібно, щоб технік та лікар працювали
+              разом та ідеально розуміли один одного
+            </li>
+            <li>
+              лабораторія знаходиться при клініці, а це означає, що технік завжди може побачити, як вініри виглядають в
+              роті пацієнта на етапі примірки, та оперативно внести корективи
+            </li>
+          </ul>
+          <p class="advantage__text">
+            Ми пишаємося кожною нашою роботою, бо вона є неповторним еталоном якості та часто перевершує очікування
+            пацієнтів. Красива посмішка — це не шаблон. Це велика праця команди над індивідуальним результатом, про який
+            ви мріяли.
+          </p>
+        </div>
+      </div>
+
+      <div class="advantage advantage--sterilization">
+        <div class="advantage__paragraph advantage__paragraph--reverse">
+          <h2 class="advantage__title">Стерилізація</h2>
+          <p class="advantage__text">
+            «Бактерії та віруси у полон не беремо. Працюємо над їх знищенням» Кожен етап проводиться за правилами
+            дезінфекції та стерилізації стоматологічних інструментів, які регулюються МОЗ України.
+          </p>
+          <p class="advantage__text">«Основні етапи обробки медичного інструментарію:</p>
+          <ul class="advantage__text">
+            <li>дезінфекція</li>
+            <li>передстерилізаційна обробка</li>
+            <li>миття дистильованою водою та висушування</li>
+            <li>контроль обробленого інструментарію на приховану кров</li>
+            <li>пакування продезінфікованого матеріалу (за необхідністю)</li>
+            <li>стерилізація в автоклаві при температурі 134^- 121^</li>
+          </ul>
+          <button type="button" class="advantage__button" data-bs-toggle="modal" data-bs-target="#advantageModal1">
+            Детальніше
+          </button>
+        </div>
+      </div>
+
+      <div class="modal fade advantage-modal" id="advantageModal1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <button
+              type="button"
+              class="btn-close advantage-modal__close-btn"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="modal-body advantage-modal__body">
+              <h2>Стерилізація</h2>
+              <p>
+                «Бактерії та віруси у полон не беремо. Працюємо над їх знищенням» Кожен етап проводиться за правилами
+                дезінфекції та стерилізації стоматологічних інструментів, які регулюються МОЗ України.
+              </p>
+              <p>«Основні етапи обробки медичного інструментарію:</p>
+              <ul>
+                <li>дезінфекція</li>
+                <li>передстерилізаційна обробка</li>
+                <li>миття дистильованою водою та висушування</li>
+                <li>контроль обробленого інструментарію на приховану кров</li>
+                <li>пакування продезінфікованого матеріалу (за необхідністю)</li>
+                <li>стерилізація в автоклаві при температурі 134^- 121^</li>
+                <li>маркування стерильно упакованого інструментарію.</li>
+              </ul>
+              <p>
+                Стерилізація стоматологічних інструментів — це неодмінний етап у стоматологічній клініці, що направлений
+                на знищення всіх патогенних мікроорганізмів та їх спор. Ми дуже уважно ставимося до вашої безпеки!
+              </p>
+              <p>
+                СТЕРИЛІЗАЦІЙНА — ЦЕ СОВІСТЬ НАШОЇ КЛІНІКИ! Весь стоматологічний інструментарій — це предмети
+                індивідуального використання (використовуються одноразові чи індивідуально запаковані багаторазові
+                інструменти). Обов'язковій стерилізації підлягають всі інструменти, які були в роботі.
+              </p>
+              <p>
+                Для цього ми використовуємо два сучасних автоклави виробництва фірми Melag Vacuklav 44B + та 23В+
+                (Німеччина).
+              </p>
+              <p>
+                Доступ до роботи мають тільки підготовлені співробітники по особовому паролю. Процедура стерилізації
+                фіксується в електронній пам’яті автоклава. Це обладнання зареєстровано та дозволено в Україні.
+              </p>
+              <p>
+                Після етапу стерилізації весь інструментарій маркується тією датою, в яку була проведена обробка й
+                вноситься до журналів. Потім стерильний та промаркований інструментарій переноситься в кабінет
+                лікаря-стоматолога, де зберігається у відповідному місці.
+              </p>
+              <p>
+                Контроль за якістю всього процесу стерилізації багаторівневий: старша медична сестра, головний лікар та
+                спеціальні контролюючі органи.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="advantage advantage--orthodontics">
+        <div class="advantage__paragraph">
+          <h2 class="advantage__title">Ортодонтія</h2>
+          <p class="advantage__text">
+            Наша посмішка — це не тільки 5 пар мімічних м'язів! Іноді, це 53 м'язи, включаючи шийні та жувальні.
+          </p>
+          <p class="advantage__text">
+            Це не тільки красиві рівні білі зуби, це й гарне обличчя, шия, постава. Тільки всі ці елементи допоможуть
+            отримати у фіналі посмішку, про яку мріє кожен.
+          </p>
+          <p class="advantage__text">
+            Взаємозв'язок прикусу і постави доведено та описано в багатьох наукових статтях... З чого все почалося?.
+          </p>
+          <p class="advantage__text">
+            Клінічні спостереження і дослідження перетворилися в теорію у 1989 році, коли Говард Маковські опублікував в
+            журналі «Краніо» статтю про теорію черепного ковзання. Ідею про те, що положення нижньої щелепи залежить не
+            тільки від черепа та положення верхньої, а й від шийного відділу.
+          </p>
+          <button type="button" class="advantage__button" data-bs-toggle="modal" data-bs-target="#advantageModal2">
+            Детальніше
+          </button>
+        </div>
+      </div>
+
+      <div class="modal fade advantage-modal" id="advantageModal2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <button
+              type="button"
+              class="btn-close advantage-modal__close-btn"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="modal-body advantage-modal__body">
+              <h2>Ортодонтія</h2>
+              <p>
+                Наша посмішка — це не тільки 5 пар мімічних м'язів! Іноді, це 53 м'язи, включаючи шийні та жувальні.
+              </p>
+              <p>
+                Це не тільки красиві рівні білі зуби, це й гарне обличчя, шия, постава. Тільки всі ці елементи
+                допоможуть отримати у фіналі посмішку, про яку мріє кожен.
+              </p>
+              <p>
+                Взаємозв'язок прикусу і постави доведено та описано в багатьох наукових статтях... З чого все почалося?.
+              </p>
+              <p>
+                Клінічні спостереження і дослідження перетворилися в теорію у 1989 році, коли Говард Маковські
+                опублікував в журналі «Краніо» статтю про теорію черепного ковзання. Ідею про те, що положення нижньої
+                щелепи залежить не тільки від черепа та положення верхньої, а й від шийного відділу.
+              </p>
+              <p>
+                Чому Сучасна Функціональна Стоматологія — це більше ніж брекети й протезування? Чому зараз ми можемо
+                отримати результати, які 20 років тому були недосяжні? Тому що зараз ми працюємо із щелепами та зубами
+                комплексно, беручи до уваги різні структури організму. Від того й отримуємо wow-результат: естетичний та
+                функціональний!
+              </p>
+              <p>Це ОРТОДОНТІЯ 21 століття, яка справді втілює мрії у реальність!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <img src="./img/2_page_about_us/picture/6.jpg" />
+      <div class="map container-fluid">
+        <div class="row map__form">
+          <div class="feedback-form col-12 col-lg-8 col-xl-6">
+            <h2 class="feedback-form__title">
+              Залиште Ваші контактні дані, і&nbsp;наш адміністратор зв'яжеться з&nbsp;вами
+            </h2>
+            <input name="name" type="text" class="feedback-form__input" placeholder="Ваше ім’я" />
+            <input name="phone" type="tel" class="feedback-form__input" placeholder="Номер телефону" />
+            <button type="button" class="feedback-form__submit">Зв’язатися з нами</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer-component></footer-component>
+
+    <script src="./js/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/esm/popper.min.js"></script> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/mainFunctions.js"></script>
+    <script src="./js/header.js" type="text/javascript" defer></script>
+    <script src="./js/footer.js" type="text/javascript" defer></script>
+  </body>
+</html>
