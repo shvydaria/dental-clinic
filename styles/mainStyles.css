@@ -321,8 +321,11 @@ body {
   text-decoration: underline;
 }
 
-.video_header {
-  margin-top: 88px;
+video {
+  width: 100%;
+  max-height: 100vh;
+  object-fit: cover;
+  margin-top: 95px;
 }
 
 .footer_wraper .navbar {
