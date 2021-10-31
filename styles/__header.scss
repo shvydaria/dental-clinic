@@ -19,7 +19,7 @@
 
     .nav-link {
       color: $black;
-      &.active, &:hover, &:focus {
+      &.active, &:hover, &:focus, &:active {
         color: $green;
         text-decoration: underline;
       }

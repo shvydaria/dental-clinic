@@ -19,9 +19,9 @@ class Header extends HTMLElement {
           <!-- mobile btn -->
     
           <div class="collapse navbar-collapse justify-content-center" id="navbarScroll">
-            <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <ul id="nav" class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html">Головна</a>
+                <a class="nav-link" href="./index.html">Головна</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./about.html">Про нас</a>
@@ -47,3 +47,19 @@ class Header extends HTMLElement {
 }
 
 customElements.define("header-component", Header);
+document.addEventListener('DOMContentLoaded', function() {
+  (function() {
+    let nav = document.getElementById('nav');
+    let anchor = nav.getElementsByTagName('a');
+    let current = window.location.pathname;
+    // let current = window.location.pathname.split('file:///')[1];
+    for (var i = 0; i < anchor.length; i++) {
+      if(anchor[i].href == current) {
+        anchor[i].className = "active";
+      } else {
+        console.log("FALSE")
+      }
+    }
+
+  })();
+}, false);

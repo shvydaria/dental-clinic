@@ -1,4 +1,7 @@
 .footer_wraper {
+  background: $black;
+  color: $basic-gray;
+
   .navbar {
     position: relative;
     bottom: 0;
@@ -6,7 +9,6 @@
     left: 0;
     z-index: 9999;
     padding: 20px 0;
-    background: $black;
 
     .nav-link {
       color: $white;
@@ -14,5 +16,22 @@
         color: $green;
       }
     }
+  }
+
+  .line {
+    p {
+      padding: 8px 0 18px;
+    }
+    div {
+      height: 1px;
+      background: $basic-gray;
+    }
+  }
+
+  .footer__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 4px 5px 15px rgba(84, 96, 97, 0.3);
   }
 }

@@ -214,7 +214,7 @@
 .header_wraper .navbar .nav-link {
   color: #333333;
 }
-.header_wraper .navbar .nav-link.active, .header_wraper .navbar .nav-link:hover, .header_wraper .navbar .nav-link:focus {
+.header_wraper .navbar .nav-link.active, .header_wraper .navbar .nav-link:hover, .header_wraper .navbar .nav-link:focus, .header_wraper .navbar .nav-link:active {
   color: rgba(3, 125, 72, 0.7);
   text-decoration: underline;
 }
@@ -226,6 +226,10 @@ video {
   margin-top: 95px;
 }
 
+.footer_wraper {
+  background: #333333;
+  color: #c4c4c4;
+}
 .footer_wraper .navbar {
   position: relative;
   bottom: 0;
@@ -233,13 +237,25 @@ video {
   left: 0;
   z-index: 9999;
   padding: 20px 0;
-  background: #333333;
 }
 .footer_wraper .navbar .nav-link {
   color: #ffffff;
 }
 .footer_wraper .navbar .nav-link:hover {
   color: rgba(3, 125, 72, 0.7);
+}
+.footer_wraper .line p {
+  padding: 8px 0 18px;
+}
+.footer_wraper .line div {
+  height: 1px;
+  background: #c4c4c4;
+}
+.footer_wraper .footer__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 4px 5px 15px rgba(84, 96, 97, 0.3);
 }
 
 .navbar-brand {
@@ -259,17 +275,24 @@ video {
 }
 
 .number {
+  width: 97px;
+}
+.number img {
   height: 140px;
   width: auto;
+}
+.number-text {
+  font-size: 1.9em;
+  font-weight: 300;
 }
 
 .collage {
   position: relative;
 }
-.collage__content {
-  position: absolute;
-  top: 120px;
-  left: 192px;
+.collage.form {
+  background-image: url("./img/1_page/photos/dentals.jpg");
+  object-fit: contain;
+  min-height: 500px;
 }
 .collage__content .heading {
   font-weight: 300;
@@ -284,12 +307,20 @@ video {
   word-spacing: 3px;
 }
 
+.absolute-wrapper {
+  position: absolute;
+  width: 100%;
+  top: 120px;
+}
+
 .accordion-button {
-  border-top: 1px solid #E8E7E6 !important;
+  border-top: 1px solid #e8e7e6 !important;
   border-radius: 10px !important;
   box-shadow: 0px 4px 8px rgba(28, 37, 44, 0.08);
   color: #333333;
   background-color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 0.6px;
 }
 .accordion-button::after, .accordion-button:not(.collapsed)::after {
   background-image: url("../img/icons/downarrow.png");
@@ -308,7 +339,7 @@ video {
   margin-right: 32px;
 }
 .accordion-item {
-  border: 1px solid #E8E7E6 !important;
+  border: 1px solid #e8e7e6 !important;
   border-radius: 10px !important;
   border-top: 0 !important;
   margin-bottom: 16px;
@@ -331,20 +362,22 @@ video {
   width: 63px;
 }
 .benefits__card {
+  max-width: 342px;
   background-color: #ffffff;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   padding: 56px 24px;
   color: #62666C;
+  text-align: center;
 }
 .benefits__card .title {
-  text-align: center;
   color: rgba(3, 125, 72, 0.7);
   font-size: 1.5em;
   margin-bottom: 1rem;
 }
 
-.carousel-control-next, .carousel-control-prev {
+.carousel-control-next,
+.carousel-control-prev {
   opacity: 1;
   top: unset;
 }
@@ -357,7 +390,8 @@ video {
   left: 30%;
 }
 
-.carousel-control-next-icon, .carousel-control-prev-icon {
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
   width: 4rem;
   height: 4rem;
 }
@@ -375,7 +409,7 @@ video {
   width: 0.6rem;
   height: 0.6rem;
   opacity: 1;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
 }
 
 .carousel-indicators .active {
@@ -405,7 +439,8 @@ video {
     justify-content: center;
   }
 }
-.form .feedback-form, .form .map-form {
+.form .feedback-form,
+.form .map-form {
   position: absolute;
   width: 100%;
   display: flex;
@@ -415,7 +450,8 @@ video {
   border-radius: 15px;
   box-shadow: 0 14px 23px rgba(28, 37, 44, 0.08);
 }
-.form .feedback-form__title, .form .map-form__title {
+.form .feedback-form__title,
+.form .map-form__title {
   margin-bottom: 48px;
   font-family: "Avenir Next Cyr", sans-serif;
   font-size: 24px;
@@ -425,7 +461,8 @@ video {
 }
 .form .feedback-form {
   max-width: 628px;
-  top: 103px;
+  top: 50%;
+  transform: translateY(-50%);
   right: 80px;
   padding: 88px 75px;
 }
@@ -1170,7 +1207,7 @@ img {
 }
 .heading--type-3 {
   font-size: 3em;
-  font-weight: 100;
+  font-weight: 300;
 }
 .heading--type-4 {
   font-size: 2.5em;
@@ -1264,10 +1301,12 @@ img {
 }
 
 .btn {
-  border-radius: 30px;
+  border-radius: 15px;
   padding: 14.5px 27.5px;
 }
 .btn-outline-success {
+  color: #333333;
+  font-weight: 500;
   border-color: rgba(3, 125, 72, 0.7);
 }
 

@@ -37,11 +37,20 @@ class Footer extends HTMLElement {
               </li>
             </ul>
           </div>
-
-          <i class="bi bi-facebook me-4"></i>
-          <i class="bi bi-instagram"></i>
+          
+          <a href="https://www.facebook.com/profile.php?id=100054469299460">
+            <img src="./img/icons/icons_contact/footer_fb.png" alt="ico-footer" class="footer__icon me-4">
+          </a>
+          <a href="https://www.instagram.com/vdc_dentistry/">
+            <img src="./img/icons/icons_contact/footer_inst.png" alt="ico-footer" class="footer__icon">
+          </a>
         </div>
       </nav>
+
+      <div class="container line">
+        <div></div>
+        <p class="mb-0">© 2021 VDC Dental Clinic All rights reserved</p>
+      </div>
    </div>
     `;
   }

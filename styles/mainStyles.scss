@@ -48,10 +48,12 @@ img {
 
 // buttons
 .btn {
-  border-radius: 30px;
+  border-radius: 15px;
   padding: 14.5px 27.5px;
 
   &-outline-success {
+    color: $black;
+    font-weight: 500;
     border-color: $green;
   }
 }
