@@ -27,7 +27,7 @@ class Header extends HTMLElement {
                 <a class="nav-link" href="./about.html">Про нас</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Послуги</a>
+                <a class="nav-link" href="./services.html">Послуги</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Ціни</a>
@@ -52,10 +52,13 @@ document.addEventListener('DOMContentLoaded', function() {
     let nav = document.getElementById('nav');
     let anchor = nav.getElementsByTagName('a');
     let current = window.location.pathname;
-    // let current = window.location.pathname.split('file:///')[1];
+    // let current = window.location.pathname.split('/Users/dariashvydka/DashaShv/dental-clinic')[1];
+
+    let correct = current.replace('/Users/dariashvydka/DashaShv/dental-clinic/', 'file:///Users/dariashvydka/DashaShv/dental-clinic/');
+
     for (var i = 0; i < anchor.length; i++) {
-      if(anchor[i].href == current) {
-        anchor[i].className = "active";
+      if(anchor[i].href == correct) {
+        anchor[i].className = "nav-link active";
       } else {
         console.log("FALSE")
       }
