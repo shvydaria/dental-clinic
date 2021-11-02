@@ -979,6 +979,249 @@ video {
   background-color: #f3f3f3;
 }
 
+.services-item {
+  position: relative;
+  z-index: 100;
+  height: 285px;
+  padding: 2em;
+  cursor: pointer;
+}
+.services-item:before {
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: 10;
+  background: rgba(38, 50, 56, 0.25);
+}
+.services-item:hover img {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.services-item__bg {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+  overflow: hidden;
+}
+.services-item__bg img {
+  transition: all 3s ease;
+}
+.services-item__title {
+  position: relative;
+  z-index: 100;
+  text-align: left;
+  font-size: 1.5em;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.services-item-details {
+  margin-bottom: 82px;
+  padding: 40px 80px;
+  display: flex;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media only screen and (min-width: 0px) and (max-width: 1384px) {
+  .services-item-details {
+    margin-bottom: 36px;
+    padding: 0;
+  }
+}
+.services-item-details__paragraph {
+  padding: 56px;
+  max-width: 600px;
+  font-family: "Avenir Next Cyr", sans-serif;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  transform: translateX(-300px);
+}
+@media only screen and (min-width: 0px) and (max-width: 1384px) {
+  .services-item-details__paragraph {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.2);
+    transform: none;
+  }
+}
+.services-item-details__paragraph--reverse {
+  transform: translateX(300px);
+}
+@media only screen and (min-width: 0px) and (max-width: 1384px) {
+  .services-item-details__paragraph--reverse {
+    transform: none;
+  }
+}
+.services-item-details__title {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #62666C;
+}
+@media only screen and (min-width: 0px) and (max-width: 1384px) {
+  .services-item-details__title {
+    color: #ffffff;
+  }
+}
+.services-item-details__text {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.04em;
+  color: #333333;
+}
+@media only screen and (min-width: 0px) and (max-width: 1384px) {
+  .services-item-details__text {
+    color: #ffffff;
+  }
+}
+.services-item-details__text li {
+  padding: 6px 0;
+}
+.services-item-details__diagnostics {
+  background-image: url(../img/3_page_services/picture/services-details1.jpg);
+  background-position: left calc(50% + 300px) center;
+}
+@media only screen and (min-width: 0px) and (max-width: 1384px) {
+  .services-item-details__diagnostics {
+    background: none;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 1384px) {
+  .services-item-details__diagnostics .services-item-details__paragraph {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/2_page_about_us/picture/Mask_Groupfon.jpg);
+    background-size: cover;
+  }
+}
+.services-item-details__caries {
+  background-image: url(../img/3_page_services/picture/services-details2.jpg);
+  background-position: right calc(50% + 300px) center;
+}
+@media only screen and (min-width: 0px) and (max-width: 1384px) {
+  .services-item-details__caries {
+    background: none;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 1384px) {
+  .services-item-details__caries .services-item-details__paragraph {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/2_page_about_us/picture/Mask_Groupfon.jpg);
+    background-size: cover;
+  }
+}
+.services-item-details__whitening {
+  background-image: url(../img/3_page_services/picture/services-details3.jpg);
+  background-position: left calc(50% + 300px) center;
+}
+@media only screen and (min-width: 0px) and (max-width: 1384px) {
+  .services-item-details__whitening {
+    background: none;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 1384px) {
+  .services-item-details__whitening .services-item-details__paragraph {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/2_page_about_us/picture/Mask_Groupfon.jpg);
+    background-size: cover;
+  }
+}
+.services-item-details__channels {
+  background-image: url(../img/3_page_services/picture/services-details4.jpg);
+  background-position: right calc(50% + 300px) center;
+}
+@media only screen and (min-width: 0px) and (max-width: 1384px) {
+  .services-item-details__channels {
+    background: none;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 1384px) {
+  .services-item-details__channels .services-item-details__paragraph {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/2_page_about_us/picture/Mask_Groupfon.jpg);
+    background-size: cover;
+  }
+}
+.services-item-details__children {
+  background-image: url(../img/3_page_services/picture/services-details5.jpg);
+  background-position: left calc(50% + 300px) center;
+}
+@media only screen and (min-width: 0px) and (max-width: 1384px) {
+  .services-item-details__children {
+    background: none;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 1384px) {
+  .services-item-details__children .services-item-details__paragraph {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/2_page_about_us/picture/Mask_Groupfon.jpg);
+    background-size: cover;
+  }
+}
+.services-item-details__surgery {
+  background-image: url(../img/3_page_services/picture/services-details6.jpg);
+  background-position: right calc(50% + 300px) center;
+}
+@media only screen and (min-width: 0px) and (max-width: 1384px) {
+  .services-item-details__surgery {
+    background: none;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 1384px) {
+  .services-item-details__surgery .services-item-details__paragraph {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/2_page_about_us/picture/Mask_Groupfon.jpg);
+    background-size: cover;
+  }
+}
+.services-item-details__orthodontics {
+  background-image: url(../img/3_page_services/picture/services-details7.jpg);
+  background-position: left calc(50% + 300px) center;
+}
+@media only screen and (min-width: 0px) and (max-width: 1384px) {
+  .services-item-details__orthodontics {
+    background: none;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 1384px) {
+  .services-item-details__orthodontics .services-item-details__paragraph {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/2_page_about_us/picture/Mask_Groupfon.jpg);
+    background-size: cover;
+  }
+}
+.services-item-details__emax {
+  background-image: url(../img/3_page_services/picture/services-details8.jpg);
+  background-position: right calc(50% + 300px) center;
+}
+@media only screen and (min-width: 0px) and (max-width: 1384px) {
+  .services-item-details__emax {
+    background: none;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 1384px) {
+  .services-item-details__emax .services-item-details__paragraph {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/2_page_about_us/picture/Mask_Groupfon.jpg);
+    background-size: cover;
+  }
+}
+.services-item-details__denture {
+  background-image: url(../img/3_page_services/picture/services-details9.jpg);
+  background-position: left calc(50% + 300px) center;
+}
+@media only screen and (min-width: 0px) and (max-width: 1384px) {
+  .services-item-details__denture {
+    background: none;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 1384px) {
+  .services-item-details__denture .services-item-details__paragraph {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/2_page_about_us/picture/Mask_Groupfon.jpg);
+    background-size: cover;
+  }
+}
+
 body {
   width: 100%;
   height: 100%;
@@ -989,6 +1232,12 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  /* no underline */
 }
 
 img {

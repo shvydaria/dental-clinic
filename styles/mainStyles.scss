@@ -9,6 +9,7 @@
 // pages
 @import "./__home";
 @import "./__about";
+@import "./_services";
 
 body {
   width: 100%;
@@ -20,6 +21,11 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none; /* no underline */
 }
 
 img {
