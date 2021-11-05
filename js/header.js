@@ -9,7 +9,7 @@ class Header extends HTMLElement {
       <nav class="navbar navbar-expand-lg">
         <div class="container justify-content-between">
           <a class="navbar-brand" href="/">
-            <img src="img/logo/logo.png" alt="logo">
+            <img src="img/logo/logo-gray.png" alt="logo">
           </a>
     
           <!-- mobile btn -->
@@ -30,10 +30,10 @@ class Header extends HTMLElement {
                 <a class="nav-link" href="./services.html">Послуги</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Ціни</a>
+                <a class="nav-link" href="./prices.html">Ціни</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Контакти</a>
+                <a class="nav-link" href="./contacts.html">Контакти</a>
               </li>
             </ul>
           </div>
