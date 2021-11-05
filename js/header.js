@@ -33,7 +33,7 @@ class Header extends HTMLElement {
                 <a class="nav-link" href="./prices.html">Ціни</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Контакти</a>
+                <a class="nav-link" href="./contacts.html">Контакти</a>
               </li>
             </ul>
           </div>
