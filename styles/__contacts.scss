@@ -1,0 +1,7 @@
+.contacts {
+  &-gallery {
+    .col:nth-last-child(n+2) {
+      padding-right: 2px;
+    }
+  }
+}

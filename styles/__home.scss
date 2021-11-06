@@ -71,7 +71,7 @@
 
     &::after,
     &:not(.collapsed)::after {
-      background-image: url('../img/icons/downarrow.png');
+      background-image: url('../img/icons/arrow-green.png');
     }
     &:not(.collapsed) {
       color: $black;

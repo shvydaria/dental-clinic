@@ -3,3 +3,4 @@
 Header set Access-Control-Allow-Origin "*"
 </IfModule>
 </FilesMatch>
+ErrorDocument 404 404.html

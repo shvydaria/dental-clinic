@@ -194,6 +194,97 @@
   font-weight: 100;
   font-style: normal;
 }
+.heading {
+  color: #333333;
+}
+.heading--type-1 {
+  font-size: 2.5em;
+  font-weight: 300;
+}
+.heading--type-2 {
+  font-size: 2.5em;
+  font-style: italic;
+  font-weight: 300;
+  opacity: 0.8;
+  margin: 0.4em 0 2.1em;
+}
+.heading--type-3 {
+  font-size: 3em;
+  font-weight: 300;
+}
+.heading--type-4 {
+  font-size: 2.5em;
+  font-weight: normal;
+}
+.heading--type-5 {
+  font-size: 2em;
+  color: #ffffff;
+}
+
+.ms-6 {
+  margin-left: 4rem !important;
+}
+
+.ms-7 {
+  margin-left: 6rem !important;
+}
+
+.ms-8 {
+  margin-left: 6.5rem !important;
+}
+
+.ms-9 {
+  margin-left: 6.9rem !important;
+}
+
+.mb-6 {
+  margin-bottom: 4rem !important;
+}
+
+.mb-7 {
+  margin-bottom: 6rem !important;
+}
+
+.mb-8 {
+  margin-bottom: 6.5rem !important;
+}
+
+.mb-9 {
+  margin-bottom: 6.9rem !important;
+}
+
+.mt-6 {
+  margin-top: 4rem !important;
+}
+
+.mt-7 {
+  margin-top: 6rem !important;
+}
+
+.mt-8 {
+  margin-top: 6.5rem !important;
+}
+
+.mt-9 {
+  margin-top: 6.9rem !important;
+}
+
+.me-6 {
+  margin-right: 4rem !important;
+}
+
+.me-7 {
+  margin-right: 6rem !important;
+}
+
+.me-8 {
+  margin-right: 6.5rem !important;
+}
+
+.me-9 {
+  margin-right: 6.9rem !important;
+}
+
 .header_wraper .navbar {
   position: fixed;
   top: 0;
@@ -222,6 +313,7 @@
 .footer_wraper {
   background: #333333;
   color: #c4c4c4;
+  height: 139px;
 }
 .footer_wraper .navbar {
   position: relative;
@@ -316,7 +408,7 @@
   letter-spacing: 0.6px;
 }
 .accordion-button::after, .accordion-button:not(.collapsed)::after {
-  background-image: url("../img/icons/downarrow.png");
+  background-image: url("../img/icons/arrow-green.png");
 }
 .accordion-button:not(.collapsed) {
   color: #333333;
@@ -972,11 +1064,24 @@
   background-color: #f3f3f3;
 }
 
+.services-title .heading {
+  color: #62666C;
+  font-size: 2.2em;
+  font-weight: 600;
+  margin-right: 16px;
+  letter-spacing: 2px;
+}
+.services-title img {
+  max-height: 47px;
+  display: block;
+}
+
 .services-item {
   position: relative;
   z-index: 100;
   height: 285px;
   padding: 2em;
+  margin: 0.5px;
   cursor: pointer;
 }
 .services-item:before {
@@ -1005,6 +1110,8 @@
 }
 .services-item__bg img {
   transition: all 3s ease;
+  object-fit: cover;
+  height: 100%;
 }
 .services-item__title {
   position: relative;
@@ -1037,7 +1144,7 @@
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-  transform: translateX(-300px);
+  transform: translateX(-360px);
 }
 @media only screen and (min-width: 0px) and (max-width: 1384px) {
   .services-item-details__paragraph {
@@ -1047,7 +1154,7 @@
   }
 }
 .services-item-details__paragraph--reverse {
-  transform: translateX(300px);
+  transform: translateX(360px);
 }
 @media only screen and (min-width: 0px) and (max-width: 1384px) {
   .services-item-details__paragraph--reverse {
@@ -1081,7 +1188,7 @@
 }
 .services-item-details__diagnostics {
   background-image: url(../img/3_page_services/picture/services-details1.jpg);
-  background-position: left calc(50% + 300px) center;
+  background-position: left calc(30% + 300px) center;
 }
 @media only screen and (min-width: 0px) and (max-width: 1384px) {
   .services-item-details__diagnostics {
@@ -1096,7 +1203,7 @@
 }
 .services-item-details__caries {
   background-image: url(../img/3_page_services/picture/services-details2.jpg);
-  background-position: right calc(50% + 300px) center;
+  background-position: right calc(30% + 300px) center;
 }
 @media only screen and (min-width: 0px) and (max-width: 1384px) {
   .services-item-details__caries {
@@ -1111,7 +1218,7 @@
 }
 .services-item-details__whitening {
   background-image: url(../img/3_page_services/picture/services-details3.jpg);
-  background-position: left calc(50% + 300px) center;
+  background-position: left calc(30% + 300px) center;
 }
 @media only screen and (min-width: 0px) and (max-width: 1384px) {
   .services-item-details__whitening {
@@ -1126,7 +1233,7 @@
 }
 .services-item-details__channels {
   background-image: url(../img/3_page_services/picture/services-details4.jpg);
-  background-position: right calc(50% + 300px) center;
+  background-position: right calc(30% + 300px) center;
 }
 @media only screen and (min-width: 0px) and (max-width: 1384px) {
   .services-item-details__channels {
@@ -1141,7 +1248,7 @@
 }
 .services-item-details__children {
   background-image: url(../img/3_page_services/picture/services-details5.jpg);
-  background-position: left calc(50% + 300px) center;
+  background-position: left calc(30% + 300px) center;
 }
 @media only screen and (min-width: 0px) and (max-width: 1384px) {
   .services-item-details__children {
@@ -1156,7 +1263,7 @@
 }
 .services-item-details__surgery {
   background-image: url(../img/3_page_services/picture/services-details6.jpg);
-  background-position: right calc(50% + 300px) center;
+  background-position: right calc(30% + 300px) center;
 }
 @media only screen and (min-width: 0px) and (max-width: 1384px) {
   .services-item-details__surgery {
@@ -1171,7 +1278,7 @@
 }
 .services-item-details__orthodontics {
   background-image: url(../img/3_page_services/picture/services-details7.jpg);
-  background-position: left calc(50% + 300px) center;
+  background-position: left calc(30% + 300px) center;
 }
 @media only screen and (min-width: 0px) and (max-width: 1384px) {
   .services-item-details__orthodontics {
@@ -1186,7 +1293,7 @@
 }
 .services-item-details__emax {
   background-image: url(../img/3_page_services/picture/services-details8.jpg);
-  background-position: right calc(50% + 300px) center;
+  background-position: right calc(30% + 300px) center;
 }
 @media only screen and (min-width: 0px) and (max-width: 1384px) {
   .services-item-details__emax {
@@ -1201,7 +1308,7 @@
 }
 .services-item-details__denture {
   background-image: url(../img/3_page_services/picture/services-details9.jpg);
-  background-position: left calc(50% + 300px) center;
+  background-position: left calc(30% + 300px) center;
 }
 @media only screen and (min-width: 0px) and (max-width: 1384px) {
   .services-item-details__denture {
@@ -1218,6 +1325,12 @@
 .prices {
   background-color: #f3f3f3;
 }
+.prices .collage__content .heading {
+  color: #ffffff;
+}
+.prices .collage__content p {
+  font-size: 2.2em;
+}
 .prices-attention {
   border-radius: 20px;
   border: 3px solid rgba(3, 125, 72, 0.7);
@@ -1225,11 +1338,22 @@
   box-shadow: 0px 14px 23px rgba(0, 0, 0, 0.05);
   padding: 31px 0;
 }
+.prices-attention p {
+  font-size: 1.5em;
+  color: #62666C;
+}
 .prices-list {
   background: #ffffff;
   box-shadow: 0px 14px 23px rgba(0, 0, 0, 0.05);
   border-radius: 15px;
   padding: 70px 0;
+}
+.prices-list .heading {
+  color: #62666C;
+  font-size: 2.2em;
+  font-weight: 600;
+  margin-right: 16px;
+  letter-spacing: 2px;
 }
 .prices-list img {
   max-height: 47px;
@@ -1238,11 +1362,21 @@
 .prices .accordion-button {
   background-color: rgba(98, 102, 108, 0.75);
   color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 400;
+  display: flex;
+  align-items: flex-end;
+}
+.prices .accordion-button::after, .prices .accordion-button:not(.collapsed)::after {
+  background-image: url("../img/icons/arrow-white.png");
+}
+
+.contacts-gallery .col:nth-last-child(n+2) {
+  padding-right: 2px;
 }
 
 body {
   width: 100%;
-  height: 100%;
   padding: 0;
   margin: 0;
   background-color: #f3f3f3;
@@ -1250,6 +1384,8 @@ body {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -1267,296 +1403,6 @@ video {
   max-height: 100vh;
   object-fit: cover;
   margin-top: 95px;
-}
-
-@font-face {
-  font-family: "Playfair Display SC";
-  src: url("PlayfairDisplaySC-BlackItalic.eot");
-  src: local("Playfair Display SC Black Italic"), local("PlayfairDisplaySC-BlackItalic"), url("PlayfairDisplaySC-BlackItalic.eot?#iefix") format("embedded-opentype"), url("PlayfairDisplaySC-BlackItalic.woff") format("woff"), url("PlayfairDisplaySC-BlackItalic.ttf") format("truetype");
-  font-weight: 900;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Playfair Display SC";
-  src: url("PlayfairDisplaySC-BoldItalic.eot");
-  src: local("Playfair Display SC Bold Italic"), local("PlayfairDisplaySC-BoldItalic"), url("PlayfairDisplaySC-BoldItalic.eot?#iefix") format("embedded-opentype"), url("PlayfairDisplaySC-BoldItalic.woff") format("woff"), url("PlayfairDisplaySC-BoldItalic.ttf") format("truetype");
-  font-weight: bold;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Playfair Display SC";
-  src: url("PlayfairDisplaySC-Italic.eot");
-  src: local("Playfair Display SC Italic"), local("PlayfairDisplaySC-Italic"), url("PlayfairDisplaySC-Italic.eot?#iefix") format("embedded-opentype"), url("PlayfairDisplaySC-Italic.woff") format("woff"), url("PlayfairDisplaySC-Italic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Playfair Display";
-  src: url("PlayfairDisplay-BoldItalic.eot");
-  src: local("Playfair Display-Bold Italic"), local("PlayfairDisplay-BoldItalic"), url("PlayfairDisplay-BoldItalic.eot?#iefix") format("embedded-opentype"), url("PlayfairDisplay-BoldItalic.woff") format("woff"), url("PlayfairDisplay-BoldItalic.ttf") format("truetype");
-  font-weight: bold;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Playfair Display";
-  src: url("PlayfairDisplay-Black.eot");
-  src: local("Playfair Display Black"), local("PlayfairDisplay-Black"), url("PlayfairDisplay-Black.eot?#iefix") format("embedded-opentype"), url("PlayfairDisplay-Black.woff") format("woff"), url("PlayfairDisplay-Black.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Playfair Display";
-  src: url("PlayfairDisplay-BlackItalic.eot");
-  src: local("Playfair Display-Black Italic"), local("PlayfairDisplay-BlackItalic"), url("PlayfairDisplay-BlackItalic.eot?#iefix") format("embedded-opentype"), url("PlayfairDisplay-BlackItalic.woff") format("woff"), url("PlayfairDisplay-BlackItalic.ttf") format("truetype");
-  font-weight: 900;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Playfair Display";
-  src: url("PlayfairDisplay-Regular.eot");
-  src: local("Playfair Display Regular"), local("PlayfairDisplay-Regular"), url("PlayfairDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("PlayfairDisplay-Regular.woff") format("woff"), url("PlayfairDisplay-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Playfair Display";
-  src: url("PlayfairDisplay-Bold.eot");
-  src: local("Playfair Display Bold"), local("PlayfairDisplay-Bold"), url("PlayfairDisplay-Bold.eot?#iefix") format("embedded-opentype"), url("PlayfairDisplay-Bold.woff") format("woff"), url("PlayfairDisplay-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Playfair Display SC";
-  src: url("PlayfairDisplaySC-Black.eot");
-  src: local("Playfair Display SC Black"), local("PlayfairDisplaySC-Black"), url("PlayfairDisplaySC-Black.eot?#iefix") format("embedded-opentype"), url("PlayfairDisplaySC-Black.woff") format("woff"), url("PlayfairDisplaySC-Black.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Playfair Display";
-  src: url("PlayfairDisplay-Italic.eot");
-  src: local("Playfair Display-Italic"), local("PlayfairDisplay-Italic"), url("PlayfairDisplay-Italic.eot?#iefix") format("embedded-opentype"), url("PlayfairDisplay-Italic.woff") format("woff"), url("PlayfairDisplay-Italic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Playfair Display SC";
-  src: url("PlayfairDisplaySC-Bold.eot");
-  src: local("Playfair Display SC Bold"), local("PlayfairDisplaySC-Bold"), url("PlayfairDisplaySC-Bold.eot?#iefix") format("embedded-opentype"), url("PlayfairDisplaySC-Bold.woff") format("woff"), url("PlayfairDisplaySC-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Playfair Display SC";
-  src: url("PlayfairDisplaySC-Regular.eot");
-  src: local("Playfair Display SC Regular"), local("PlayfairDisplaySC-Regular"), url("PlayfairDisplaySC-Regular.eot?#iefix") format("embedded-opentype"), url("PlayfairDisplaySC-Regular.woff") format("woff"), url("PlayfairDisplaySC-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Avenir Next Cyr";
-  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-BoldItalic.eot");
-  src: local("Avenir Next Cyr Bold Italic"), local("AvenirNextCyr-BoldItalic"), url("../fonts/AvenirNextCyr/AvenirNextCyr-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr/AvenirNextCyr-BoldItalic.woff") format("woff"), url("../fonts/AvenirNextCyr/AvenirNextCyr-BoldItalic.ttf") format("truetype");
-  font-weight: bold;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Avenir Next Cyr";
-  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Light.eot");
-  src: local("Avenir Next Cyr Light"), local("AvenirNextCyr-Light"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Light.woff") format("woff"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Avenir Next Cyr";
-  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Demi.eot");
-  src: local("Avenir Next Cyr Demi"), local("AvenirNextCyr-Demi"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Demi.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Demi.woff") format("woff"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Demi.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Avenir Next Cyr";
-  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-ThinItalic.eot");
-  src: local("Avenir Next Cyr Thin Italic"), local("AvenirNextCyr-ThinItalic"), url("../fonts/AvenirNextCyr/AvenirNextCyr-ThinItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr/AvenirNextCyr-ThinItalic.woff") format("woff"), url("../fonts/AvenirNextCyr/AvenirNextCyr-ThinItalic.ttf") format("truetype");
-  font-weight: 100;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Avenir Next Cyr";
-  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Italic.eot");
-  src: local("Avenir Next Cyr Italic"), local("AvenirNextCyr-Italic"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Italic.woff") format("woff"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Italic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Avenir Next Cyr";
-  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-HeavyItalic.eot");
-  src: local("Avenir Next Cyr Heavy Italic"), local("AvenirNextCyr-HeavyItalic"), url("../fonts/AvenirNextCyr/AvenirNextCyr-HeavyItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr/AvenirNextCyr-HeavyItalic.woff") format("woff"), url("../fonts/AvenirNextCyr/AvenirNextCyr-HeavyItalic.ttf") format("truetype");
-  font-weight: 900;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Avenir Next Cyr";
-  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-MediumItalic.eot");
-  src: local("Avenir Next Cyr Medium Italic"), local("AvenirNextCyr-MediumItalic"), url("../fonts/AvenirNextCyr/AvenirNextCyr-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr/AvenirNextCyr-MediumItalic.woff") format("woff"), url("../fonts/AvenirNextCyr/AvenirNextCyr-MediumItalic.ttf") format("truetype");
-  font-weight: 500;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Avenir Next Cyr";
-  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-LightItalic.eot");
-  src: local("Avenir Next Cyr Light Italic"), local("AvenirNextCyr-LightItalic"), url("../fonts/AvenirNextCyr/AvenirNextCyr-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr/AvenirNextCyr-LightItalic.woff") format("woff"), url("../fonts/AvenirNextCyr/AvenirNextCyr-LightItalic.ttf") format("truetype");
-  font-weight: 300;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Avenir Next Cyr";
-  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Medium.eot");
-  src: local("Avenir Next Cyr Medium"), local("AvenirNextCyr-Medium"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Medium.woff") format("woff"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Avenir Next Cyr Ultra";
-  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-UltraLightIt.eot");
-  src: local("Avenir Next Cyr Ultra Light Italic"), local("AvenirNextCyr-UltraLightIt"), url("../fonts/AvenirNextCyr/AvenirNextCyr-UltraLightIt.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr/AvenirNextCyr-UltraLightIt.woff") format("woff"), url("../fonts/AvenirNextCyr/AvenirNextCyr-UltraLightIt.ttf") format("truetype");
-  font-weight: 200;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Avenir Next Cyr";
-  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Regular.eot");
-  src: local("Avenir Next Cyr Regular"), local("AvenirNextCyr-Regular"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Regular.woff") format("woff"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Avenir Next Cyr Ultra";
-  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-UltraLight.eot");
-  src: local("Avenir Next Cyr Ultra Light"), local("AvenirNextCyr-UltraLight"), url("../fonts/AvenirNextCyr/AvenirNextCyr-UltraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr/AvenirNextCyr-UltraLight.woff") format("woff"), url("../fonts/AvenirNextCyr/AvenirNextCyr-UltraLight.ttf") format("truetype");
-  font-weight: 200;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Avenir Next Cyr";
-  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Heavy.eot");
-  src: local("Avenir Next Cyr Heavy"), local("AvenirNextCyr-Heavy"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Heavy.woff") format("woff"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Heavy.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Avenir Next Cyr";
-  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Bold.eot");
-  src: local("Avenir Next Cyr Bold"), local("AvenirNextCyr-Bold"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Bold.woff") format("woff"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Avenir Next Cyr";
-  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-DemiItalic.eot");
-  src: local("Avenir Next Cyr Demi Italic"), local("AvenirNextCyr-DemiItalic"), url("../fonts/AvenirNextCyr/AvenirNextCyr-DemiItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr/AvenirNextCyr-DemiItalic.woff") format("woff"), url("../fonts/AvenirNextCyr/AvenirNextCyr-DemiItalic.ttf") format("truetype");
-  font-weight: bold;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Avenir Next Cyr";
-  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Thin.eot");
-  src: local("Avenir Next Cyr Thin"), local("AvenirNextCyr-Thin"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Thin.woff") format("woff"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Thin.ttf") format("truetype");
-  font-weight: 100;
-  font-style: normal;
-}
-.heading {
-  color: #333333;
-}
-.heading--type-1 {
-  font-size: 2.5em;
-  font-weight: 300;
-}
-.heading--type-2 {
-  font-size: 2.5em;
-  font-style: italic;
-  font-weight: 300;
-  opacity: 0.8;
-  margin: 0.4em 0 2.1em;
-}
-.heading--type-3 {
-  font-size: 3em;
-  font-weight: 300;
-}
-.heading--type-4 {
-  font-size: 2.5em;
-  font-weight: normal;
-}
-.heading--type-5 {
-  font-size: 2em;
-  color: #ffffff;
-}
-.heading--bold {
-  font-weight: bold !important;
-}
-
-.ms-6 {
-  margin-left: 4rem !important;
-}
-
-.ms-7 {
-  margin-left: 6rem !important;
-}
-
-.ms-8 {
-  margin-left: 6.5rem !important;
-}
-
-.ms-9 {
-  margin-left: 6.9rem !important;
-}
-
-.mb-6 {
-  margin-bottom: 4rem !important;
-}
-
-.mb-7 {
-  margin-bottom: 6rem !important;
-}
-
-.mb-8 {
-  margin-bottom: 6.5rem !important;
-}
-
-.mb-9 {
-  margin-bottom: 6.9rem !important;
-}
-
-.mt-6 {
-  margin-top: 4rem !important;
-}
-
-.mt-7 {
-  margin-top: 6rem !important;
-}
-
-.mt-8 {
-  margin-top: 6.5rem !important;
-}
-
-.mt-9 {
-  margin-top: 6.9rem !important;
-}
-
-.me-6 {
-  margin-right: 4rem !important;
-}
-
-.me-7 {
-  margin-right: 6rem !important;
-}
-
-.me-8 {
-  margin-right: 6.5rem !important;
-}
-
-.me-9 {
-  margin-right: 6.9rem !important;
 }
 
 .mob_hidden {
@@ -1585,6 +1431,26 @@ video {
   color: #333333;
   font-weight: 500;
   border-color: rgba(3, 125, 72, 0.7);
+}
+
+.position-relative {
+  max-height: 640px;
+}
+
+.page-wrapper {
+  min-height: calc(100vh - 139px);
+}
+.page-wrapper .heading, .page-wrapper p {
+  color: #62666C;
+  font-weight: 100;
+}
+.page-wrapper .heading {
+  letter-spacing: 3px;
+  margin-bottom: 24px;
+}
+.page-wrapper p {
+  font-size: 1.3em;
+  letter-spacing: 1px;
 }
 
 /*# sourceMappingURL=mainStyles.css.map */

@@ -1,9 +1,26 @@
+.services-title {
+  .heading {
+    color: $dark-gray;
+    font-size: 2.2em;
+    font-weight: 600;
+    margin-right: 16px;
+    letter-spacing: 2px;
+  }
+
+  img {
+    max-height: 47px;
+    display: block;
+  }
+}
+
 .services-item {
   position: relative;
   z-index: 100;
   height: 285px;
   padding: 2em;
+  margin: 0.5px;
   cursor: pointer;
+
   &:before {
     content: "";
     top: 0;
@@ -18,6 +35,7 @@
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2); 
+
   }
   &__bg {
     top: 0;
@@ -29,6 +47,8 @@
     overflow: hidden;
     img {
       transition: all 3s ease;
+      object-fit: cover;
+      height: 100%;
     }
   }
   &__title {
@@ -61,7 +81,7 @@
     background-color: $white;
     border-radius: 10px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-    transform: translateX(-300px);
+    transform: translateX(-360px);
     @include responsive(0px, 1384px) {
       color: $white;
       background-color: rgba(0, 0, 0, 0.2);
@@ -69,7 +89,7 @@
     }
 
     &--reverse {
-      transform: translateX(300px);
+      transform: translateX(360px);
       @include responsive(0px, 1384px) {
         transform: none;
       }
@@ -102,7 +122,7 @@
 
   &__diagnostics {
     background-image: url(../img/3_page_services/picture/services-details1.jpg);
-    background-position: left calc(50% + 300px) center;
+    background-position: left calc(30% + 300px) center;
     @include responsive(0px, 1384px) {
       background: none;
     }
@@ -116,7 +136,7 @@
   }
   &__caries {
     background-image: url(../img/3_page_services/picture/services-details2.jpg);
-    background-position: right calc(50% + 300px) center;
+    background-position: right calc(30% + 300px) center;
     @include responsive(0px, 1384px) {
       background: none;
     }
@@ -130,7 +150,7 @@
   }
   &__whitening {
     background-image: url(../img/3_page_services/picture/services-details3.jpg);
-    background-position: left calc(50% + 300px) center;
+    background-position: left calc(30% + 300px) center;
     @include responsive(0px, 1384px) {
       background: none;
     }
@@ -144,7 +164,7 @@
   }
   &__channels {
     background-image: url(../img/3_page_services/picture/services-details4.jpg);
-    background-position: right calc(50% + 300px) center;
+    background-position: right calc(30% + 300px) center;
     @include responsive(0px, 1384px) {
       background: none;
     }
@@ -158,7 +178,7 @@
   }
   &__children {
     background-image: url(../img/3_page_services/picture/services-details5.jpg);
-    background-position: left calc(50% + 300px) center;
+    background-position: left calc(30% + 300px) center;
     @include responsive(0px, 1384px) {
       background: none;
     }
@@ -172,7 +192,7 @@
   }
   &__surgery {
     background-image: url(../img/3_page_services/picture/services-details6.jpg);
-    background-position: right calc(50% + 300px) center;
+    background-position: right calc(30% + 300px) center;
     @include responsive(0px, 1384px) {
       background: none;
     }
@@ -186,7 +206,7 @@
   }
   &__orthodontics {
     background-image: url(../img/3_page_services/picture/services-details7.jpg);
-    background-position: left calc(50% + 300px) center;
+    background-position: left calc(30% + 300px) center;
     @include responsive(0px, 1384px) {
       background: none;
     }
@@ -200,7 +220,7 @@
   }
   &__emax {
     background-image: url(../img/3_page_services/picture/services-details8.jpg);
-    background-position: right calc(50% + 300px) center;
+    background-position: right calc(30% + 300px) center;
     @include responsive(0px, 1384px) {
       background: none;
     }
@@ -214,7 +234,7 @@
   }
   &__denture {
     background-image: url(../img/3_page_services/picture/services-details9.jpg);
-    background-position: left calc(50% + 300px) center;
+    background-position: left calc(30% + 300px) center;
     @include responsive(0px, 1384px) {
       background: none;
     }
