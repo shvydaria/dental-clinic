@@ -20,14 +20,16 @@
         "
         src="./img/2_page_about_us/picture/1.jpg"
       />
-      <p class="promo__text">
-        Ми задаємо стандарти лікування та&nbsp;дбаємо про&nbsp;своїх <br />
-        пацієнтів від&nbsp;першого візиту і&nbsp;назавжди
-      </p>
+      <div class="container">
+        <p class="promo__text">
+          Ми задаємо стандарти лікування та&nbsp;дбаємо про&nbsp;своїх <br />
+          пацієнтів від&nbsp;першого візиту і&nbsp;назавжди
+        </p>
+      </div>
     </section>
 
     <!-- Про команду -->
-    <section class="container-fluid team">
+    <section class="container team">
       <hgroup class="team__title">
         <h1>Про нас та команду</h1>
         <img src="./img/logo/Logo 3logo.png" />
@@ -46,7 +48,7 @@
 
     <img class="team__image" src="./img/2_page_about_us/picture/5.jpg" />
 
-    <section class="container-fluid team">
+    <section class="container team">
       <p class="team__text">
         У популярній книзі «Генії і&nbsp;аутсайдери. Чому одним&nbsp;все, а&nbsp;іншим нічого?» Малкольм Гладуелл
         популяризував теорію: щоб&nbsp;стати професіоналом потрібно витратити на&nbsp;її&nbsp;вивчення близько
@@ -60,7 +62,7 @@
       </p>
       <p class="team__text">Завжди раді вам та&nbsp;обіцяємо подарувати кращий результат з&nbsp;можливих!</p>
 
-      <div class="container-fluid doctors">
+      <div class="container doctors">
         <div class="row">
           <button type="button" class="doctor-card col-3" data-bs-toggle="modal" data-bs-target="#doctorModal1">
             <img class="doctor-card__photo" src="./img/2_page_about_us/picture/Portraits/doc-2.jpg" />
@@ -426,21 +428,121 @@
           </div>
         </div>
       </div>
+
+      <div class="container doctors-carousel">
+        <div id="doctorsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#doctorsCarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+            ></button>
+            <button type="button" data-bs-target="#doctorsCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#doctorsCarousel" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#doctorsCarousel" data-bs-slide-to="3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="doctors-carousel__item">
+                <div class="doctor-card">
+                  <img class="doctor-card__photo" src="./img/2_page_about_us/picture/Portraits/doc-2.jpg" />
+                  <div class="doctor-card__annotation">
+                    <h2 class="doctor-card__name">Кінішенко&nbsp;Олександр<br />Володимирович</h2>
+                    <p class="doctor-card__spec mb-0">Лікар-ортодонт, засновник VDC</p>
+                  </div>
+                </div>
+                <div class="doctor-card">
+                  <img class="doctor-card__photo" src="./img/2_page_about_us/picture/Portraits/doc.jpg" />
+                  <div class="doctor-card__annotation">
+                    <h2 class="doctor-card__name">Кінішенко&nbsp;Олексій<br />Олександрович</h2>
+                    <p class="doctor-card__spec mb-0">Лікар-ортодонт</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="doctors-carousel__item">
+                <div class="doctor-card">
+                  <img class="doctor-card__photo" src="./img/2_page_about_us/picture/Portraits/doc-1.jpg" />
+                  <div class="doctor-card__annotation">
+                    <h2 class="doctor-card__name">Ткаченко&nbsp;Марина<br />Володимирівна</h2>
+                    <p class="doctor-card__spec mb-0">Дитячий стоматолог-терапевт</p>
+                  </div>
+                </div>
+                <div class="doctor-card">
+                  <img class="doctor-card__photo" src="./img/2_page_about_us/picture/Portraits/doc-6.jpg" />
+                  <div class="doctor-card__annotation">
+                    <h2 class="doctor-card__name">Коваль&nbsp;Віталій<br />Сергійович</h2>
+                    <p class="doctor-card__spec mb-0">Стоматолог-ортопед</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="doctors-carousel__item">
+                <div class="doctor-card">
+                  <img class="doctor-card__photo" src="./img/2_page_about_us/picture/Portraits/doc-3.jpg" />
+                  <div class="doctor-card__annotation">
+                    <h2 class="doctor-card__name">Бугай&nbsp;Євген<br />Вячеславович</h2>
+                    <p class="doctor-card__spec mb-0">Стоматолог-ортопед</p>
+                  </div>
+                </div>
+                <div class="doctor-card">
+                  <img class="doctor-card__photo" src="./img/2_page_about_us/picture/Portraits/doc-7.jpg" />
+                  <div class="doctor-card__annotation">
+                    <h2 class="doctor-card__name">Моргунов&nbsp;Валерій<br />Юрійович</h2>
+                    <p class="doctor-card__spec mb-0">Лікар-імплантолог</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="doctors-carousel__item">
+                <div class="doctor-card">
+                  <img class="doctor-card__photo" src="./img/2_page_about_us/picture/Portraits/doc-5.jpg" />
+                  <div class="doctor-card__annotation">
+                    <h2 class="doctor-card__name">Сервінський&nbsp;Ілля<br />Ігорович</h2>
+                    <p class="doctor-card__spec mb-0">Лікар-ортодонт</p>
+                  </div>
+                </div>
+                <div class="doctor-card">
+                  <img class="doctor-card__photo" src="./img/2_page_about_us/picture/Portraits/doc-4.jpg" />
+                  <div class="doctor-card__annotation">
+                    <h2 class="doctor-card__name">В‘яла&nbsp;Аліна<br />Олександрівна</h2>
+                    <p class="doctor-card__spec mb-0">Дитячий стоматолог-терапевт</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#doctorsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#doctorsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
     </section>
 
     <!-- Наши сильные стороны -->
-    <section class="services container-fluid">
+    <section class="services container">
       <h1 class="services__title">Наші сильні сторони</h1>
 
       <div class="row justify-content-center gap-4 service-cards">
-        <div class="service-card col-6 col-lg-5 col-xl-3">
+        <div class="service-card col-10 col-sm-6 col-lg-5 col-xl-3">
           <h2 class="service-card__title mb-3">Ортодонтія</h2>
           <p class="service-card__text">
             21 століття, яка&nbsp;втілює мрії та&nbsp;гарантує wow-результат: естетичний та&nbsp;функціональний!
           </p>
         </div>
 
-        <div class="service-card col-6 col-lg-5 col-xl-3">
+        <div class="service-card col-10 col-sm-6 col-lg-5 col-xl-3">
           <h2 class="service-card__title mb-3">Стерилізація</h2>
           <p class="service-card__text">
             Кожен етап проводиться за&nbsp;правилами дезінфекції та&nbsp;стерилізації стоматологічних інструментів, які
@@ -448,7 +550,7 @@
           </p>
         </div>
 
-        <div class="service-card col-6 col-lg-5 col-xl-3">
+        <div class="service-card col-10 col-sm-6 col-lg-5 col-xl-3">
           <h2 class="service-card__title mb-3">Лабораторія</h2>
           <p class="service-card__text">
             Наші техніки та&nbsp;лікарі — це&nbsp;одна команда, яка&nbsp;просякнута загальною філософією, має&nbsp;одне
@@ -631,13 +733,11 @@
     </section>
 
     <section>
-        <div class="container-fluid p-0">
-          <video src="./img/about.mp4" loop autoplay muted>
-            We're sorry; your browser doesn't support HTML5 video.
-          </video>
-        </div>
+      <div class="container-fluid about-video p-0">
+        <video src="./img/about.mp4" loop autoplay muted>We're sorry; your browser doesn't support HTML5 video.</video>
+      </div>
 
-            <div class="map container-fluid">
+      <div class="map container-fluid">
         <div class="row map__form">
           <div class="feedback-form col-12 col-lg-8 col-xl-6">
             <h2 class="feedback-form__title">
