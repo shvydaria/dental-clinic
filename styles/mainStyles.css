@@ -592,10 +592,6 @@
   box-shadow: 4px 5px 15px rgba(84, 96, 97, 0.3);
 }
 
-.container-fluid {
-  padding: 0 80px;
-}
-
 .promo {
   position: relative;
   margin-top: 95px;
@@ -604,7 +600,6 @@
 .promo__text {
   position: absolute;
   bottom: 0;
-  padding: 30px 80px;
   font-family: "Avenir Next Cyr", sans-serif;
   font-size: 36px;
   font-weight: 500;
@@ -621,9 +616,15 @@
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .team {
+    padding: 0 16px;
+  }
+}
 .team__title {
   margin-bottom: 32px;
   display: flex;
+  align-items: center;
   font-family: "Avenir Next Cyr", sans-serif;
   font-size: 30px;
   font-weight: 500;
@@ -631,7 +632,7 @@
   white-space: nowrap;
 }
 @media only screen and (max-width: 767px) {
-  .team__title {
+  .team__title h1 {
     font-size: 24px;
   }
 }
@@ -658,10 +659,58 @@
   margin-top: 32px;
   margin-bottom: 48px;
 }
+@media only screen and (max-width: 767px) {
+  .team__image {
+    margin-top: 8px;
+    margin-bottom: 24px;
+  }
+}
 
 .doctors {
   margin-top: 82px;
   padding: 0;
+}
+@media only screen and (min-width: 0px) and (max-width: 1325px) {
+  .doctors {
+    display: none;
+  }
+}
+
+.doctors-carousel {
+  display: none;
+  margin: 56px 0;
+}
+@media only screen and (min-width: 0px) and (max-width: 1325px) {
+  .doctors-carousel {
+    display: block;
+    padding: 0;
+  }
+}
+.doctors-carousel .carousel {
+  padding-bottom: 32px;
+}
+@media only screen and (max-width: 767px) {
+  .doctors-carousel .carousel-control-prev {
+    left: 25%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .doctors-carousel .carousel-control-next {
+    right: 25%;
+  }
+}
+.doctors-carousel .carousel-indicators {
+  right: auto;
+  left: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  transform: translateX(-50%);
+}
+.doctors-carousel__item {
+  display: flex;
+}
+.doctors-carousel__item .doctor-card {
+  margin: 0 8px;
 }
 
 .doctor-card {
@@ -678,15 +727,30 @@
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   transform: translateY(-50%);
 }
+@media only screen and (max-width: 767px) {
+  .doctor-card__annotation {
+    padding: 12px;
+  }
+}
 .doctor-card__name {
   font-size: 18px;
   font-weight: 400;
   line-height: 20px;
   color: #62666C;
 }
+@media only screen and (max-width: 767px) {
+  .doctor-card__name {
+    font-size: 14px;
+  }
+}
 .doctor-card__spec {
-  font-size: 16px;
+  font-size: 14px;
   color: #62666C;
+}
+@media only screen and (min-width: 0px) and (max-width: 1460px) {
+  .doctor-card__spec {
+    font-size: 12px;
+  }
 }
 .doctor-card__photo {
   border-radius: 10px;
@@ -803,9 +867,20 @@
   color: #333333;
   text-align: center;
 }
+@media only screen and (max-width: 767px) {
+  .services__title {
+    margin-bottom: 40px;
+    font-size: 24px;
+  }
+}
 
 .service-cards {
   margin-bottom: 112px;
+}
+@media only screen and (max-width: 767px) {
+  .service-cards {
+    margin-bottom: 56px;
+  }
 }
 
 .service-card {
@@ -820,15 +895,31 @@
   background-color: #ffffff;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
+@media only screen and (max-width: 767px) {
+  .service-card {
+    padding: 16px;
+    min-height: 165px;
+  }
+}
 .service-card__title {
   font-size: 24px;
   font-weight: 500;
   color: rgba(3, 125, 72, 0.7);
 }
+@media only screen and (max-width: 767px) {
+  .service-card__title {
+    font-size: 18px;
+  }
+}
 .service-card__text {
   font-size: 16px;
   line-height: 20px;
   color: #62666C;
+}
+@media only screen and (max-width: 767px) {
+  .service-card__text {
+    font-size: 14px;
+  }
 }
 
 .advantage {
@@ -844,6 +935,9 @@
     margin-bottom: 36px;
     padding: 0;
   }
+}
+.advantage:last-child {
+  margin-bottom: 0;
 }
 .advantage--laboratory {
   background-image: url(../img/2_page_about_us/picture/4.jpg);
@@ -899,6 +993,11 @@
   border-radius: 10px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   transform: translateX(-300px);
+}
+@media only screen and (max-width: 767px) {
+  .advantage__paragraph {
+    padding: 56px 24px;
+  }
 }
 @media only screen and (min-width: 0px) and (max-width: 1384px) {
   .advantage__paragraph {
@@ -996,11 +1095,25 @@
   color: #333333;
 }
 
+.about-video {
+  display: flex;
+}
+@media only screen and (max-width: 767px) {
+  .about-video video {
+    margin-top: 56px;
+  }
+}
+
 .map {
   padding: 50px 80px;
   background-image: url(../img/2_page_about_us/picture/7.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media only screen and (max-width: 767px) {
+  .map {
+    padding: 40px 16px;
+  }
 }
 .map__form {
   display: flex;
@@ -1027,6 +1140,12 @@
   border-radius: 15px;
   box-shadow: 0 14px 23px rgba(28, 37, 44, 0.08);
 }
+@media only screen and (max-width: 767px) {
+  .feedback-form {
+    margin-bottom: 80%;
+    padding: 36px 24px;
+  }
+}
 .feedback-form__title {
   margin-bottom: 48px;
   font-family: "Avenir Next Cyr", sans-serif;
@@ -1034,6 +1153,13 @@
   font-weight: 500;
   text-align: center;
   line-height: 36px;
+}
+@media only screen and (max-width: 767px) {
+  .feedback-form__title {
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 150%;
+  }
 }
 .feedback-form__input {
   margin-bottom: 24px;
@@ -1047,6 +1173,12 @@
   box-shadow: 0 4px 8px rgba(28, 37, 44, 0.08);
   transition: border-color 0.3s;
 }
+@media only screen and (max-width: 767px) {
+  .feedback-form__input {
+    margin-bottom: 16px;
+    font-size: 14px;
+  }
+}
 .feedback-form__input:focus, .feedback-form__input:-webkit-autofill {
   border-color: rgba(3, 125, 72, 0.7);
   outline: none;
@@ -1059,6 +1191,13 @@
   border-radius: 15px;
   box-shadow: 0 14px 23px rgba(28, 37, 44, 0.08);
   transition: background-color 0.3s;
+}
+@media only screen and (max-width: 767px) {
+  .feedback-form__submit {
+    margin-top: 8px;
+    padding: 12px 32px;
+    font-size: 14px;
+  }
 }
 .feedback-form__submit:hover {
   background-color: #f3f3f3;
