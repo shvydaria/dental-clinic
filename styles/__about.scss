@@ -10,6 +10,10 @@
   position: relative;
   margin-top: 95px;
   margin-bottom: 78px;
+  @include responsive_mobile() {
+    margin-top: 143px;
+    margin-bottom: 56px;
+  }
 
   &__text {
     position: absolute;
@@ -23,6 +27,9 @@
     }
     @include responsive_mobile() {
       font-size: 20px;
+    }
+    @include responsive(0px, 428px) {
+      font-size: 16px;
     }
   }
 }
@@ -46,12 +53,18 @@
       @include responsive_mobile() {
         font-size: 24px;
       }
+      @include responsive(0px, 428px) {
+        font-size: 20px;
+      }
     }
 
     img {
       margin-left: 18px;
       width: auto;
-      max-height: 51px;
+      max-height: 50px;
+      @include responsive(0px, 428px) {
+        max-height: 25px;
+      }
     }
   }
 
@@ -99,14 +112,34 @@
   }
 
   .carousel-control-prev {
+    @include responsive(976px, 1325px) {
+      left: 35%;
+    }
+    @include responsive_tab() {
+      left: 32%;
+    }
     @include responsive_mobile() {
-      left: 25%;
+      left: 23%;
+      width: 4rem;
+    }
+    @include responsive(0px, 392px) {
+      left: 12%;
     }
   }
 
   .carousel-control-next {
+    @include responsive(976px, 1325px) {
+      right: 35%;
+    }
+    @include responsive_tab() {
+      right: 32%;
+    }
     @include responsive_mobile() {
-      right: 25%;
+      right: 23%;
+      width: 4rem;
+    }
+    @include responsive(0px, 392px) {
+      right: 12%;
     }
   }
 
@@ -120,6 +153,9 @@
 
   &__item {
     display: flex;
+    @include responsive(0px, 408px) {
+      flex-direction: column;
+    }
 
     .doctor-card {
       margin: 0 8px;
@@ -485,13 +521,25 @@
 }
 
 .advantage-modal {
+  @include responsive_mobile() {
+    z-index: 10000;
+  }
+
   &__close-btn {
     @include modal-close-btn;
+    @include responsive_mobile() {
+      top: 10px;
+      right: 32px;
+      z-index: 10001;
+    }
   }
 
   &__body {
     padding: 90px 80px 80px 80px;
     font-family: "Avenir Next Cyr", sans-serif;
+    @include responsive_mobile() {
+      padding: 48px 24px;
+    }
 
     h2 {
       margin-bottom: 30px;
@@ -509,6 +557,9 @@
       line-height: 17px;
       letter-spacing: 0.04em;
       color: $black;
+      @include responsive_mobile() {
+        font-weight: 500;
+      }
     }
   }
 }
@@ -518,7 +569,7 @@
 
   video {
     @include responsive_mobile() {
-      margin-top: 56px;
+      margin-top: 20px;
     }
   }
 }
