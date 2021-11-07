@@ -85,9 +85,17 @@ document.addEventListener('DOMContentLoaded', function() {
       if(anchor[i].href == correct) {
         anchor[i].className = "nav-link active";
       } else {
-        console.log("FALSE")
+        console.log("FALSE");
       }
     }
 
   })();
 }, false);
+
+if (history.scrollRestoration) {
+  history.scrollRestoration = 'manual';
+} else {
+  window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+  }
+}

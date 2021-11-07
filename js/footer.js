@@ -27,13 +27,13 @@ class Footer extends HTMLElement {
                 <a class="nav-link" href="./about.html">Про нас</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Послуги</a>
+                <a class="nav-link" href="./services.html">Послуги</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Ціни</a>
+                <a class="nav-link" href="./prices.html">Ціни</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Контакти</a>
+                <a class="nav-link" href="./contacts.html">Контакти</a>
               </li>
             </ul>
           </div>
@@ -46,11 +46,11 @@ class Footer extends HTMLElement {
           </a>
         </div>
       </nav>
-
       <div class="container line">
         <div></div>
-        <p class="mb-0">© 2021 VDC Dental Clinic All rights reserved</p>
+        <p class="mb-0 copy">© 2021 VDC Dental Clinic All rights reserved</p>
       </div>
+
    </div>
     `;
   }

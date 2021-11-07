@@ -306,6 +306,7 @@
   color: #333333;
 }
 .header_wraper .navbar .nav-link.active, .header_wraper .navbar .nav-link:hover, .header_wraper .navbar .nav-link:focus, .header_wraper .navbar .nav-link:active {
+  font-weight: 500;
   color: rgba(3, 125, 72, 0.7);
   text-decoration: underline;
 }
@@ -391,6 +392,9 @@
   height: 40px;
   border-radius: 50%;
   box-shadow: 4px 5px 15px rgba(84, 96, 97, 0.3);
+}
+.footer_wraper .copy {
+  font-size: 12px;
 }
 
 .navbar-brand {
@@ -587,7 +591,7 @@
 }
 .form .feedback-form__title,
 .form .map-form__title {
-  margin-bottom: 48px;
+  margin-bottom: 24px;
   font-family: "Avenir Next Cyr", sans-serif;
   font-size: 24px;
   font-weight: 500;
@@ -1307,13 +1311,12 @@
   z-index: 100;
   text-align: left;
   font-size: 1.5em;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 2px;
   color: #ffffff;
 }
 
 .services-item-details {
-  margin-bottom: 82px;
   padding: 40px 80px;
   display: flex;
   justify-content: center;
@@ -1324,6 +1327,17 @@
   .services-item-details {
     margin-bottom: 36px;
     padding: 0;
+  }
+}
+.services-item-details__title {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #333333;
+}
+@media only screen and (min-width: 0px) and (max-width: 1384px) {
+  .services-item-details__title {
+    color: #ffffff;
   }
 }
 .services-item-details__paragraph {
@@ -1348,17 +1362,6 @@
 @media only screen and (min-width: 0px) and (max-width: 1384px) {
   .services-item-details__paragraph--reverse {
     transform: none;
-  }
-}
-.services-item-details__title {
-  font-size: 20px;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  color: #62666C;
-}
-@media only screen and (min-width: 0px) and (max-width: 1384px) {
-  .services-item-details__title {
-    color: #ffffff;
   }
 }
 .services-item-details__text {
@@ -1511,11 +1514,20 @@
   }
 }
 
+.anchor:nth-child(n+2) {
+  padding-top: 82px;
+}
+
 .prices {
   background-color: #f3f3f3;
 }
+.prices .collage img {
+  height: 632px;
+  object-fit: cover;
+}
 .prices .collage__content .heading {
   color: #ffffff;
+  margin-bottom: 36px;
 }
 .prices .collage__content p {
   font-size: 2.2em;
@@ -1525,17 +1537,18 @@
   border: 3px solid rgba(3, 125, 72, 0.7);
   background-color: #ffffff;
   box-shadow: 0px 14px 23px rgba(0, 0, 0, 0.05);
-  padding: 31px 0;
+  padding: 31px 109px;
 }
 .prices-attention p {
-  font-size: 1.5em;
+  font-size: 1.7em;
+  letter-spacing: 1.5px;
   color: #62666C;
 }
 .prices-list {
   background: #ffffff;
   box-shadow: 0px 14px 23px rgba(0, 0, 0, 0.05);
   border-radius: 15px;
-  padding: 70px 0;
+  padding: 70px 109px;
 }
 .prices-list .heading {
   color: #62666C;
@@ -1548,13 +1561,18 @@
   max-height: 47px;
   display: block;
 }
+.prices .accordion-body {
+  color: #333333;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 32px;
+}
 .prices .accordion-button {
-  background-color: rgba(98, 102, 108, 0.75);
+  padding: 1rem 40px;
+  background-color: #62666C;
   color: #ffffff;
   font-size: 1.5rem;
   font-weight: 400;
-  display: flex;
-  align-items: flex-end;
 }
 .prices .accordion-button::after, .prices .accordion-button:not(.collapsed)::after {
   background-image: url("../img/icons/arrow-white.png");
@@ -1594,6 +1612,10 @@ video {
   margin-top: 95px;
 }
 
+.modal-content {
+  top: 20px;
+}
+
 .mob_hidden {
   display: block;
 }
@@ -1627,18 +1649,23 @@ video {
 }
 
 .page-wrapper {
-  min-height: calc(100vh - 139px);
+  min-height: calc(100vh - 212px);
+}
+.page-wrapper img {
+  height: 284px;
+  width: auto;
 }
 .page-wrapper .heading, .page-wrapper p {
   color: #62666C;
   font-weight: 100;
 }
 .page-wrapper .heading {
+  font-size: 1.8em;
   letter-spacing: 3px;
   margin-bottom: 24px;
 }
 .page-wrapper p {
-  font-size: 1.3em;
+  font-size: 1.1em;
   letter-spacing: 1px;
 }
 

@@ -50,6 +50,10 @@ video {
   margin-top: 95px;
 }
 
+.modal-content {
+  top: 20px;
+}
+
 .mob_hidden {
   display: block;
   @include responsive_mobile() {
@@ -83,18 +87,24 @@ video {
 
 // 404 
 .page-wrapper {
-  min-height: calc(100vh - 139px);
+  min-height: calc(100vh - 212px);
+
+  img {
+    height: 284px;
+    width: auto;
+  }
 
   .heading, p {
     color: $dark-gray;
     font-weight: 100;
   }
   .heading {
+    font-size: 1.8em;
     letter-spacing: 3px;
     margin-bottom: 24px;
   }
   p {
-    font-size: 1.3em;
+    font-size: 1.1em;
     letter-spacing: 1px;
   }
 }
