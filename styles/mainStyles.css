@@ -290,7 +290,7 @@
   top: 0;
   right: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 101;
   padding: 20px 0;
   background: rgba(243, 243, 243, 0.6);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
@@ -308,6 +308,56 @@
 .header_wraper .navbar .nav-link.active, .header_wraper .navbar .nav-link:hover, .header_wraper .navbar .nav-link:focus, .header_wraper .navbar .nav-link:active {
   color: rgba(3, 125, 72, 0.7);
   text-decoration: underline;
+}
+
+#formModal .modal-content {
+  min-width: 628px;
+  padding: 48px 30px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 14px 23px rgba(28, 37, 44, 0.08);
+}
+#formModal .modal-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#formModal .modal-form__title {
+  margin-bottom: 48px;
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 36px;
+}
+#formModal .modal-form__input {
+  margin-bottom: 24px;
+  padding: 12px 43px;
+  align-self: stretch;
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-size: 16px;
+  color: #333333;
+  border: 1px solid #E8E7E6;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(28, 37, 44, 0.08);
+  transition: border-color 0.3s;
+}
+#formModal .modal-form__input:focus, #formModal .modal-form__input:-webkit-autofill {
+  border-color: rgba(3, 125, 72, 0.7);
+  outline: none;
+}
+#formModal .modal-form__submit {
+  margin-top: 32px;
+  padding: 18px 34px;
+  background-color: #ffffff;
+  border: 2px solid rgba(3, 125, 72, 0.7);
+  border-radius: 15px;
+  box-shadow: 0 14px 23px rgba(28, 37, 44, 0.08);
+  transition: background-color 0.3s;
+}
+#formModal .modal-form__submit:hover {
+  background-color: #f3f3f3;
 }
 
 .footer_wraper {
