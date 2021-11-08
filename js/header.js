@@ -38,10 +38,35 @@ class Header extends HTMLElement {
             </ul>
           </div>
     
-          <button type="button" class="btn btn-outline-success">Зв’язатися з нами</button>
+          <button type="button" class="btn btn-outline-success"  data-bs-toggle="modal" data-bs-target="#formModal">Зв’язатися з нами</button>
         </div>
       </nav>
     </div>
+
+    <div id="formModal" tabindex="-1" class="modal fade">
+    <div class="modal-dialog modal-dialog-centered justify-content-center">
+      <div class="modal-content doctor-modal__content">
+        <button
+          type="button"
+          class="btn-close doctor-modal__close-btn"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+
+        <div class="modal-body">
+     
+            <div class="modal-form">
+              <h2 class="modal-form__title">
+                Залиште Ваші контактні дані, і&nbsp;наш адміністратор зв'яжеться з&nbsp;вами
+              </h2>
+              <input name="name" type="text" class="modal-form__input" placeholder="Ваше ім’я" />
+              <input name="phone" type="tel" class="modal-form__input" placeholder="Номер телефону" />
+              <button type="button" class="modal-form__submit">Зв’язатися з нами</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
     `;
   }
 }
@@ -60,9 +85,17 @@ document.addEventListener('DOMContentLoaded', function() {
       if(anchor[i].href == correct) {
         anchor[i].className = "nav-link active";
       } else {
-        console.log("FALSE")
+        console.log("FALSE");
       }
     }
 
   })();
 }, false);
+
+if (history.scrollRestoration) {
+  history.scrollRestoration = 'manual';
+} else {
+  window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+  }
+}
