@@ -59,8 +59,8 @@ class Header extends HTMLElement {
               <h2 class="modal-form__title">
                 Залиште Ваші контактні дані, і&nbsp;наш адміністратор зв'яжеться з&nbsp;вами
               </h2>
-              <input name="name" type="text" class="modal-form__input" placeholder="Ваше ім’я" />
-              <input name="phone" type="tel" class="modal-form__input" placeholder="Номер телефону" />
+              <input name="name" type="text" class="modal-form__input" required autocomplete="name" placeholder="Ваше ім’я" />
+              <input type="tel" name="phone" placeholder="Номер телефону" required autocomplete="tel" pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" value="+380" minlength="13" maxlength="13" class="modal-form__input" />
               <button type="button" class="modal-form__submit">Зв’язатися з нами</button>
             </div>
         </div>
