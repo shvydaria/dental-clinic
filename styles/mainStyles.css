@@ -651,6 +651,12 @@
   margin-top: 95px;
   margin-bottom: 78px;
 }
+@media only screen and (max-width: 767px) {
+  .promo {
+    margin-top: 143px;
+    margin-bottom: 56px;
+  }
+}
 .promo__text {
   position: absolute;
   bottom: 0;
@@ -667,6 +673,11 @@
 @media only screen and (max-width: 767px) {
   .promo__text {
     font-size: 20px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 428px) {
+  .promo__text {
+    font-size: 16px;
   }
 }
 
@@ -690,10 +701,20 @@
     font-size: 24px;
   }
 }
+@media only screen and (min-width: 0px) and (max-width: 428px) {
+  .team__title h1 {
+    font-size: 20px;
+  }
+}
 .team__title img {
   margin-left: 18px;
   width: auto;
-  max-height: 51px;
+  max-height: 50px;
+}
+@media only screen and (min-width: 0px) and (max-width: 428px) {
+  .team__title img {
+    max-height: 25px;
+  }
 }
 .team__text {
   margin-bottom: 16px;
@@ -743,14 +764,46 @@
 .doctors-carousel .carousel {
   padding-bottom: 32px;
 }
+@media only screen and (min-width: 976px) and (max-width: 1325px) {
+  .doctors-carousel .carousel-control-prev {
+    left: 35%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .doctors-carousel .carousel-control-prev {
+    left: 32%;
+  }
+}
 @media only screen and (max-width: 767px) {
   .doctors-carousel .carousel-control-prev {
-    left: 25%;
+    left: 23%;
+    width: 4rem;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 392px) {
+  .doctors-carousel .carousel-control-prev {
+    left: 12%;
+  }
+}
+@media only screen and (min-width: 976px) and (max-width: 1325px) {
+  .doctors-carousel .carousel-control-next {
+    right: 35%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .doctors-carousel .carousel-control-next {
+    right: 32%;
   }
 }
 @media only screen and (max-width: 767px) {
   .doctors-carousel .carousel-control-next {
-    right: 25%;
+    right: 23%;
+    width: 4rem;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 392px) {
+  .doctors-carousel .carousel-control-next {
+    right: 12%;
   }
 }
 .doctors-carousel .carousel-indicators {
@@ -762,6 +815,11 @@
 }
 .doctors-carousel__item {
   display: flex;
+}
+@media only screen and (min-width: 0px) and (max-width: 408px) {
+  .doctors-carousel__item {
+    flex-direction: column;
+  }
 }
 .doctors-carousel__item .doctor-card {
   margin: 0 8px;
@@ -1122,15 +1180,32 @@
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .advantage-modal {
+    z-index: 10000;
+  }
+}
 .advantage-modal__close-btn {
   position: absolute;
   top: -40px;
   right: -40px;
   font-size: 24px;
 }
+@media only screen and (max-width: 767px) {
+  .advantage-modal__close-btn {
+    top: 10px;
+    right: 32px;
+    z-index: 10001;
+  }
+}
 .advantage-modal__body {
   padding: 90px 80px 80px 80px;
   font-family: "Avenir Next Cyr", sans-serif;
+}
+@media only screen and (max-width: 767px) {
+  .advantage-modal__body {
+    padding: 48px 24px;
+  }
 }
 .advantage-modal__body h2 {
   margin-bottom: 30px;
@@ -1148,13 +1223,19 @@
   letter-spacing: 0.04em;
   color: #333333;
 }
+@media only screen and (max-width: 767px) {
+  .advantage-modal__body p,
+.advantage-modal__body ul {
+    font-weight: 500;
+  }
+}
 
 .about-video {
   display: flex;
 }
 @media only screen and (max-width: 767px) {
   .about-video video {
-    margin-top: 56px;
+    margin-top: 20px;
   }
 }
 
