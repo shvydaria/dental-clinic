@@ -200,6 +200,7 @@
 .heading--type-1 {
   font-size: 2.5em;
   font-weight: 300;
+  margin-top: 56px;
 }
 .heading--type-2 {
   font-size: 2.5em;
@@ -1748,6 +1749,26 @@ video {
 .page-wrapper p {
   font-size: 1.1em;
   letter-spacing: 1px;
+}
+
+.parallax {
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-image--1 {
+  background-image: url("../img/1_page/photos/46pic_1_1.jpg");
+}
+
+.parallax-image--2 {
+  background-image: url("../img/1_page/photos/smile.jpg");
+}
+
+.parallax-image--3 {
+  background-image: url("../img/1_page/photos/dentals.jpg");
 }
 
 /*# sourceMappingURL=mainStyles.css.map */

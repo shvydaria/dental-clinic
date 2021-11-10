@@ -108,3 +108,22 @@ video {
     letter-spacing: 1px;
   }
 }
+
+// parallax
+.parallax {
+  min-height: 400px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-image--1 {
+  background-image: url('../img/1_page/photos/46pic_1_1.jpg');
+}
+.parallax-image--2 {
+  background-image: url('../img/1_page/photos/smile.jpg');
+}
+.parallax-image--3 {
+  background-image: url('../img/1_page/photos/dentals.jpg');
+}
