@@ -15,7 +15,6 @@
 </head>
 
 <body>
-
   <header-component></header-component>
 
     <section class="video_header">
@@ -38,7 +37,7 @@
         <div class="row mb-5">
           <h3 class="heading heading--type-3 mb-5">Чому саме ми?</h3>
 
-          <div class="col-6 d-flex">
+          <div class="col-md-6 col-sm-12 d-flex">
             <div class="number">
               <img src="./img/1_page/illustration/1numbers.png" alt="img">
             </div>
@@ -48,7 +47,7 @@
           </div>
 
 
-          <div class="col-6 d-flex">
+          <div class="col-md-6 col-sm-12 d-flex">
             <div class="number mb-4">
               <img src="./img/1_page/illustration/2numbers.png" alt="img">
             </div>
@@ -57,7 +56,7 @@
             </p>
           </div>
 
-          <div class="col-6 d-flex">
+          <div class="col-md-6 col-sm-12 d-flex">
             <div class="number mb-4">
               <img src="./img/1_page/illustration/3numbers.png" alt="img">
             </div>
@@ -67,7 +66,7 @@
             </p>
           </div>
 
-          <div class="col-6 d-flex">
+          <div class="col-md-6 col-sm-12 d-flex">
             <div class="number">
               <img src="./img/1_page/illustration/4numbers.png" alt="img">
             </div>
@@ -95,7 +94,7 @@
             </div>
           </div>
         </div>
-        <div class="parallax parallax-image--1"></div>
+        <div class="parallax parallax-image--1 d-none d-xs-none d-sm-none d-md-block"></div>
       </div>
     </section>
 
@@ -103,9 +102,18 @@
     <section class="container-fluid">
 
       <div class="row">
-        <div class="col-6">
-          <div id="carouselIndicators" class="carousel slide p-5 mt-5 mb-7" data-bs-ride="carousel">
-
+        <div class="col-md-6 col-sm-12">
+          <div id="carouselIndicators" class="carousel slide mt-5 mb-7" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="./img/1_page/photos/teeth_1.png" class="d-block w-100" alt="...">
@@ -120,17 +128,7 @@
                 <img src="./img/1_page/photos/teeth_4.png" class="d-block w-100" alt="...">
               </div>
             </div>
-            <div class="mt-5">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"
-                  aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1"
-                  aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2"
-                  aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="3"
-                  aria-label="Slide 4"></button>
-              </div>
+       
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -141,11 +139,10 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
-            </div>
 
           </div>
         </div>
-        <div class="col-6 align-self-center">
+        <div class="d-none d-xs-none d-sm-none d-md-block col-md-6 align-self-center">
           <div class="carousel-text">
             <p>Ми прогнозуємо, як будь-яке стоматологічне втручання вплине на зовнішність пацієнта, та підбираємо
               оптимальне рішення, щоб зберегти Вашу привабливість та подарувати Вам здорову посмішку</p>
@@ -170,7 +167,7 @@
             </div>
           </div>
         </div>
-        <div class="parallax parallax-image--2"></div>
+        <div class="parallax parallax-image--2 d-none d-xs-none d-sm-none d-md-block"></div>
       </div>
 
     </section>
@@ -179,26 +176,27 @@
     <section class="benefits">
       <div class="container">
         <p class="line">
-          <img src="./img/icons/line.png" alt="img" height="1"> VDC обожнює Вашу посмішку <img
-            src="./img/icons/line.png" height="1">
+          <img src="./img/icons/line.png" alt="img" height="1" class="d-none d-xs-none d-sm-none d-md-block"> 
+          VDC обожнює Вашу посмішку 
+          <img src="./img/icons/line.png" height="1" class="d-none d-xs-none d-sm-none d-md-block">
         </p>
         <h4 class="heading heading--type-4 text-center mb-5">Наші досягнення</h4>
 
         <div class="row justify-content-evenly">
-          <div class="benefits__card col-lg-4 mb-4">
+          <div class="benefits__card col-sm-12 col-lg-4 mb-4">
             <p class="title">Інноваційні</p>
             <p>
               Створюємо шедеври на обладнанні з Німеччини, США, Італії, Японії, Данії, Словакії 2015-2021 років
               виробництва.
             </p>
           </div>
-          <div class="benefits__card col-lg-4 mb-4">
+          <div class="benefits__card col-sm-12 col-lg-4 mb-4">
             <p class="title">Працюємо по коханню</p>
             <p>
               VDC — 18 фахівців з єдиною місією: щоб здорових, щасливих та відкритих посмішок стало якомога більше.
             </p>
           </div>
-          <div class="benefits__card col-lg-4 mb-4">
+          <div class="benefits__card col-sm-12 col-lg-4 mb-4">
             <p class="title">Любимо вчитися</p>
             <p>
               За 5 років наші лікарі відвідали 50+ семінарів, конгресів та симпозіумів у 9 країнах світу.
@@ -207,7 +205,7 @@
         </div>
 
         <div class="row justify-content-evenly">
-          <div class="benefits__card col-lg-4">
+          <div class="benefits__card col-sm-12 col-lg-4">
             <p class="title">Креативні</p>
             <p>
               За останній рік зробили 200+ унікальних посмішок. Навіть коли казали «мабуть, неможливо», ми доводили, що
@@ -216,14 +214,14 @@
             </p>
           </div>
 
-          <div class="benefits__card col-lg-4">
+          <div class="benefits__card col-sm-12 col-lg-4">
             <p class="title">У нас безпечно</p>
             <p>
               Стерильно, як в операційних. Та морально спокійно, бо ми створили атмосферу тотального розслаблення.
             </p>
           </div>
 
-          <div class="benefits__card col-lg-4">
+          <div class="benefits__card col-sm-12 col-lg-4">
             <p class="title">Є власна лабораторія</p>
             <p>
               Над вашою посмішкою працюють одразу й технік, й лікар. Контролюють увесь процес та разом втілюють кращий
@@ -251,7 +249,7 @@
             </div>
           </div>
         </div>
-        <div class="parallax parallax-image--3"></div>
+        <div class="parallax parallax-image--3 d-none d-xs-none d-sm-none d-md-block"></div>
       </div>
     </section>
 
@@ -414,19 +412,6 @@
         </div>
       </div>
     </section>
-
-    <!-- красива карта
-  <div id='map' style='width: 100%; height: 634px;'></div>
-  <script>
-        mapboxgl.accessToken = 'pk.eyJ1IjoiZGFyaWFzaHZ5ZGthIiwiYSI6ImNrczBoNWR4MjBuZGUyb3BqNjg5bXB1dzQifQ.wooIER1z9EVAOc1ZDEa9GQ';
-        var map = new mapboxgl.Map({
-          container: 'map',
-          style: 'mapbox://styles/mapbox/light-v10',
-          center: [31.3026047,51.4982707], 
-          zoom: 15
-        });
-        map.addControl(new mapboxgl.NavigationControl());
-  </script> -->
 
     <section>
       <div class="position-relative">

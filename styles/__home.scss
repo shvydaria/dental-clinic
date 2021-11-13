@@ -128,6 +128,10 @@
   }
 }
 
+.carousel {
+  padding: 3rem;
+}
+
 .carousel-control-next,
 .carousel-control-prev {
   opacity: 1;
@@ -165,9 +169,7 @@
     background-color: $green;
   }
 }
-// .carousel-controls {
-//   margin-top: ;
-// }
+
 .carousel-text {
   color: $black;
   padding: 2rem 4.5rem 4rem;
@@ -260,5 +262,95 @@
       border-radius: 50%;
       box-shadow: 4px 5px 15px rgba(84, 96, 97, 0.3);
     }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .number {
+    flex: 1;
+    margin-bottom: 24px;
+    &-text {
+      flex: 2;
+      font-size: 1.2em;
+    }
+  }
+  .collage {
+    &__content {
+      .heading {
+        font-weight: 300;
+        letter-spacing: 1.5px;
+      }
+      p {
+        font-size: 1em;
+        font-weight: 200;
+        line-height: 1.5;
+        letter-spacing: normal;
+        word-spacing: normal;
+      }
+    }
+  }
+
+  .carousel {
+    padding: 0;
+
+    &-control-prev {
+      @include responsive(976px, 1325px) {
+        left: 35%;
+      }
+      @include responsive_tab() {
+        left: 32%;
+      }
+      @include responsive_mobile() {
+        left: 23%;
+        width: 4rem;
+      }
+      @include responsive(0px, 392px) {
+        left: 12%;
+      }
+    }
+
+    &-control-next {
+      @include responsive(976px, 1325px) {
+        right: 35%;
+      }
+      @include responsive_tab() {
+        right: 32%;
+      }
+      @include responsive_mobile() {
+        right: 23%;
+        width: 4rem;
+      }
+      @include responsive(0px, 392px) {
+        right: 12%;
+      }
+    }
+
+    &-indicators {
+      right: auto;
+      left: 50%;
+      margin-right: auto;
+      margin-left: auto;
+      transform: translateX(-50%);
+    }
+  }
+
+  .benefits__card {
+    margin-bottom: 1.5rem;
+    .title {
+      font-size: 1.2em;
+    }
+  }
+
+  .form {
+    .feedback-form {
+      right: 0 !important;
+    }
+    .map-form {
+      left: 0 !important;
+    }
+  }
+
+  .accordion-icon {
+    margin-right: 10px;
   }
 }

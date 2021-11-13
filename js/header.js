@@ -6,15 +6,20 @@ class Header extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <div class="header_wraper">
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-sm">
         <div class="container justify-content-between">
           <a class="navbar-brand" href="/">
             <img src="img/logo/logo-gray.png" alt="logo">
           </a>
     
           <!-- mobile btn -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler d-xs-block d-sm-block d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
           </button>
           <!-- mobile btn -->
     
@@ -36,9 +41,17 @@ class Header extends HTMLElement {
                 <a class="nav-link" href="./contacts.html">Контакти</a>
               </li>
             </ul>
+            <div class="header-social d-xs-block d-sm-block d-md-none">
+              <a href="https://www.instagram.com/vdc_dentistry/">
+                <img src="./img/icons/ing-black.png" alt="ico-footer" class="me-9">
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=100054469299460">
+                <img src="./img/icons/fb-black.png" alt="ico-footer" class="">
+              </a>
+            </div>
           </div>
     
-          <button type="button" class="btn btn-outline-success"  data-bs-toggle="modal" data-bs-target="#formModal">Зв’язатися з нами</button>
+          <button type="button" class="btn btn-outline-success d-none d-xs-none d-sm-none d-md-block"  data-bs-toggle="modal" data-bs-target="#formModal">Зв’язатися з нами</button>
         </div>
       </nav>
     </div>
@@ -67,9 +80,19 @@ class Header extends HTMLElement {
       </div>
     </div>
   </div>
+
+  <button onclick="topFunction()" id="scrollButton" class="d-xs-block d-sm-block d-md-none">
+    <img src="./img/icons/skroll.png" alt="scroll">
+  </button>
     `;
   }
 }
+
+$(document).ready(function(){
+	$('.navbar-toggler').click(function(){
+		$(this).toggleClass('open');
+	});
+});
 
 customElements.define("header-component", Header);
 document.addEventListener('DOMContentLoaded', function() {
@@ -98,4 +121,23 @@ if (history.scrollRestoration) {
   window.onbeforeunload = function () {
       window.scrollTo(0, 0);
   }
+}
+
+var scrollButton = document.getElementById("scrollButton");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollButton.style.display = "block";
+  } else {
+    scrollButton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }

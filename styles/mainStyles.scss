@@ -1,3 +1,4 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "./_responsive_mixins";
 @import "./__fonts";
 @import "./__colors";
@@ -119,11 +120,23 @@ video {
 }
 
 .parallax-image--1 {
-  background-image: url('../img/1_page/photos/46pic_1_1.jpg');
+  background-image: url('../img/1_page/photos/46.jpg');
 }
 .parallax-image--2 {
   background-image: url('../img/1_page/photos/smile.jpg');
 }
 .parallax-image--3 {
   background-image: url('../img/1_page/photos/dentals.jpg');
+}
+
+@include media-breakpoint-down(sm) {
+  .parallax-image--1 {
+    background-image: url('../img/1_page/photos/46-mob.jpg');
+  }
+  .parallax-image--2 {
+    background-image: url('../img/1_page/photos/smille-mob.jpg');
+  }
+  .parallax-image--3 {
+    background-image: url('../img/1_page/photos/dentals-mob.jpg');
+  }
 }
