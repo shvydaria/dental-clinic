@@ -94,7 +94,7 @@
 .doctors {
   margin-top: 82px;
   padding: 0;
-  @include responsive(0px, 1325px) {
+  @include responsive_mobile() {
     display: none;
   }
 }
@@ -102,64 +102,29 @@
 .doctors-carousel {
   display: none;
   margin: 56px 0;
-  @include responsive(0px, 1325px) {
+  @include responsive_mobile() {
     display: block;
     padding: 0;
   }
 
   .carousel {
-    padding-bottom: 32px;
-  }
+    padding: 40px;
 
-  .carousel-control-prev {
-    @include responsive(976px, 1325px) {
-      left: 35%;
+    .carousel-inner {
+      overflow: visible;
     }
-    @include responsive_tab() {
-      left: 32%;
+
+    .carousel-item-prev:not(.carousel-item-end) {
+      transform: translateX(-100%) scale(0.9);
     }
-    @include responsive_mobile() {
-      left: 23%;
-      width: 4rem;
-    }
-    @include responsive(0px, 392px) {
-      left: 12%;
+
+    .carousel-item-next:not(.carousel-item-start) {
+      transform: translateX(100%) scale(0.9);
     }
   }
 
-  .carousel-control-next {
-    @include responsive(976px, 1325px) {
-      right: 35%;
-    }
-    @include responsive_tab() {
-      right: 32%;
-    }
-    @include responsive_mobile() {
-      right: 23%;
-      width: 4rem;
-    }
-    @include responsive(0px, 392px) {
-      right: 12%;
-    }
-  }
-
-  .carousel-indicators {
-    right: auto;
-    left: 50%;
-    margin-right: auto;
-    margin-left: auto;
-    transform: translateX(-50%);
-  }
-
-  &__item {
-    display: flex;
-    @include responsive(0px, 408px) {
-      flex-direction: column;
-    }
-
-    .doctor-card {
-      margin: 0 8px;
-    }
+  .doctor-card {
+    margin: 0 8px;
   }
 }
 
