@@ -12968,16 +12968,42 @@ textarea.form-control-lg {
 .prices {
   background-color: #f3f3f3;
 }
+@media only screen and (max-width: 767px) {
+  .prices {
+    background-color: #ffffff;
+  }
+}
 .prices .collage img {
   height: 632px;
   object-fit: cover;
+}
+@media only screen and (max-width: 767px) {
+  .prices .collage img {
+    height: 376px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .prices .collage .absolute-wrapper {
+    top: 56px;
+  }
 }
 .prices .collage__content .heading {
   color: #ffffff;
   margin-bottom: 36px;
 }
+@media only screen and (max-width: 767px) {
+  .prices .collage__content .heading {
+    font-size: 1.25em;
+  }
+}
 .prices .collage__content p {
   font-size: 2.2em;
+}
+@media only screen and (max-width: 767px) {
+  .prices .collage__content p {
+    font-size: 1.125em;
+    line-height: 1.5em;
+  }
 }
 .prices-attention {
   border-radius: 20px;
@@ -12986,16 +13012,31 @@ textarea.form-control-lg {
   box-shadow: 0px 14px 23px rgba(0, 0, 0, 0.05);
   padding: 31px 109px;
 }
+@media only screen and (max-width: 767px) {
+  .prices-attention {
+    padding: 24px;
+  }
+}
 .prices-attention p {
   font-size: 1.7em;
   letter-spacing: 1.5px;
   color: #62666C;
+}
+@media only screen and (max-width: 767px) {
+  .prices-attention p {
+    font-size: 1.125em;
+  }
 }
 .prices-list {
   background: #ffffff;
   box-shadow: 0px 14px 23px rgba(0, 0, 0, 0.05);
   border-radius: 15px;
   padding: 70px 109px;
+}
+@media only screen and (max-width: 767px) {
+  .prices-list {
+    padding: 0 16px;
+  }
 }
 .prices-list .heading {
   color: #62666C;
@@ -13004,15 +13045,25 @@ textarea.form-control-lg {
   margin-right: 16px;
   letter-spacing: 2px;
 }
+@media only screen and (max-width: 767px) {
+  .prices-list .heading {
+    font-size: 1.625em;
+  }
+}
 .prices-list img {
   max-height: 47px;
   display: block;
 }
 .prices .accordion-body {
   color: #333333;
-  font-size: 20px;
+  font-size: 1.25em;
   font-weight: 300;
   padding: 32px;
+}
+@media only screen and (max-width: 767px) {
+  .prices .accordion-body {
+    font-size: 1em;
+  }
 }
 .prices .accordion-button {
   padding: 1rem 40px;
@@ -13020,6 +13071,12 @@ textarea.form-control-lg {
   color: #ffffff;
   font-size: 1.5rem;
   font-weight: 400;
+}
+@media only screen and (max-width: 767px) {
+  .prices .accordion-button {
+    padding: 12px 24px;
+    font-size: 1.25rem;
+  }
 }
 .prices .accordion-button::after, .prices .accordion-button:not(.collapsed)::after {
   background-image: url("../img/icons/arrow-white.png");
