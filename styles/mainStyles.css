@@ -11716,6 +11716,15 @@ textarea.form-control-lg {
   top: 120px;
 }
 
+.accordion-wrapper {
+  padding: 6.9rem 0;
+  background-color: #ffffff;
+}
+
+.heading-accordion {
+  padding-left: 6.5rem;
+}
+
 .accordion-button {
   border-top: 1px solid #e8e7e6 !important;
   border-radius: 10px !important;
@@ -11761,7 +11770,7 @@ textarea.form-control-lg {
   color: rgba(3, 125, 72, 0.7);
   text-align: center;
 }
-.benefits .line img {
+.benefits .line-img {
   width: 63px;
 }
 .benefits__card {
@@ -11846,8 +11855,7 @@ textarea.form-control-lg {
     justify-content: center;
   }
 }
-.form .feedback-form,
-.form .map-form {
+.form .feedback-form {
   position: absolute;
   width: 100%;
   display: flex;
@@ -11857,8 +11865,7 @@ textarea.form-control-lg {
   border-radius: 15px;
   box-shadow: 0 14px 23px rgba(28, 37, 44, 0.08);
 }
-.form .feedback-form__title,
-.form .map-form__title {
+.form .feedback-form__title {
   margin-bottom: 24px;
   font-family: "Avenir Next Cyr", sans-serif;
   font-size: 24px;
@@ -11901,17 +11908,37 @@ textarea.form-control-lg {
 .form .feedback-form__submit:hover {
   background-color: #f3f3f3;
 }
-.form .map-form {
+
+.contacts-block {
+  position: absolute;
+  width: 100%;
   max-width: 343px;
   top: 64px;
   left: 80px;
   padding: 48px 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 14px 23px rgba(28, 37, 44, 0.08);
 }
-.form .map-form__icon {
+.contacts-block__title {
+  margin-bottom: 24px;
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 36px;
+}
+.contacts-block__icon {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   box-shadow: 4px 5px 15px rgba(84, 96, 97, 0.3);
+}
+.contacts-block--mobile {
+  display: none;
 }
 
 @media (max-width: 575.98px) {
@@ -12003,13 +12030,35 @@ textarea.form-control-lg {
   .form .feedback-form {
     right: 0 !important;
   }
-  .form .map-form {
-    left: 0 !important;
-  }
 }
 @media (max-width: 575.98px) {
   .accordion-icon {
     margin-right: 10px;
+  }
+}
+@media (max-width: 575.98px) {
+  .line-img {
+    display: none;
+  }
+}
+@media (max-width: 575.98px) {
+  .absolute-wrapper {
+    top: 50px;
+  }
+}
+@media (max-width: 575.98px) {
+  .heading-accordion {
+    padding-left: 0;
+    padding: 64px 0;
+  }
+}
+@media (max-width: 575.98px) {
+  .contacts-block {
+    display: none;
+  }
+  .contacts-block--mobile {
+    display: block;
+    margin: 24px 0 67px;
   }
 }
 .promo {
