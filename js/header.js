@@ -67,15 +67,23 @@ class Header extends HTMLElement {
         ></button>
 
         <div class="modal-body">
-     
-            <div class="modal-form">
-              <h2 class="modal-form__title">
-                Залиште Ваші контактні дані, і&nbsp;наш адміністратор зв'яжеться з&nbsp;вами
-              </h2>
-              <input name="name" type="text" class="modal-form__input" required autocomplete="name" placeholder="Ваше ім’я" />
-              <input type="tel" name="phone" placeholder="Номер телефону" required autocomplete="tel" pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" value="+380" minlength="13" maxlength="13" class="modal-form__input" />
-              <button type="button" class="modal-form__submit">Зв’язатися з нами</button>
-            </div>
+    
+            <form class="form">
+            <h2 class="form__title">Залиште Ваші контактні дані, і&nbsp;наш адміністратор зв'яжеться з&nbsp;вами</h2>
+            <input name="name" type="text" class="form__input" placeholder="Ваше ім’я" minlength="2" required />
+            <input
+              name="phone"
+              type="tel"
+              class="form__input"
+              placeholder="Номер телефону"
+              pattern="\\+380\\s\\(\\d{2}\\)\\s\\d{3}-\\d{2}-\\d{2}"
+              required
+            />
+            <button type="submit" class="form__submit">
+              <span>Зв’язатися з нами</span>
+              <div class="form__success"><i class="bi bi-check-circle"></i> Форма отправлена</div>
+            </button>
+          </form>
         </div>
       </div>
     </div>
@@ -88,45 +96,53 @@ class Header extends HTMLElement {
   }
 }
 
-$(document).ready(function(){
-	$('.navbar-toggler').click(function(){
-		$(this).toggleClass('open');
-	});
+$(document).ready(function () {
+  $(".navbar-toggler").click(function () {
+    $(this).toggleClass("open");
+  });
 });
 
 customElements.define("header-component", Header);
-document.addEventListener('DOMContentLoaded', function() {
-  (function() {
-    let nav = document.getElementById('nav');
-    let anchor = nav.getElementsByTagName('a');
-    let current = window.location.pathname;
-    // let current = window.location.pathname.split('/Users/dariashvydka/DashaShv/dental-clinic')[1];
+document.addEventListener(
+  "DOMContentLoaded",
+  function () {
+    (function () {
+      let nav = document.getElementById("nav");
+      let anchor = nav.getElementsByTagName("a");
+      let current = window.location.pathname;
+      // let current = window.location.pathname.split('/Users/dariashvydka/DashaShv/dental-clinic')[1];
 
-    let correct = current.replace('/Users/dariashvydka/DashaShv/dental-clinic/', 'file:///Users/dariashvydka/DashaShv/dental-clinic/');
+      let correct = current.replace(
+        "/Users/dariashvydka/DashaShv/dental-clinic/",
+        "file:///Users/dariashvydka/DashaShv/dental-clinic/"
+      );
 
-    for (var i = 0; i < anchor.length; i++) {
-      if(anchor[i].href == correct) {
-        anchor[i].className = "nav-link active";
-      } else {
-        console.log("FALSE");
+      for (var i = 0; i < anchor.length; i++) {
+        if (anchor[i].href == correct) {
+          anchor[i].className = "nav-link active";
+        } else {
+          console.log("FALSE");
+        }
       }
-    }
-
-  })();
-}, false);
+    })();
+  },
+  false
+);
 
 if (history.scrollRestoration) {
-  history.scrollRestoration = 'manual';
+  history.scrollRestoration = "manual";
 } else {
   window.onbeforeunload = function () {
-      window.scrollTo(0, 0);
-  }
+    window.scrollTo(0, 0);
+  };
 }
 
 var scrollButton = document.getElementById("scrollButton");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () {
+  scrollFunction();
+};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {

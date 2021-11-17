@@ -11454,52 +11454,9 @@ textarea.form-control-lg {
 
 #formModal .modal-content {
   min-width: 628px;
-  padding: 48px 30px;
   background-color: #ffffff;
   border-radius: 15px;
   box-shadow: 0 14px 23px rgba(28, 37, 44, 0.08);
-}
-#formModal .modal-form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#formModal .modal-form__title {
-  margin-bottom: 48px;
-  font-family: "Avenir Next Cyr", sans-serif;
-  font-size: 24px;
-  font-weight: 500;
-  text-align: center;
-  line-height: 36px;
-}
-#formModal .modal-form__input {
-  margin-bottom: 24px;
-  padding: 12px 43px;
-  align-self: stretch;
-  font-family: "Avenir Next Cyr", sans-serif;
-  font-size: 16px;
-  color: #333333;
-  border: 1px solid #E8E7E6;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(28, 37, 44, 0.08);
-  transition: border-color 0.3s;
-}
-#formModal .modal-form__input:focus, #formModal .modal-form__input:-webkit-autofill {
-  border-color: rgba(3, 125, 72, 0.7);
-  outline: none;
-}
-#formModal .modal-form__submit {
-  margin-top: 32px;
-  padding: 18px 34px;
-  background-color: #ffffff;
-  border: 2px solid rgba(3, 125, 72, 0.7);
-  border-radius: 15px;
-  box-shadow: 0 14px 23px rgba(28, 37, 44, 0.08);
-  transition: background-color 0.3s;
-}
-#formModal .modal-form__submit:hover {
-  background-color: #f3f3f3;
 }
 
 #scrollButton {
@@ -11549,7 +11506,7 @@ textarea.form-control-lg {
     position: absolute;
     height: 5px;
     width: 50%;
-    background: #62666C;
+    background: #62666c;
     opacity: 1;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -11768,6 +11725,108 @@ textarea.form-control-lg {
     transform: translateX(-50%);
   }
 }
+.form {
+  padding: 88px 72px;
+  max-width: 624px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+@media only screen and (max-width: 767px) {
+  .form {
+    padding: 32px;
+    max-width: 416px;
+  }
+}
+.form__title {
+  margin-bottom: 42px;
+  font-size: 1.5em;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: center;
+  color: #333333;
+}
+@media only screen and (max-width: 767px) {
+  .form__title {
+    margin-bottom: 24px;
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+}
+.form__input {
+  margin-bottom: 24px;
+  padding: 12px 42px;
+  width: 472px;
+  font-size: 1em;
+  color: #333333;
+  background-color: #ffffff;
+  border: 1px solid #e8e7e6;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(28, 37, 44, 0.08);
+  transition: border-color 0.3s;
+}
+@media only screen and (max-width: 767px) {
+  .form__input {
+    margin-bottom: 16px;
+    padding: 8px 32px;
+    width: 248px;
+    font-size: 0.875em;
+  }
+}
+.form__input:focus, .form__input:-webkit-autofill {
+  border-color: rgba(3, 125, 72, 0.7);
+  outline: none;
+}
+.form__input--error {
+  border-color: #da4453;
+}
+.form__submit {
+  position: relative;
+  margin-top: 32px;
+  padding: 16px 32px;
+  font-size: 1.125em;
+  font-weight: 500;
+  color: #333333;
+  background-color: #ffffff;
+  border: 2px solid rgba(3, 125, 72, 0.7);
+  border-radius: 15px;
+  box-shadow: 0 14px 23px rgba(28, 37, 44, 0.08);
+  overflow: hidden;
+  transition: background-color 0.3s;
+}
+@media only screen and (max-width: 767px) {
+  .form__submit {
+    margin-top: 8px;
+    padding: 12px 32px;
+    font-size: 0.875em;
+  }
+}
+.form__submit:hover {
+  background-color: #f3f3f3;
+}
+.form__success {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  color: rgba(3, 125, 72, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.form__success--visible {
+  opacity: 1;
+}
+.form__success i {
+  margin-right: 8px;
+}
+
 .navbar-brand {
   padding: 0;
 }
@@ -11855,7 +11914,7 @@ textarea.form-control-lg {
   margin-bottom: 16px;
 }
 .accordion-body {
-  color: #62666C;
+  color: #62666c;
   border-radius: 10px !important;
   box-shadow: 0px 4px 8px rgba(28, 37, 44, 0.08);
 }
@@ -11877,7 +11936,7 @@ textarea.form-control-lg {
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   padding: 56px 24px;
-  color: #62666C;
+  color: #62666c;
   text-align: center;
 }
 .benefits__card .title {
@@ -11886,23 +11945,44 @@ textarea.form-control-lg {
   margin-bottom: 1rem;
 }
 
-.form {
+.form-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding: 0 80px;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 @media only screen and (max-width: 767px) {
-  .form {
+  .form-container {
     justify-content: center;
+    padding: 0 8px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .form {
+  .form-container {
     justify-content: center;
+    padding: 0 8px;
   }
 }
-.form .feedback-form,
-.form .map-form {
-  position: absolute;
+.form-container--reverse {
+  justify-content: flex-start;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .form-container--reverse {
+    justify-content: flex-start;
+    padding: 0 60px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .form-container--reverse {
+    justify-content: flex-start;
+    padding: 0 16px;
+  }
+}
+.form-container .map-form {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -11911,8 +11991,7 @@ textarea.form-control-lg {
   border-radius: 15px;
   box-shadow: 0 14px 23px rgba(28, 37, 44, 0.08);
 }
-.form .feedback-form__title,
-.form .map-form__title {
+.form-container .map-form__title {
   margin-bottom: 24px;
   font-family: "Avenir Next Cyr", sans-serif;
   font-size: 24px;
@@ -11920,48 +11999,13 @@ textarea.form-control-lg {
   text-align: center;
   line-height: 36px;
 }
-.form .feedback-form {
-  max-width: 628px;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 80px;
-  padding: 88px 75px;
-}
-.form .feedback-form__input {
-  margin-bottom: 24px;
-  padding: 12px 43px;
-  align-self: stretch;
-  font-family: "Avenir Next Cyr", sans-serif;
-  font-size: 16px;
-  color: #333333;
-  border: 1px solid #E8E7E6;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(28, 37, 44, 0.08);
-  transition: border-color 0.3s;
-}
-.form .feedback-form__input:focus, .form .feedback-form__input:-webkit-autofill {
-  border-color: rgba(3, 125, 72, 0.7);
-  outline: none;
-}
-.form .feedback-form__submit {
-  margin-top: 32px;
-  padding: 18px 34px;
-  background-color: #ffffff;
-  border: 2px solid rgba(3, 125, 72, 0.7);
-  border-radius: 15px;
-  box-shadow: 0 14px 23px rgba(28, 37, 44, 0.08);
-  transition: background-color 0.3s;
-}
-.form .feedback-form__submit:hover {
-  background-color: #f3f3f3;
-}
-.form .map-form {
+.form-container .map-form {
   max-width: 343px;
   top: 64px;
   left: 80px;
   padding: 48px 44px;
 }
-.form .map-form__icon {
+.form-container .map-form__icon {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -11997,10 +12041,7 @@ textarea.form-control-lg {
     font-size: 1.2em;
   }
 
-  .form .feedback-form {
-    right: 0 !important;
-  }
-  .form .map-form {
+  .form-container .map-form {
     left: 0 !important;
   }
 
@@ -12055,7 +12096,7 @@ textarea.form-control-lg {
   font-family: "Avenir Next Cyr", sans-serif;
   font-size: 30px;
   font-weight: 500;
-  color: #62666C;
+  color: #62666c;
   white-space: nowrap;
 }
 @media only screen and (max-width: 767px) {
@@ -12084,7 +12125,7 @@ textarea.form-control-lg {
   font-size: 24px;
   line-height: 32px;
   letter-spacing: 0.02em;
-  color: #62666C;
+  color: #62666c;
 }
 @media only screen and (max-width: 767px) {
   .team__text {
@@ -12162,7 +12203,7 @@ textarea.form-control-lg {
   font-size: 18px;
   font-weight: 400;
   line-height: 20px;
-  color: #62666C;
+  color: #62666c;
 }
 @media only screen and (max-width: 767px) {
   .doctor-card__name {
@@ -12171,7 +12212,7 @@ textarea.form-control-lg {
 }
 .doctor-card__spec {
   font-size: 14px;
-  color: #62666C;
+  color: #62666c;
 }
 @media only screen and (min-width: 0px) and (max-width: 1460px) {
   .doctor-card__spec {
@@ -12209,7 +12250,7 @@ textarea.form-control-lg {
   margin-bottom: 32px;
   font-size: 16px;
   font-weight: 500;
-  color: #62666C;
+  color: #62666c;
   letter-spacing: 0.04em;
 }
 .doctor-modal__article p {
@@ -12340,7 +12381,7 @@ textarea.form-control-lg {
 .service-card__text {
   font-size: 16px;
   line-height: 20px;
-  color: #62666C;
+  color: #62666c;
 }
 @media only screen and (max-width: 767px) {
   .service-card__text {
@@ -12444,7 +12485,7 @@ textarea.form-control-lg {
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 0.04em;
-  color: #62666C;
+  color: #62666c;
 }
 @media only screen and (min-width: 0px) and (max-width: 1384px) {
   .advantage__title {
@@ -12526,7 +12567,7 @@ textarea.form-control-lg {
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 0.04em;
-  color: #62666C;
+  color: #62666c;
 }
 .advantage-modal__body p,
 .advantage-modal__body ul {
@@ -12579,81 +12620,8 @@ textarea.form-control-lg {
   }
 }
 
-.feedback-form {
-  padding: 88px 75px;
-  max-width: 628px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #ffffff;
-  border-radius: 15px;
-  box-shadow: 0 14px 23px rgba(28, 37, 44, 0.08);
-}
-@media only screen and (max-width: 767px) {
-  .feedback-form {
-    margin-bottom: 80%;
-    padding: 36px 24px;
-  }
-}
-.feedback-form__title {
-  margin-bottom: 48px;
-  font-family: "Avenir Next Cyr", sans-serif;
-  font-size: 24px;
-  font-weight: 500;
-  text-align: center;
-  line-height: 36px;
-}
-@media only screen and (max-width: 767px) {
-  .feedback-form__title {
-    margin-bottom: 24px;
-    font-size: 16px;
-    line-height: 150%;
-  }
-}
-.feedback-form__input {
-  margin-bottom: 24px;
-  padding: 12px 43px;
-  align-self: stretch;
-  font-family: "Avenir Next Cyr", sans-serif;
-  font-size: 16px;
-  color: #333333;
-  border: 1px solid #E8E7E6;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(28, 37, 44, 0.08);
-  transition: border-color 0.3s;
-}
-@media only screen and (max-width: 767px) {
-  .feedback-form__input {
-    margin-bottom: 16px;
-    font-size: 14px;
-  }
-}
-.feedback-form__input:focus, .feedback-form__input:-webkit-autofill {
-  border-color: rgba(3, 125, 72, 0.7);
-  outline: none;
-}
-.feedback-form__submit {
-  margin-top: 32px;
-  padding: 18px 34px;
-  background-color: #ffffff;
-  border: 2px solid rgba(3, 125, 72, 0.7);
-  border-radius: 15px;
-  box-shadow: 0 14px 23px rgba(28, 37, 44, 0.08);
-  transition: background-color 0.3s;
-}
-@media only screen and (max-width: 767px) {
-  .feedback-form__submit {
-    margin-top: 8px;
-    padding: 12px 32px;
-    font-size: 14px;
-  }
-}
-.feedback-form__submit:hover {
-  background-color: #f3f3f3;
-}
-
 .services-title .heading {
-  color: #62666C;
+  color: #62666c;
   font-size: 2.2em;
   font-weight: 600;
   margin-right: 16px;
@@ -12968,7 +12936,7 @@ textarea.form-control-lg {
 .prices-attention p {
   font-size: 1.7em;
   letter-spacing: 1.5px;
-  color: #62666C;
+  color: #62666c;
 }
 @media only screen and (max-width: 767px) {
   .prices-attention p {
@@ -12987,7 +12955,7 @@ textarea.form-control-lg {
   }
 }
 .prices-list .heading {
-  color: #62666C;
+  color: #62666c;
   font-size: 2.2em;
   font-weight: 600;
   margin-right: 16px;
@@ -13015,7 +12983,7 @@ textarea.form-control-lg {
 }
 .prices .accordion-button {
   padding: 1rem 40px;
-  background-color: #62666C;
+  background-color: #62666c;
   color: #ffffff;
   font-size: 1.5rem;
   font-weight: 400;
@@ -13109,7 +13077,7 @@ video {
 }
 .page-wrapper .heading,
 .page-wrapper p {
-  color: #62666C;
+  color: #62666c;
   font-weight: 100;
 }
 .page-wrapper .heading {

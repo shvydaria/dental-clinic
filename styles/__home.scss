@@ -128,19 +128,37 @@
   }
 }
 
-.form {
+.form-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding: 0 80px;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   @include responsive_mobile() {
     justify-content: center;
+    padding: 0 8px;
   }
   @include responsive_tab() {
     justify-content: center;
+    padding: 0 8px;
   }
 
-  .feedback-form,
+  &--reverse {
+    justify-content: flex-start;
+    @include responsive_tab() {
+      justify-content: flex-start;
+      padding: 0 60px;
+    }
+    @include responsive_mobile() {
+      justify-content: flex-start;
+      padding: 0 16px;
+    }
+  }
+
   .map-form {
-    position: absolute;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -159,46 +177,6 @@
     }
   }
 
-  .feedback-form {
-    max-width: 628px;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 80px;
-    padding: 88px 75px;
-
-    &__input {
-      margin-bottom: 24px;
-      padding: 12px 43px;
-      align-self: stretch;
-      font-family: "Avenir Next Cyr", sans-serif;
-      font-size: 16px;
-      color: $black;
-      border: 1px solid $light-gray;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(28, 37, 44, 0.08);
-      transition: border-color 0.3s;
-
-      &:focus,
-      &:-webkit-autofill {
-        border-color: $green;
-        outline: none;
-      }
-    }
-
-    &__submit {
-      margin-top: 32px;
-      padding: 18px 34px;
-      background-color: $white;
-      border: 2px solid $green;
-      border-radius: 15px;
-      box-shadow: 0 14px 23px rgba(28, 37, 44, 0.08);
-      transition: background-color 0.3s;
-
-      &:hover {
-        background-color: $beige;
-      }
-    }
-  }
   .map-form {
     max-width: 343px;
     top: 64px;
@@ -246,10 +224,7 @@
     }
   }
 
-  .form {
-    .feedback-form {
-      right: 0 !important;
-    }
+  .form-container {
     .map-form {
       left: 0 !important;
     }
