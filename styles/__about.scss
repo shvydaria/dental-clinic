@@ -4,6 +4,24 @@
   top: -40px;
   right: -40px;
   font-size: 24px;
+  @include responsive_mobile() {
+    top: 10px;
+    right: 32px;
+    z-index: 10001;
+  }
+}
+
+@mixin doctors-modal-background($url) {
+  @include responsive_tab() {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url($url);
+    background-size: cover;
+    background-position: center center;
+  }
+  @include responsive_mobile() {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url($url);
+    background-size: cover;
+    background-position: center center;
+  }
 }
 
 .promo {
@@ -37,6 +55,9 @@
 .team {
   @include responsive_mobile() {
     padding: 0 16px;
+  }
+  @include responsive(0px, 540px) {
+    overflow: hidden;
   }
 
   &__title {
@@ -94,72 +115,40 @@
 .doctors {
   margin-top: 82px;
   padding: 0;
-  @include responsive(0px, 1325px) {
+  @include responsive_mobile() {
     display: none;
   }
 }
 
 .doctors-carousel {
   display: none;
-  margin: 56px 0;
-  @include responsive(0px, 1325px) {
+  @include responsive_mobile() {
     display: block;
+    margin: 8px 0;
     padding: 0;
   }
 
   .carousel {
-    padding-bottom: 32px;
-  }
-
-  .carousel-control-prev {
-    @include responsive(976px, 1325px) {
-      left: 35%;
-    }
-    @include responsive_tab() {
-      left: 32%;
-    }
+    padding: 40px;
     @include responsive_mobile() {
-      left: 23%;
-      width: 4rem;
+      padding-bottom: 0;
     }
-    @include responsive(0px, 392px) {
-      left: 12%;
+
+    .carousel-inner {
+      overflow: visible;
+    }
+
+    .carousel-item-prev:not(.carousel-item-end) {
+      transform: translateX(-100%) scale(0.9);
+    }
+
+    .carousel-item-next:not(.carousel-item-start) {
+      transform: translateX(100%) scale(0.9);
     }
   }
 
-  .carousel-control-next {
-    @include responsive(976px, 1325px) {
-      right: 35%;
-    }
-    @include responsive_tab() {
-      right: 32%;
-    }
-    @include responsive_mobile() {
-      right: 23%;
-      width: 4rem;
-    }
-    @include responsive(0px, 392px) {
-      right: 12%;
-    }
-  }
-
-  .carousel-indicators {
-    right: auto;
-    left: 50%;
-    margin-right: auto;
-    margin-left: auto;
-    transform: translateX(-50%);
-  }
-
-  &__item {
-    display: flex;
-    @include responsive(0px, 408px) {
-      flex-direction: column;
-    }
-
-    .doctor-card {
-      margin: 0 8px;
-    }
+  .doctor-card {
+    margin: 0 8px;
   }
 }
 
@@ -211,7 +200,8 @@
     @include modal-close-btn;
   }
 
-  &__content {
+  &__content.modal-content {
+    top: 0;
     border: none;
   }
 
@@ -226,6 +216,14 @@
     padding: 60px;
     width: 50%;
     background-repeat: no-repeat;
+    @include responsive_tab() {
+      padding: 60px;
+      width: 100%;
+    }
+    @include responsive_mobile() {
+      padding: 48px 24px;
+      width: 100%;
+    }
 
     h3 {
       margin-bottom: 32px;
@@ -233,6 +231,12 @@
       font-weight: 500;
       color: $dark-gray;
       letter-spacing: 0.04em;
+      @include responsive_tab() {
+        color: $white;
+      }
+      @include responsive_mobile() {
+        color: $white;
+      }
     }
 
     p {
@@ -241,24 +245,33 @@
       line-height: 128%;
       letter-spacing: 0.04em;
       color: $black;
+      @include responsive_tab() {
+        color: $white;
+      }
+      @include responsive_mobile() {
+        color: $white;
+      }
     }
 
     &--1 {
       background-image: url(../img/2_page_about_us/illustration/instruments.png);
       background-size: 242px;
       background-position: 55% 95%;
+      @include doctors-modal-background("../img/2_page_about_us/picture/modal/doc1-4.jpg");
     }
 
     &--2 {
       background-image: url(../img/2_page_about_us/illustration/teeth.png);
       background-size: 350px;
       background-position: -25% 115%;
+      @include doctors-modal-background("../img/2_page_about_us/picture/modal/doc1-7.jpg");
     }
 
     &--3 {
       background-image: url(../img/2_page_about_us/illustration/teeth-sparkle.png);
       background-size: 382px;
       background-position: 2% 0%;
+      @include doctors-modal-background("../img/2_page_about_us/picture/modal/doc1-1.jpg");
 
       &:before {
         content: "";
@@ -270,6 +283,12 @@
         background-position: 85% 95%;
         background-repeat: no-repeat;
         transform: scaleX(-1);
+        @include responsive_tab() {
+          content: none;
+        }
+        @include responsive_mobile() {
+          content: none;
+        }
       }
     }
 
@@ -278,6 +297,7 @@
         url(../img/2_page_about_us/illustration/inst.png);
       background-size: 350px, 300px;
       background-position: 128% -21%, 128% 118%;
+      @include doctors-modal-background("../img/2_page_about_us/picture/modal/doc1.jpg");
     }
 
     &--5 {
@@ -285,18 +305,21 @@
         url(../img/2_page_about_us/illustration/teeth-search.png);
       background-size: 420px, 375px;
       background-position: 153% 30%, -53% 121%;
+      @include doctors-modal-background("../img/2_page_about_us/picture/modal/doc1-2.jpg");
     }
 
     &--6 {
       background-image: url(../img/2_page_about_us/illustration/tooth.png);
       background-size: 350px;
       background-position: 90% 102%;
+      @include doctors-modal-background("../img/2_page_about_us/picture/modal/doc1-6.jpg");
     }
 
     &--7 {
       background-image: url(../img/2_page_about_us/illustration/teeth-instruments.png);
       background-size: 400px;
       background-position: -50% -44px;
+      @include doctors-modal-background("../img/2_page_about_us/picture/modal/doc1-3.jpg");
 
       &:before {
         content: "";
@@ -308,12 +331,54 @@
         background-position: 76% -12%;
         background-repeat: no-repeat;
         transform: rotate(-150deg);
+        @include responsive_tab() {
+          content: none;
+        }
+        @include responsive_mobile() {
+          content: none;
+        }
+      }
+    }
+
+    &--8 {
+      background-image: url(../img/2_page_about_us/illustration/teeth-sparkle.png);
+      background-size: 382px;
+      background-position: 2% 0%;
+      @include doctors-modal-background("../img/2_page_about_us/picture/modal/doc1-5.jpg");
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/2_page_about_us/illustration/teeth-sparkle.png);
+        background-size: 382px;
+        background-position: 85% 95%;
+        background-repeat: no-repeat;
+        transform: scaleX(-1);
+        @include responsive_tab() {
+          content: none;
+        }
+        @include responsive_mobile() {
+          content: none;
+        }
       }
     }
   }
 
   &__photo {
     width: 50%;
+    @include responsive_tab() {
+      display: none;
+    }
+    @include responsive_mobile() {
+      display: none;
+    }
+
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
   &__content {
@@ -527,11 +592,6 @@
 
   &__close-btn {
     @include modal-close-btn;
-    @include responsive_mobile() {
-      top: 10px;
-      right: 32px;
-      z-index: 10001;
-    }
   }
 
   &__body {
@@ -591,77 +651,6 @@
     }
     @include responsive_tab() {
       justify-content: center;
-    }
-  }
-}
-
-.feedback-form {
-  padding: 88px 75px;
-  max-width: 628px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: $white;
-  border-radius: 15px;
-  box-shadow: 0 14px 23px rgba(28, 37, 44, 0.08);
-  @include responsive_mobile() {
-    margin-bottom: 80%;
-    padding: 36px 24px;
-  }
-
-  &__title {
-    margin-bottom: 48px;
-    font-family: "Avenir Next Cyr", sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    text-align: center;
-    line-height: 36px;
-    @include responsive_mobile() {
-      margin-bottom: 24px;
-      font-size: 16px;
-      line-height: 150%;
-    }
-  }
-
-  &__input {
-    margin-bottom: 24px;
-    padding: 12px 43px;
-    align-self: stretch;
-    font-family: "Avenir Next Cyr", sans-serif;
-    font-size: 16px;
-    color: $black;
-    border: 1px solid $light-gray;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(28, 37, 44, 0.08);
-    transition: border-color 0.3s;
-    @include responsive_mobile() {
-      margin-bottom: 16px;
-      font-size: 14px;
-    }
-
-    &:focus,
-    &:-webkit-autofill {
-      border-color: $green;
-      outline: none;
-    }
-  }
-
-  &__submit {
-    margin-top: 32px;
-    padding: 18px 34px;
-    background-color: $white;
-    border: 2px solid $green;
-    border-radius: 15px;
-    box-shadow: 0 14px 23px rgba(28, 37, 44, 0.08);
-    transition: background-color 0.3s;
-    @include responsive_mobile() {
-      margin-top: 8px;
-      padding: 12px 32px;
-      font-size: 14px;
-    }
-
-    &:hover {
-      background-color: $beige;
     }
   }
 }

@@ -8,7 +8,7 @@
 
 .nav-link {
   font-size: 1rem;
-  font-family: 'Avenir Next Cyr';
+  font-family: "Avenir Next Cyr";
 }
 
 .nav-item {
@@ -32,7 +32,7 @@
 .collage {
   position: relative;
   &.form {
-    background-image: url('./img/1_page/photos/dentals.jpg');
+    background-image: url("./img/1_page/photos/dentals.jpg");
     object-fit: contain;
     min-height: 500px;
   }
@@ -71,7 +71,7 @@
 
     &::after,
     &:not(.collapsed)::after {
-      background-image: url('../img/icons/arrow-green.png');
+      background-image: url("../img/icons/arrow-green.png");
     }
     &:not(.collapsed) {
       color: $black;
@@ -128,70 +128,37 @@
   }
 }
 
-.carousel {
-  padding: 3rem;
-}
-
-.carousel-control-next,
-.carousel-control-prev {
-  opacity: 1;
-  top: unset;
-}
-
-.carousel-control-next {
-  right: 30%;
-}
-.carousel-control-prev {
-  left: 30%;
-}
-
-.carousel-control-next-icon,
-.carousel-control-prev-icon {
-  width: 4rem;
-  height: 4rem;
-}
-
-.carousel-control-next-icon {
-  background-image: url('../img/icons/right.png');
-}
-.carousel-control-prev-icon {
-  background-image: url('../img/icons/left.png');
-}
-.carousel-indicators [data-bs-target] {
-  border-radius: 50%;
-  width: 0.6rem;
-  height: 0.6rem;
-  opacity: 1;
-  background-color: #c4c4c4;
-}
-.carousel-indicators {
-  .active {
-    background-color: $green;
-  }
-}
-
-.carousel-text {
-  color: $black;
-  padding: 2rem 4.5rem 4rem;
-  font-size: 1.5em;
-  line-height: 37px;
-  letter-spacing: 1px;
-  font-weight: 200;
-}
-
-.form {
+.form-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding: 0 80px;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   @include responsive_mobile() {
     justify-content: center;
+    padding: 0 8px;
   }
   @include responsive_tab() {
     justify-content: center;
+    padding: 0 8px;
   }
 
-  .feedback-form,
+  &--reverse {
+    justify-content: flex-start;
+    @include responsive_tab() {
+      justify-content: flex-start;
+      padding: 0 60px;
+    }
+    @include responsive_mobile() {
+      justify-content: flex-start;
+      padding: 0 16px;
+    }
+  }
+
   .map-form {
-    position: absolute;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -202,7 +169,7 @@
 
     &__title {
       margin-bottom: 24px;
-      font-family: 'Avenir Next Cyr', sans-serif;
+      font-family: "Avenir Next Cyr", sans-serif;
       font-size: 24px;
       font-weight: 500;
       text-align: center;
@@ -210,46 +177,6 @@
     }
   }
 
-  .feedback-form {
-    max-width: 628px;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 80px;
-    padding: 88px 75px;
-
-    &__input {
-      margin-bottom: 24px;
-      padding: 12px 43px;
-      align-self: stretch;
-      font-family: 'Avenir Next Cyr', sans-serif;
-      font-size: 16px;
-      color: $black;
-      border: 1px solid $light-gray;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(28, 37, 44, 0.08);
-      transition: border-color 0.3s;
-
-      &:focus,
-      &:-webkit-autofill {
-        border-color: $green;
-        outline: none;
-      }
-    }
-
-    &__submit {
-      margin-top: 32px;
-      padding: 18px 34px;
-      background-color: $white;
-      border: 2px solid $green;
-      border-radius: 15px;
-      box-shadow: 0 14px 23px rgba(28, 37, 44, 0.08);
-      transition: background-color 0.3s;
-
-      &:hover {
-        background-color: $beige;
-      }
-    }
-  }
   .map-form {
     max-width: 343px;
     top: 64px;
@@ -290,50 +217,6 @@
     }
   }
 
-  .carousel {
-    padding: 0;
-
-    &-control-prev {
-      @include responsive(976px, 1325px) {
-        left: 35%;
-      }
-      @include responsive_tab() {
-        left: 32%;
-      }
-      @include responsive_mobile() {
-        left: 23%;
-        width: 4rem;
-      }
-      @include responsive(0px, 392px) {
-        left: 12%;
-      }
-    }
-
-    &-control-next {
-      @include responsive(976px, 1325px) {
-        right: 35%;
-      }
-      @include responsive_tab() {
-        right: 32%;
-      }
-      @include responsive_mobile() {
-        right: 23%;
-        width: 4rem;
-      }
-      @include responsive(0px, 392px) {
-        right: 12%;
-      }
-    }
-
-    &-indicators {
-      right: auto;
-      left: 50%;
-      margin-right: auto;
-      margin-left: auto;
-      transform: translateX(-50%);
-    }
-  }
-
   .benefits__card {
     margin-bottom: 1.5rem;
     .title {
@@ -341,10 +224,7 @@
     }
   }
 
-  .form {
-    .feedback-form {
-      right: 0 !important;
-    }
+  .form-container {
     .map-form {
       left: 0 !important;
     }

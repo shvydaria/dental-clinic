@@ -1,0 +1,103 @@
+.form {
+  padding: 88px 72px;
+  max-width: 624px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $white;
+  border-radius: 15px;
+  @include responsive_mobile() {
+    padding: 32px;
+    max-width: 416px;
+  }
+
+  &__title {
+    margin-bottom: 42px;
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: center;
+    color: $black;
+    @include responsive_mobile() {
+      margin-bottom: 24px;
+      font-size: 1em;
+      line-height: 1.5em;
+    }
+  }
+
+  &__input {
+    margin-bottom: 24px;
+    padding: 12px 42px;
+    width: 472px;
+    font-size: 1em;
+    color: $black;
+    background-color: $white;
+    border: 1px solid $light-gray;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(28, 37, 44, 0.08);
+    transition: border-color 0.3s;
+    @include responsive_mobile() {
+      margin-bottom: 16px;
+      padding: 8px 32px;
+      width: 248px;
+      font-size: 0.875em;
+    }
+
+    &:focus,
+    &:-webkit-autofill {
+      border-color: $green;
+      outline: none;
+    }
+
+    &--error {
+      border-color: $red;
+    }
+  }
+
+  &__submit {
+    position: relative;
+    margin-top: 32px;
+    padding: 16px 32px;
+    font-size: 1.125em;
+    font-weight: 500;
+    color: $black;
+    background-color: $white;
+    border: 2px solid $green;
+    border-radius: 15px;
+    box-shadow: 0 14px 23px rgba(28, 37, 44, 0.08);
+    overflow: hidden;
+    transition: background-color 0.3s;
+    @include responsive_mobile() {
+      margin-top: 8px;
+      padding: 12px 32px;
+      font-size: 0.875em;
+    }
+
+    &:hover {
+      background-color: $beige;
+    }
+  }
+
+  &__success {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $white;
+    color: $green;
+    opacity: 0;
+    transition: opacity 0.3s;
+
+    &--visible {
+      opacity: 1;
+    }
+
+    i {
+      margin-right: 8px;
+    }
+  }
+}

@@ -1,395 +1,368 @@
 <!DOCTYPE html>
 <html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>VDC</title>
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="styles/mainStyles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/imask@6.2.2/dist/imask.min.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>VDC</title>
-  <link rel="stylesheet" href="./styles/bootstrap.min.css" />
-  <link rel="stylesheet" href="./styles/mainStyles.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
-</head>
-
-<body>
-
-  <header-component></header-component>
-  <section class="mt-7">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 g-0">
-          <a href="#diagnostics">
-            <div class="services-item">
-              <div class="services-item__bg">
-                <img src="./img/3_page_services/picture/services1.jpg" alt="service">
+  <body>
+    <header-component></header-component>
+    <section class="mt-7">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 g-0">
+            <a href="#diagnostics">
+              <div class="services-item">
+                <div class="services-item__bg">
+                  <img src="./img/3_page_services/picture/services1.jpg" alt="service" />
+                </div>
+                <div class="services-item__title">Діагностика</div>
               </div>
-              <div class="services-item__title">
-                Діагностика
+            </a>
+          </div>
+          <div class="col-lg-4 g-0">
+            <a href="#caries">
+              <div class="services-item">
+                <div class="services-item__bg">
+                  <img src="./img/3_page_services/picture/services2.jpg" alt="caries" />
+                </div>
+                <div class="services-item__title">Лікування карієсу</div>
               </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 g-0">
-          <a href="#caries">
-            <div class="services-item">
-              <div class="services-item__bg">
-                <img src="./img/3_page_services/picture/services2.jpg" alt="caries">
+            </a>
+          </div>
+          <div class="col-lg-4 g-0">
+            <a href="#whitening">
+              <div class="services-item">
+                <div class="services-item__bg">
+                  <img src="./img/3_page_services/picture/services3.jpg" alt="whitening" />
+                </div>
+                <div class="services-item__title">Відбілювання</div>
               </div>
-              <div class="services-item__title">
-                Лікування карієсу
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 g-0">
+            <a href="#channels">
+              <div class="services-item">
+                <div class="services-item__bg">
+                  <img src="./img/3_page_services/picture/services4.jpg" alt="channels" />
+                </div>
+                <div class="services-item__title">Лікування каналів</div>
               </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 g-0">
-          <a href="#whitening">
-            <div class="services-item">
-              <div class="services-item__bg">
-                <img src="./img/3_page_services/picture/services3.jpg" alt="whitening">
+            </a>
+          </div>
+          <div class="col-lg-4 g-0">
+            <a href="#children">
+              <div class="services-item">
+                <div class="services-item__bg">
+                  <img src="./img/3_page_services/picture/services5.jpg" alt="children" />
+                </div>
+                <div class="services-item__title">Дитинство</div>
               </div>
-              <div class="services-item__title">
-                Відбілювання
+            </a>
+          </div>
+          <div class="col-lg-4 g-0">
+            <a href="#surgery">
+              <div class="services-item">
+                <div class="services-item__bg">
+                  <img src="./img/3_page_services/picture/services6.jpg" alt="surgery" />
+                </div>
+                <div class="services-item__title">Хірургія, імплантація</div>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 g-0">
-          <a href="#channels">
-            <div class="services-item">
-              <div class="services-item__bg">
-                <img src="./img/3_page_services/picture/services4.jpg" alt="channels">
+        <div class="row">
+          <div class="col-lg-4 g-0">
+            <a href="#orthodontics">
+              <div class="services-item">
+                <div class="services-item__bg">
+                  <img src="./img/3_page_services/picture/services7.jpg" alt="orthodontics" />
+                </div>
+                <div class="services-item__title">Ортодонтія</div>
               </div>
-              <div class="services-item__title">
-                Лікування каналів
+            </a>
+          </div>
+          <div class="col-lg-4 g-0">
+            <a href="#emax">
+              <div class="services-item">
+                <div class="services-item__bg">
+                  <img src="./img/3_page_services/picture/services8.jpg" alt="emax" />
+                </div>
+                <div class="services-item__title">Авторські вініри E.MAX</div>
               </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 g-0">
-          <a href="#children">
-            <div class="services-item">
-              <div class="services-item__bg">
-                <img src="./img/3_page_services/picture/services5.jpg" alt="children">
+            </a>
+          </div>
+          <div class="col-lg-4 g-0">
+            <a href="#denture">
+              <div class="services-item">
+                <div class="services-item__bg">
+                  <img src="./img/3_page_services/picture/services9.jpg" alt="denture" />
+                </div>
+                <div class="services-item__title">Протезування</div>
               </div>
-              <div class="services-item__title">
-                Дитинство
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 g-0">
-          <a href="#surgery">
-            <div class="services-item">
-              <div class="services-item__bg">
-                <img src="./img/3_page_services/picture/services6.jpg" alt="surgery">
-              </div>
-              <div class="services-item__title">
-                Хірургія, імплантація
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 g-0">
-          <a href="#orthodontics">
-            <div class="services-item">
-              <div class="services-item__bg">
-                <img src="./img/3_page_services/picture/services7.jpg" alt="orthodontics">
-              </div>
-              <div class="services-item__title">
-                Ортодонтія
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 g-0">
-          <a href="#emax">
-            <div class="services-item">
-              <div class="services-item__bg">
-                <img src="./img/3_page_services/picture/services8.jpg" alt="emax">
-              </div>
-              <div class="services-item__title">
-                Авторські вініри E.MAX
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 g-0">
-          <a href="#denture">
-            <div class="services-item">
-              <div class="services-item__bg">
-                <img src="./img/3_page_services/picture/services9.jpg" alt="denture">
-              </div>
-              <div class="services-item__title">
-                Протезування
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <section>
-    <div class="container p-0">
-      <div class="services-title d-flex align-items-center mt-9">
-        <h5 class="heading heading--type-5 heading--bold">Послуги</h5>
-        <div><img src="./img/logo/logo-gray.png" alt="logo"></div>
-      </div>
-
-      <div id="diagnostics" class="anchor"></div>
-      <div class="services-item-details services-item-details__diagnostics">
-        <div class="services-item-details__paragraph">
-          <h2 class="services-item-details__title mb-4">Діагностика</h2>
-          <p>Діагностика зубів — це найважливіший етап, без перебільшень. Адже 80% помилок всіх маніпуляцій у
-            стоматології є результатом незадовільної діагностики.
-          </p>
-          <p>Якісне обстеження — це запорука успішного лікування.
-            Клініка VDC надає всі необхідні умови для того, щоб цей етап був максимально результативним. Стартом
-            лікування завжди є діагностика. І лише після цього складається індивідуальний план лікування.
-          </p>
-          <p>
-            У нашому кабінеті рентгенології обстеження здійснюється за допомогою найсучаснішого обладнання нового
-            покоління, що дозволяє звести до мінімуму шкоду від випромінювання апарату, уникнути помилки, викликаної
-            людським фактором, та передбачити ймовірність ускладнення ще до його клінічного прояву.
-          </p>
-          <p>
-            Знайдіть час для себе і якісної діагностики ротової порожнини!
-          </p>
-        </div>
-      </div>
-
-      <div  id="caries" class="anchor"></div>
-      <div class="services-item-details services-item-details__caries">
-        <div class="services-item-details__paragraph services-item-details__paragraph--reverse">
-          <h2 class="services-item-details__title mb-4">Лікування карієсу</h2>
-          <p>У клініці VDC наші стоматологи лікують і відновлюють зуби з використанням передових технологій.
-          </p>
-          <p>
-            Під час першого відвідування пацієнт отримує повну інформацію про стан його ротової порожнини, оцінюється
-            гігієна і даються рекомендації по підбору гігієнічних засобів.
-          </p>
-          <p>
-            Якщо своєчасно не лікувати карієс і некаріозні захворювання, незабаром це може викликати запалення ясен,
-            ураження пульпи і ранню втрату зубів. Такі захворювання на пізній стадії призводять до появи ускладнень,
-            формують косметичні дефекти, створюють больові відчуття.
-          </p>
-          <p>
-            Не відкладайте візит до стоматолога-терапевта, адже від здоров'я зубів залежить не тільки краса вашої
-            посмішки, але і якість життя.
-          </p>
-        </div>
-      </div>
-
-      <div  id="whitening" class="anchor"></div>
-      <div class="services-item-details services-item-details__whitening">
-        <div class="services-item-details__paragraph">
-          <h2 class="services-item-details__title mb-4">Відбілювання</h2>
-          <p>Доведено, що люди с білосніжною посмішкою виглядають молодше за свій вік. А також, коли людина
-            посміхається, ми вважаємо її більш привабливою, ніж коли вона похмура.
-          </p>
-          <p>
-            Новітні професійні методи відбілювання емалі у VDC здатні гарантувати білосніжну посмішку без жодних
-            складнощів.
-          </p>
-          <p>
-            Ми використовуємо американську систему Magic Smile — справжній науковий підхід з ефектом чародійства. Секрет
-            комфортного та безпечного відбілювання полягає у спеціальному ультрафіолетовому фільтрі, який захищає
-            внутрішні тканини зуба й допомагає при підвищеній чутливості.
-          </p>
-          <p>
-            WOW-ефект вже після першої процедури!
-          </p>
-        </div>
-      </div>
-
-      <div id="channels" class="anchor"></div>
-      <div class="services-item-details services-item-details__channels">
-        <div class="services-item-details__paragraph services-item-details__paragraph--reverse">
-          <h2 class="services-item-details__title mb-4">Лікування каналів</h2>
-          <p>
-            Наші зуби — це складний механізм. Для підтримки його у відмінному стані інколи доводиться лікувати те, чого
-            не видно на перший погляд.
-          </p>
-          <p>
-            Необхідність лікування зубного каналу виникає у випадку розвитку інфекції в корені зуба. Вона проникає у
-            канал через каріозну порожнину при несвоєчасному лікуванні карієсу.
-          </p>
-          <p>
-            Неозброєним оком виявити таку проблему неможливо, для цього у нашому арсеналі є надійний дентальний
-            мікроскоп. Це невід'ємна частина пародонтологічного чи ендодонтичного лікування, створення високоестетичних
-            реставрацій фронтальних та жувальних зубів, препарування зубів під керамічні вініри, а також під час їх
-            фіксації.
-          </p>
-          <p>При роботі з мікроскопом лікар максимально контролює ситуацію та дає гарантію, що ви будете задоволені
-            результатом.</p>
-        </div>
-      </div>
-
-      <div id="children" class="anchor"></div>
-      <div class="services-item-details services-item-details__children">
-        <div class="services-item-details__paragraph">
-          <h2 class="services-item-details__title mb-4">Дитинство</h2>
-          <p>
-            Ми не квапимо малюків та знаємо, як їх відволікти та налаштувати, пояснюємо, що буде робити лікар. А головне
-            — говоримо про те, чому необхідно лікувати зубки!
-          </p>
-          <p>За статистикою, у дітей карієс розвивається у 10 разів швидше, ніж у дорослих: найчастіше малюки не
-            вичищають зуби якісно або просто пропускають чистку.</p>
-          <p>
-            Ми рекомендуємо кожні 6 місяців відвідувати лікаря для профілактики. Та двічі на рік проводити процедуру
-            фторування — насичення зубів необхідними мікроелементами, щоб зберегти їх міцними якомога довше.
-          </p>
-          <p>
-            Додатково, в залежності від показань, призначається процедура герметизації фісур у дітей — закриття зубних
-            заглиблень корисними матеріалами. Її проводять для захисту зубів від руйнування, які виникають під впливом
-            розкладання залишків їжі.
-          </p>
-          <p>
-            Герметики зберігаються протягом декількох років та перевіряються щоразу при візиті дитини до стоматолога.
-          </p>
-        </div>
-      </div>
-
-      <div id="surgery" class="anchor"></div>
-      <div class="services-item-details services-item-details__surgery">
-        <div class="services-item-details__paragraph services-item-details__paragraph--reverse">
-          <h2 class="services-item-details__title mb-4">Хірургія, імплантація</h2>
-          <p>У VDC широкий спектр хірургічних послуг:</p>
-          <ul>
-            <li>видалення зубів різних рівнів складності</li>
-            <li>
-              атипове видалення зубів, в тому числі видалення «зубів мудрості»
-            </li>
-            <li>
-              пластика м’яких тканин
-            </li>
-            <li>
-              закриття рецесій в ділянці одного або ж групи зубів
-            </li>
-            <li>
-              кісткова пластика
-            </li>
-            <li>
-              операції по встановленню імплантів
-            </li>
-            <li>
-              хірургічна пародонтологія
-            </li>
-          </ul>
-          <p>
-            Кваліфіковані лікарі клініки VDC максимально детально пояснюють пацієнтам всі етапи хірургічного лікування
-            та успішно проводять операції. Після чого надають потрібні рекомендації та контролюють процес загоєння.
-          </p>
-          <p>
-            Ми завжди поруч з вами: від початку до закінчення лікування!
-          </p>
-        </div>
-      </div>
-
-      <div id="orthodontics" class="anchor"></div>
-      <div class="services-item-details services-item-details__orthodontics">
-        <div class="services-item-details__paragraph">
-          <h2 class="services-item-details__title mb-4">Ортодонтія</h2>
-          <p>
-            Якщо ви вирішили змінити свою посмішку, пам'ятайте: розпочати вирівнювання зубів за допомогою брекет-системи
-            ніколи не пізно!
-          </p>
-          <p>
-            Аби досягти максимального результату від ортодонтичного лікування необхідно фіксувати брекет-систему на
-            верхню та нижню щелепи. Таким чином ми не тільки зробимо зуби рівними, а й виправимо прикус.
-          </p>
-          <p>
-            Часто нас запитують про те, як довго слід носити брекети. І ми завжди відповідаємо: тривалість лікування та
-            вартість залежить від багатьох факторів, тому про це ви дізнаєтесь безпосередньо після консультації у
-            лікаря-ортодонта.
-          </p>
-          <p>
-            Бо ви та ваша посмішка унікальні!
-          </p>
-        </div>
-      </div>
-
-      <div id="emax" class="anchor"></div>
-      <div class="services-item-details services-item-details__emax">
-        <div class="services-item-details__paragraph services-item-details__paragraph--reverse">
-          <h2 class="services-item-details__title mb-4">Авторські вініри E.MAX</h2>
-          <p>
-            Сьогодні білосніжна посмішка — далеко не голлівудська розкіш, а візитна картка успішної людини. Проте, у
-            сучасному ритмі життя не завжди вдається зберегти ідеальний колір емалі та цілісінький зубний ряд.
-          </p>
-          <p>
-            Часто пацієнти незадоволені формою своїх зубів чи широкими міжзубними проміжками, когось турбує, так звана,
-            ясенна усмішка. У таких випадках вініри стають найкращим рішенням для апргейду вашої посмішки. Ці тонкі
-            пластини, товщиною лише 0,2-0,6 мм, виготовляються індивідуально у нашій лабораторії, а потім фіксуються
-            лікарем на передній поверхні зубів.
-          </p>
-          <p>
-            Сучасна стоматологія може все або майже все. Вініри змінюють не тільки посмішку, вони змінюють вас.
-          </p>
-          <p>
-            Посміхайтеся щодня разом з VDC!
-          </p>
-        </div>
-      </div>
-
-      <div id="denture" class="anchor"></div>
-      <div class="services-item-details services-item-details__denture">
-        <div class="services-item-details__paragraph">
-          <h2 class="services-item-details__title mb-4">Протезування</h2>
-          <p>
-            Головною задачею стоматолога-ортопеда у VDC є повернення вашій посмішці впевненості, а зубо-щелепній системі
-            — гармонійності та функціональності.
-          </p>
-          <p>
-            Стоматологічна клініка VDC пропонує найсучасніші методи протезування для заміщення дефектів окремих зубів та
-            зубних рядів.
-          </p>
-          <p>
-            Після проведеної серії діагностичних маніпуляцій, лікар ортопед-стоматолог запропонує вам декілька варіантів
-            плану протезування на вибір, які приведуть до максимально практичного, естетичного та привабливого
-            результату!
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="position-relative">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.814542960276!2d31.3026047!3d51.4982707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDI5JzUzLjgiTiAzMcKwMTgnMDkuNCJF!5e0!3m2!1sru!2sua!4v1636174364974!5m2!1sru!2sua"
-        width="100%" height="640" style="border:0;" allowfullscreen="" loading="lazy">
-      </iframe>
-      <div class="form-container">
-        <div class="row form">
-          <div class="feedback-form col-12 col-lg-8 col-xl-6">
-            <h2 class="feedback-form__title">
-              Залиште Ваші контактні дані, і&nbsp;наш адміністратор зв'яжеться з&nbsp;вами
-            </h2>
-            <input name="name" type="text" class="feedback-form__input" placeholder="Ваше ім’я" />
-            <input name="phone" type="tel" class="feedback-form__input" placeholder="Номер телефону" />
-            <button type="button" class="feedback-form__submit">Зв’язатися з нами</button>
+            </a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <footer-component></footer-component>
+    </section>
 
-  <script src="./js/jquery.min.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/esm/popper.min.js"></script> -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-    crossorigin="anonymous"></script>
-  <script src="./js/bootstrap.min.js"></script>
-  <script src="./js/mainFunctions.js"></script>
-  <script src="./js/header.js" type="text/javascript" defer></script>
-  <script src="./js/footer.js" type="text/javascript" defer></script>
-</body>
+    <section>
+      <div class="container p-0">
+        <div class="services-title d-flex align-items-center mt-9">
+          <h5 class="heading heading--type-5 heading--bold">Послуги</h5>
+          <div><img src="./img/logo/logo-gray.png" alt="logo" /></div>
+        </div>
 
+        <div id="diagnostics" class="anchor"></div>
+        <div class="services-item-details services-item-details__diagnostics">
+          <div class="services-item-details__paragraph">
+            <h2 class="services-item-details__title mb-4">Діагностика</h2>
+            <p>
+              Діагностика зубів — це найважливіший етап, без перебільшень. Адже 80% помилок всіх маніпуляцій у
+              стоматології є результатом незадовільної діагностики.
+            </p>
+            <p>
+              Якісне обстеження — це запорука успішного лікування. Клініка VDC надає всі необхідні умови для того, щоб
+              цей етап був максимально результативним. Стартом лікування завжди є діагностика. І лише після цього
+              складається індивідуальний план лікування.
+            </p>
+            <p>
+              У нашому кабінеті рентгенології обстеження здійснюється за допомогою найсучаснішого обладнання нового
+              покоління, що дозволяє звести до мінімуму шкоду від випромінювання апарату, уникнути помилки, викликаної
+              людським фактором, та передбачити ймовірність ускладнення ще до його клінічного прояву.
+            </p>
+            <p>Знайдіть час для себе і якісної діагностики ротової порожнини!</p>
+          </div>
+        </div>
+
+        <div id="caries" class="anchor"></div>
+        <div class="services-item-details services-item-details__caries">
+          <div class="services-item-details__paragraph services-item-details__paragraph--reverse">
+            <h2 class="services-item-details__title mb-4">Лікування карієсу</h2>
+            <p>У клініці VDC наші стоматологи лікують і відновлюють зуби з використанням передових технологій.</p>
+            <p>
+              Під час першого відвідування пацієнт отримує повну інформацію про стан його ротової порожнини, оцінюється
+              гігієна і даються рекомендації по підбору гігієнічних засобів.
+            </p>
+            <p>
+              Якщо своєчасно не лікувати карієс і некаріозні захворювання, незабаром це може викликати запалення ясен,
+              ураження пульпи і ранню втрату зубів. Такі захворювання на пізній стадії призводять до появи ускладнень,
+              формують косметичні дефекти, створюють больові відчуття.
+            </p>
+            <p>
+              Не відкладайте візит до стоматолога-терапевта, адже від здоров'я зубів залежить не тільки краса вашої
+              посмішки, але і якість життя.
+            </p>
+          </div>
+        </div>
+
+        <div id="whitening" class="anchor"></div>
+        <div class="services-item-details services-item-details__whitening">
+          <div class="services-item-details__paragraph">
+            <h2 class="services-item-details__title mb-4">Відбілювання</h2>
+            <p>
+              Доведено, що люди с білосніжною посмішкою виглядають молодше за свій вік. А також, коли людина
+              посміхається, ми вважаємо її більш привабливою, ніж коли вона похмура.
+            </p>
+            <p>
+              Новітні професійні методи відбілювання емалі у VDC здатні гарантувати білосніжну посмішку без жодних
+              складнощів.
+            </p>
+            <p>
+              Ми використовуємо американську систему Magic Smile — справжній науковий підхід з ефектом чародійства.
+              Секрет комфортного та безпечного відбілювання полягає у спеціальному ультрафіолетовому фільтрі, який
+              захищає внутрішні тканини зуба й допомагає при підвищеній чутливості.
+            </p>
+            <p>WOW-ефект вже після першої процедури!</p>
+          </div>
+        </div>
+
+        <div id="channels" class="anchor"></div>
+        <div class="services-item-details services-item-details__channels">
+          <div class="services-item-details__paragraph services-item-details__paragraph--reverse">
+            <h2 class="services-item-details__title mb-4">Лікування каналів</h2>
+            <p>
+              Наші зуби — це складний механізм. Для підтримки його у відмінному стані інколи доводиться лікувати те,
+              чого не видно на перший погляд.
+            </p>
+            <p>
+              Необхідність лікування зубного каналу виникає у випадку розвитку інфекції в корені зуба. Вона проникає у
+              канал через каріозну порожнину при несвоєчасному лікуванні карієсу.
+            </p>
+            <p>
+              Неозброєним оком виявити таку проблему неможливо, для цього у нашому арсеналі є надійний дентальний
+              мікроскоп. Це невід'ємна частина пародонтологічного чи ендодонтичного лікування, створення
+              високоестетичних реставрацій фронтальних та жувальних зубів, препарування зубів під керамічні вініри, а
+              також під час їх фіксації.
+            </p>
+            <p>
+              При роботі з мікроскопом лікар максимально контролює ситуацію та дає гарантію, що ви будете задоволені
+              результатом.
+            </p>
+          </div>
+        </div>
+
+        <div id="children" class="anchor"></div>
+        <div class="services-item-details services-item-details__children">
+          <div class="services-item-details__paragraph">
+            <h2 class="services-item-details__title mb-4">Дитинство</h2>
+            <p>
+              Ми не квапимо малюків та знаємо, як їх відволікти та налаштувати, пояснюємо, що буде робити лікар. А
+              головне — говоримо про те, чому необхідно лікувати зубки!
+            </p>
+            <p>
+              За статистикою, у дітей карієс розвивається у 10 разів швидше, ніж у дорослих: найчастіше малюки не
+              вичищають зуби якісно або просто пропускають чистку.
+            </p>
+            <p>
+              Ми рекомендуємо кожні 6 місяців відвідувати лікаря для профілактики. Та двічі на рік проводити процедуру
+              фторування — насичення зубів необхідними мікроелементами, щоб зберегти їх міцними якомога довше.
+            </p>
+            <p>
+              Додатково, в залежності від показань, призначається процедура герметизації фісур у дітей — закриття зубних
+              заглиблень корисними матеріалами. Її проводять для захисту зубів від руйнування, які виникають під впливом
+              розкладання залишків їжі.
+            </p>
+            <p>
+              Герметики зберігаються протягом декількох років та перевіряються щоразу при візиті дитини до стоматолога.
+            </p>
+          </div>
+        </div>
+
+        <div id="surgery" class="anchor"></div>
+        <div class="services-item-details services-item-details__surgery">
+          <div class="services-item-details__paragraph services-item-details__paragraph--reverse">
+            <h2 class="services-item-details__title mb-4">Хірургія, імплантація</h2>
+            <p>У VDC широкий спектр хірургічних послуг:</p>
+            <ul>
+              <li>видалення зубів різних рівнів складності</li>
+              <li>атипове видалення зубів, в тому числі видалення «зубів мудрості»</li>
+              <li>пластика м’яких тканин</li>
+              <li>закриття рецесій в ділянці одного або ж групи зубів</li>
+              <li>кісткова пластика</li>
+              <li>операції по встановленню імплантів</li>
+              <li>хірургічна пародонтологія</li>
+            </ul>
+            <p>
+              Кваліфіковані лікарі клініки VDC максимально детально пояснюють пацієнтам всі етапи хірургічного лікування
+              та успішно проводять операції. Після чого надають потрібні рекомендації та контролюють процес загоєння.
+            </p>
+            <p>Ми завжди поруч з вами: від початку до закінчення лікування!</p>
+          </div>
+        </div>
+
+        <div id="orthodontics" class="anchor"></div>
+        <div class="services-item-details services-item-details__orthodontics">
+          <div class="services-item-details__paragraph">
+            <h2 class="services-item-details__title mb-4">Ортодонтія</h2>
+            <p>
+              Якщо ви вирішили змінити свою посмішку, пам'ятайте: розпочати вирівнювання зубів за допомогою
+              брекет-системи ніколи не пізно!
+            </p>
+            <p>
+              Аби досягти максимального результату від ортодонтичного лікування необхідно фіксувати брекет-систему на
+              верхню та нижню щелепи. Таким чином ми не тільки зробимо зуби рівними, а й виправимо прикус.
+            </p>
+            <p>
+              Часто нас запитують про те, як довго слід носити брекети. І ми завжди відповідаємо: тривалість лікування
+              та вартість залежить від багатьох факторів, тому про це ви дізнаєтесь безпосередньо після консультації у
+              лікаря-ортодонта.
+            </p>
+            <p>Бо ви та ваша посмішка унікальні!</p>
+          </div>
+        </div>
+
+        <div id="emax" class="anchor"></div>
+        <div class="services-item-details services-item-details__emax">
+          <div class="services-item-details__paragraph services-item-details__paragraph--reverse">
+            <h2 class="services-item-details__title mb-4">Авторські вініри E.MAX</h2>
+            <p>
+              Сьогодні білосніжна посмішка — далеко не голлівудська розкіш, а візитна картка успішної людини. Проте, у
+              сучасному ритмі життя не завжди вдається зберегти ідеальний колір емалі та цілісінький зубний ряд.
+            </p>
+            <p>
+              Часто пацієнти незадоволені формою своїх зубів чи широкими міжзубними проміжками, когось турбує, так
+              звана, ясенна усмішка. У таких випадках вініри стають найкращим рішенням для апргейду вашої посмішки. Ці
+              тонкі пластини, товщиною лише 0,2-0,6 мм, виготовляються індивідуально у нашій лабораторії, а потім
+              фіксуються лікарем на передній поверхні зубів.
+            </p>
+            <p>Сучасна стоматологія може все або майже все. Вініри змінюють не тільки посмішку, вони змінюють вас.</p>
+            <p>Посміхайтеся щодня разом з VDC!</p>
+          </div>
+        </div>
+
+        <div id="denture" class="anchor"></div>
+        <div class="services-item-details services-item-details__denture">
+          <div class="services-item-details__paragraph">
+            <h2 class="services-item-details__title mb-4">Протезування</h2>
+            <p>
+              Головною задачею стоматолога-ортопеда у VDC є повернення вашій посмішці впевненості, а зубо-щелепній
+              системі — гармонійності та функціональності.
+            </p>
+            <p>
+              Стоматологічна клініка VDC пропонує найсучасніші методи протезування для заміщення дефектів окремих зубів
+              та зубних рядів.
+            </p>
+            <p>
+              Після проведеної серії діагностичних маніпуляцій, лікар ортопед-стоматолог запропонує вам декілька
+              варіантів плану протезування на вибір, які приведуть до максимально практичного, естетичного та
+              привабливого результату!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="position-relative">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.814542960276!2d31.3026047!3d51.4982707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDI5JzUzLjgiTiAzMcKwMTgnMDkuNCJF!5e0!3m2!1sru!2sua!4v1636174364974!5m2!1sru!2sua"
+          width="100%"
+          height="640"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        >
+        </iframe>
+        <div class="form-container">
+          <form class="form">
+            <h2 class="form__title">Залиште Ваші контактні дані, і&nbsp;наш адміністратор зв'яжеться з&nbsp;вами</h2>
+            <input name="name" type="text" class="form__input" placeholder="Ваше ім’я" minlength="2" required />
+            <input
+              name="phone"
+              type="tel"
+              class="form__input"
+              placeholder="Номер телефону"
+              pattern="\+380\s\(\d{2}\)\s\d{3}-\d{2}-\d{2}"
+              required
+            />
+            <button type="submit" class="form__submit">
+              <span>Зв’язатися з нами</span>
+              <div class="form__success"><i class="bi bi-check-circle"></i> Форма отправлена</div>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer-component></footer-component>
+
+    <script src="./js/mainFunctions.js"></script>
+    <script src="./js/header.js" type="text/javascript" defer></script>
+    <script src="./js/footer.js" type="text/javascript" defer></script>
+    <script src="./js/form.js" type="text/javascript" defer></script>
+  </body>
 </html>
