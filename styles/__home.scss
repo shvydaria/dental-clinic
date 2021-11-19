@@ -387,13 +387,9 @@
     }
   }
 
-  .absolute-wrapper {
-    top: 50px;
-  }
-
   .heading-accordion {
     padding-left: 0;
-    padding: 64px 0;
+    padding: 40px 0;
   }
 
   .contacts-block {
@@ -402,5 +398,15 @@
       display: block;
       margin: 24px 0 67px;
     }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .absolute-wrapper {
+    top: 50px;
+  }
+
+  .benefits__card {
+    // margin-bottom: 1.5rem;
   }
 }

@@ -107,10 +107,14 @@
 }
 
 @include media-breakpoint-down(sm) {
-  .header-social img {
-    height: 60px;
-    width: 60px;
+  .header-social {
+    height: 100vh;
+    img {
+      height: 60px;
+      width: 60px;
+    }
   }
+ 
     
   .navbar-toggler {
     width: 60px;
@@ -222,5 +226,22 @@
     &:last-child {
      margin-bottom: 39px;
     }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .navbar {
+    .btn {
+      padding: 12.5px 14.5px;
+    }
+  }
+  .number-text {
+    font-size: 1.5em;
+  }
+}
+
+@include media-breakpoint-down(xl) {
+  .nav-item:not(:last-child) {
+    margin: 0!important;
   }
 }
