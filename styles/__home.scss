@@ -59,6 +59,15 @@
   top: 120px;
 }
 
+.accordion-wrapper {
+  padding: 6.9rem 0;
+  background-color: $white;
+}
+
+.heading-accordion {
+  padding-left: 6.5rem;
+}
+
 .accordion {
   &-button {
     border-top: 1px solid #e8e7e6 !important;
@@ -107,7 +116,7 @@
   .line {
     color: $green;
     text-align: center;
-    img {
+    &-img {
       width: 63px;
     }
   }
@@ -192,6 +201,41 @@
   }
 }
 
+.contacts-block {
+  position: absolute;
+  width: 100%;
+  max-width: 343px;
+  top: 64px;
+  left: 80px;
+  padding: 48px 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $white;
+  border-radius: 15px;
+  box-shadow: 0 14px 23px rgba(28, 37, 44, 0.08);
+
+  &__title {
+    margin-bottom: 24px;
+    font-family: 'Avenir Next Cyr', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 36px;
+  }
+
+  &__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 4px 5px 15px rgba(84, 96, 97, 0.3);
+  }
+
+  &--mobile {
+    display: none;
+  }
+}
+
 @include media-breakpoint-down(sm) {
   .number {
     flex: 1;
@@ -208,7 +252,7 @@
         letter-spacing: 1.5px;
       }
       p {
-        font-size: 1em;
+        font-size: 1em!important;
         font-weight: 200;
         line-height: 1.5;
         letter-spacing: normal;
@@ -232,5 +276,34 @@
 
   .accordion-icon {
     margin-right: 10px;
+  }
+
+  .line {
+    &-img {
+      display: none;
+    }
+  }
+
+  .heading-accordion {
+    padding-left: 0;
+    padding: 40px 0;
+  }
+
+  .contacts-block {
+    display: none;
+    &--mobile {
+      display: block;
+      margin: 24px 0 67px;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .absolute-wrapper {
+    top: 50px;
+  }
+
+  .benefits__card {
+    // margin-bottom: 1.5rem;
   }
 }
