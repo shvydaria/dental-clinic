@@ -76,7 +76,7 @@ class Header extends HTMLElement {
             />
             <button type="submit" class="form__submit">
               <span>Зв’язатися з нами</span>
-              <div class="form__success"><i class="bi bi-check-circle"></i> Форма отправлена</div>
+              <div class="form__success"><i class="bi bi-check-circle"></i> Дякуємо! </div>
             </button>
           </form>
         </div>
@@ -134,7 +134,6 @@ if (history.scrollRestoration) {
 
 var scrollButton = document.getElementById("scrollButton");
 
-// When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
   scrollFunction();
 };
@@ -147,7 +146,6 @@ function scrollFunction() {
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
