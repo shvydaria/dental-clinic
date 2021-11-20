@@ -126,6 +126,12 @@ video {
 .parallax-image--3 {
   background-image: url("../img/1_page/photos/dentals.jpg");
 }
+.parallax-image--4 {
+  background-image: url("../img/4_page_price/prices-heading.jpg");
+}
+.parallax-image--5 {
+  background-image: url("../img/4_page_price/prices-form.jpg");
+}
 
 @include media-breakpoint-down(sm) {
   .parallax-image--1 {
@@ -136,5 +142,11 @@ video {
   }
   .parallax-image--3 {
     background-image: url("../img/1_page/photos/dentals-mob.jpg");
+  }
+  .parallax-image--4 {
+    background-image: url("../img/4_page_price/prices-heading.jpg");
+  }
+  .parallax-image--5 {
+    background-image: url("../img/4_page_price/prices-form.jpg");
   }
 }

@@ -7,23 +7,18 @@ class Header extends HTMLElement {
     this.innerHTML = `
     <div class="header_wraper">
       <nav class="navbar navbar-expand-sm">
-        <div class="container justify-content-between">
+        <div class="container justify-content-between align-items-center">
           <a class="navbar-brand" href="/">
             <img src="img/logo/logo-gray.png" alt="logo">
           </a>
     
           <!-- mobile btn -->
-          <button class="navbar-toggler d-xs-block d-sm-block d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+          <button class="navbar-toggler d-xs-block d-sm-block d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i></i>
           </button>
           <!-- mobile btn -->
     
-          <div class="collapse navbar-collapse justify-content-center" id="navbarScroll">
+          <div class="collapse navbar-collapse justify-content-center align-items-center" id="navbarSupportedContent">
             <ul id="nav" class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link" href="./index.html">Головна</a>

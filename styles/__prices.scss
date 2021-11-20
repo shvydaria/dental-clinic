@@ -62,6 +62,7 @@
     box-shadow: 0px 14px 23px rgba(0, 0, 0, 0.05);
     border-radius: 15px;
     padding: 70px 109px;
+    margin-bottom: 6rem;
     @include responsive_mobile() {
       padding: 0 16px;
     }

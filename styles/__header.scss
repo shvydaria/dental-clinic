@@ -59,7 +59,7 @@
   width: 60px;
 }
 
-@include media-breakpoint-down(sm) {
+@include media-breakpoint-down(md) {
   .header-social {
     height: 100vh;
     img {
@@ -70,7 +70,7 @@
 
   .navbar-toggler {
     width: 60px;
-    height: 45px;
+    height: 30px;
     position: relative;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -84,91 +84,57 @@
     &:focus {
       box-shadow: none;
     }
-    span {
-      display: block;
+    i {
+      position: relative;
+      display: inline-block;
+      width: 45px;
+      height: 3px;
+      color:#63666C;
+      font:bold 14px/.4 Helvetica;
+      text-transform: uppercase;
+      text-indent:-55px;
+      background: #63666C;
+      transition:all .2s ease-out;
+    }
+    i::before, i::after {
+      content:'';
+      width: 45px;
+      height: 3px;
+      background: #63666C;
       position: absolute;
-      height: 5px;
-      width: 50%;
-      background: $dark-gray;
-      opacity: 1;
-      -webkit-transform: rotate(0deg);
-      -moz-transform: rotate(0deg);
-      -o-transform: rotate(0deg);
-      transform: rotate(0deg);
-      -webkit-transition: 0.25s ease-in-out;
-      -moz-transition: 0.25s ease-in-out;
-      -o-transition: 0.25s ease-in-out;
-      transition: 0.25s ease-in-out;
+      left:0;
+      transition:all .2s ease-out;
     }
-    & span:nth-child(even) {
-      left: 50%;
-      border-radius: 0 9px 9px 0;
+    i::before {
+      top: -10px;
     }
-
-    & span:nth-child(odd) {
-      left: 0px;
-      border-radius: 9px 0 0 9px;
+    i::after {
+      bottom: -10px;
     }
-
-    & span:nth-child(1),
-    & span:nth-child(2) {
-      top: 0px;
+    &:hover i::before {
+      top: -12px;
     }
-
-    & span:nth-child(3),
-    & span:nth-child(4) {
-      top: 18px;
+    &:hover i::after {
+      bottom: -12px;
     }
-
-    & span:nth-child(5),
-    & span:nth-child(6) {
-      top: 36px;
+    &.open i {
+      background: none;
     }
-
-    &.open span:nth-child(1),
-    &.open span:nth-child(6) {
-      -webkit-transform: rotate(45deg);
-      -moz-transform: rotate(45deg);
-      -o-transform: rotate(45deg);
-      transform: rotate(45deg);
+    &.open i::before {
+      top:0;
+      -webkit-transform: rotateZ(45deg);
+         -moz-transform: rotateZ(45deg);
+          -ms-transform: rotateZ(45deg);
+           -o-transform: rotateZ(45deg);
+              transform: rotateZ(45deg);
     }
-
-    &.open span:nth-child(2),
-    &.open span:nth-child(5) {
-      -webkit-transform: rotate(-45deg);
-      -moz-transform: rotate(-45deg);
-      -o-transform: rotate(-45deg);
-      transform: rotate(-45deg);
-    }
-
-    &.open span:nth-child(1) {
-      left: 5px;
-      top: 7px;
-    }
-
-    &.open span:nth-child(2) {
-      left: calc(50% - 5px);
-      top: 7px;
-    }
-
-    &.open span:nth-child(3) {
-      left: -50%;
-      opacity: 0;
-    }
-
-    &.open span:nth-child(4) {
-      left: 100%;
-      opacity: 0;
-    }
-
-    &.open span:nth-child(5) {
-      left: 5px;
-      top: 29px;
-    }
-
-    &.open span:nth-child(6) {
-      left: calc(50% - 5px);
-      top: 29px;
+    &.open i::after {
+      bottom:0;
+      -webkit-transform: rotateZ(-45deg);
+         -moz-transform: rotateZ(-45deg);
+          -ms-transform: rotateZ(-45deg);
+           -o-transform: rotateZ(-45deg);
+              transform: rotateZ(-45deg);
     }
   }
 

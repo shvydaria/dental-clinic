@@ -11478,7 +11478,7 @@ textarea.form-control-lg {
   width: 60px;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .header-social {
     height: 100vh;
   }
@@ -11489,7 +11489,7 @@ textarea.form-control-lg {
 
   .navbar-toggler {
     width: 60px;
-    height: 45px;
+    height: 30px;
     position: relative;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -11504,74 +11504,57 @@ textarea.form-control-lg {
   .navbar-toggler:focus {
     box-shadow: none;
   }
-  .navbar-toggler span {
-    display: block;
+  .navbar-toggler i {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 3px;
+    color: #63666C;
+    font: bold 14px/0.4 Helvetica;
+    text-transform: uppercase;
+    text-indent: -55px;
+    background: #63666C;
+    transition: all 0.2s ease-out;
+  }
+  .navbar-toggler i::before, .navbar-toggler i::after {
+    content: "";
+    width: 45px;
+    height: 3px;
+    background: #63666C;
     position: absolute;
-    height: 5px;
-    width: 50%;
-    background: #62666c;
-    opacity: 1;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -webkit-transition: 0.25s ease-in-out;
-    -moz-transition: 0.25s ease-in-out;
-    -o-transition: 0.25s ease-in-out;
-    transition: 0.25s ease-in-out;
+    left: 0;
+    transition: all 0.2s ease-out;
   }
-  .navbar-toggler span:nth-child(even) {
-    left: 50%;
-    border-radius: 0 9px 9px 0;
+  .navbar-toggler i::before {
+    top: -10px;
   }
-  .navbar-toggler span:nth-child(odd) {
-    left: 0px;
-    border-radius: 9px 0 0 9px;
+  .navbar-toggler i::after {
+    bottom: -10px;
   }
-  .navbar-toggler span:nth-child(1), .navbar-toggler span:nth-child(2) {
-    top: 0px;
+  .navbar-toggler:hover i::before {
+    top: -12px;
   }
-  .navbar-toggler span:nth-child(3), .navbar-toggler span:nth-child(4) {
-    top: 18px;
+  .navbar-toggler:hover i::after {
+    bottom: -12px;
   }
-  .navbar-toggler span:nth-child(5), .navbar-toggler span:nth-child(6) {
-    top: 36px;
+  .navbar-toggler.open i {
+    background: none;
   }
-  .navbar-toggler.open span:nth-child(1), .navbar-toggler.open span:nth-child(6) {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
+  .navbar-toggler.open i::before {
+    top: 0;
+    -webkit-transform: rotateZ(45deg);
+    -moz-transform: rotateZ(45deg);
+    -ms-transform: rotateZ(45deg);
+    -o-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
   }
-  .navbar-toggler.open span:nth-child(2), .navbar-toggler.open span:nth-child(5) {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-  }
-  .navbar-toggler.open span:nth-child(1) {
-    left: 5px;
-    top: 7px;
-  }
-  .navbar-toggler.open span:nth-child(2) {
-    left: calc(50% - 5px);
-    top: 7px;
-  }
-  .navbar-toggler.open span:nth-child(3) {
-    left: -50%;
-    opacity: 0;
-  }
-  .navbar-toggler.open span:nth-child(4) {
-    left: 100%;
-    opacity: 0;
-  }
-  .navbar-toggler.open span:nth-child(5) {
-    left: 5px;
-    top: 29px;
-  }
-  .navbar-toggler.open span:nth-child(6) {
-    left: calc(50% - 5px);
-    top: 29px;
+  .navbar-toggler.open i::after {
+    bottom: 0;
+    -webkit-transform: rotateZ(-45deg);
+    -moz-transform: rotateZ(-45deg);
+    -ms-transform: rotateZ(-45deg);
+    -o-transform: rotateZ(-45deg);
+    transform: rotateZ(-45deg);
   }
 
   .nav-link {
@@ -13260,6 +13243,7 @@ textarea.form-control-lg {
   box-shadow: 0px 14px 23px rgba(0, 0, 0, 0.05);
   border-radius: 15px;
   padding: 70px 109px;
+  margin-bottom: 6rem;
 }
 @media only screen and (max-width: 767px) {
   .prices-list {
@@ -13456,6 +13440,14 @@ video {
   background-image: url("../img/1_page/photos/dentals.jpg");
 }
 
+.parallax-image--4 {
+  background-image: url("../img/4_page_price/prices-heading.jpg");
+}
+
+.parallax-image--5 {
+  background-image: url("../img/4_page_price/prices-form.jpg");
+}
+
 @media (max-width: 575.98px) {
   .parallax-image--1 {
     background-image: url("../img/1_page/photos/46-mob.jpg");
@@ -13467,6 +13459,14 @@ video {
 
   .parallax-image--3 {
     background-image: url("../img/1_page/photos/dentals-mob.jpg");
+  }
+
+  .parallax-image--4 {
+    background-image: url("../img/4_page_price/prices-heading.jpg");
+  }
+
+  .parallax-image--5 {
+    background-image: url("../img/4_page_price/prices-form.jpg");
   }
 }
 

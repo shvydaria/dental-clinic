@@ -19,7 +19,7 @@ if ( isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message'])
     $mail = new PHPMailer();
     $mail->From = 'info@gmail.com';      // from email
     $mail->FromName = 'Info';   // from name
-    $mail->AddAddress('voyt.print@gmail.com', 'Voyt'); // change to work e-mail
+    $mail->AddAddress('dariashvydka@gmail.com', 'DS'); // change to work e-mail
 
 
     $mail->IsHTML(true);        // email format HTML
