@@ -12,8 +12,7 @@ class Footer extends HTMLElement {
              <img src="img/logo/logo-white.png" alt="logo">
           </a>
     
-          <div class="navbar-collapse justify-content-center d-none d-xs-none d-sm-none d-md-block" id="navbarScroll">
-            <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <div class="navbar-collapse justify-content-center d-none d-xs-none d-sm-none d-md-none d-lg-none d-xl-block" id="navbarScroll">            <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="./index.html">Головна</a>
               </li>
@@ -31,13 +30,14 @@ class Footer extends HTMLElement {
               </li>
             </ul>
           </div>
-          
-          <a href="https://www.facebook.com/profile.php?id=100054469299460">
-            <img src="./img/icons/icons_contact/footer_fb.png" alt="ico-footer" class="footer__icon me-4">
-          </a>
-          <a href="https://www.instagram.com/vdc_dentistry/">
-            <img src="./img/icons/icons_contact/footer_inst.png" alt="ico-footer" class="footer__icon">
-          </a>
+          <div class="footer__social">
+            <a href="https://www.facebook.com/profile.php?id=100054469299460">
+              <img src="./img/icons/icons_contact/footer_fb.png" alt="ico-footer" class="footer__icon me-4">
+            </a>
+            <a href="https://www.instagram.com/vdc_dentistry/">
+              <img src="./img/icons/icons_contact/footer_inst.png" alt="ico-footer" class="footer__icon">
+            </a>
+          </div>
         </div>
       </nav>
       <div class="container line">

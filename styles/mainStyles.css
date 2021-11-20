@@ -11479,6 +11479,9 @@ textarea.form-control-lg {
 }
 
 @media (max-width: 575.98px) {
+  .header-social {
+    height: 100vh;
+  }
   .header-social img {
     height: 60px;
     width: 60px;
@@ -11580,6 +11583,20 @@ textarea.form-control-lg {
   }
   .navbar-nav .nav-item:last-child {
     margin-bottom: 39px;
+  }
+}
+@media (max-width: 991.98px) {
+  .navbar .btn {
+    padding: 12.5px 14.5px;
+  }
+
+  .number-text {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 1199.98px) {
+  .nav-item:not(:last-child) {
+    margin: 0 !important;
   }
 }
 .footer_wraper {
@@ -11882,6 +11899,15 @@ textarea.form-control-lg {
   top: 120px;
 }
 
+.accordion-wrapper {
+  padding: 6.9rem 0;
+  background-color: #ffffff;
+}
+
+.heading-accordion {
+  padding-left: 6.5rem;
+}
+
 .accordion-button {
   border-top: 1px solid #e8e7e6 !important;
   border-radius: 10px !important;
@@ -11927,7 +11953,7 @@ textarea.form-control-lg {
   color: rgba(3, 125, 72, 0.7);
   text-align: center;
 }
-.benefits .line img {
+.benefits .line-img {
   width: 63px;
 }
 .benefits__card {
@@ -12012,6 +12038,38 @@ textarea.form-control-lg {
   box-shadow: 4px 5px 15px rgba(84, 96, 97, 0.3);
 }
 
+.contacts-block {
+  position: absolute;
+  width: 100%;
+  max-width: 343px;
+  top: 64px;
+  left: 80px;
+  padding: 48px 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 14px 23px rgba(28, 37, 44, 0.08);
+}
+.contacts-block__title {
+  margin-bottom: 24px;
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 36px;
+}
+.contacts-block__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 4px 5px 15px rgba(84, 96, 97, 0.3);
+}
+.contacts-block--mobile {
+  display: none;
+}
+
 @media (max-width: 575.98px) {
   .number {
     flex: 1;
@@ -12027,7 +12085,7 @@ textarea.form-control-lg {
     letter-spacing: 1.5px;
   }
   .collage__content p {
-    font-size: 1em;
+    font-size: 1em !important;
     font-weight: 200;
     line-height: 1.5;
     letter-spacing: normal;
@@ -12047,6 +12105,28 @@ textarea.form-control-lg {
 
   .accordion-icon {
     margin-right: 10px;
+  }
+
+  .line-img {
+    display: none;
+  }
+
+  .heading-accordion {
+    padding-left: 0;
+    padding: 40px 0;
+  }
+
+  .contacts-block {
+    display: none;
+  }
+  .contacts-block--mobile {
+    display: block;
+    margin: 24px 0 67px;
+  }
+}
+@media (max-width: 991.98px) {
+  .absolute-wrapper {
+    top: 50px;
   }
 }
 .promo {
@@ -12974,7 +13054,7 @@ textarea.form-control-lg {
 }
 @media only screen and (min-width: 0px) and (max-width: 1384px) {
   .services-item-details__diagnostics .services-item-details__paragraph {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/2_page_about_us/picture/Mask_Groupfon.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/3_page_services/picture/services-details1.jpg);
     background-size: cover;
   }
 }
@@ -12989,7 +13069,7 @@ textarea.form-control-lg {
 }
 @media only screen and (min-width: 0px) and (max-width: 1384px) {
   .services-item-details__caries .services-item-details__paragraph {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/2_page_about_us/picture/Mask_Groupfon.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/3_page_services/picture/services-details2.jpg);
     background-size: cover;
   }
 }
@@ -13004,7 +13084,7 @@ textarea.form-control-lg {
 }
 @media only screen and (min-width: 0px) and (max-width: 1384px) {
   .services-item-details__whitening .services-item-details__paragraph {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/2_page_about_us/picture/Mask_Groupfon.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/3_page_services/picture/services-details3.jpg);
     background-size: cover;
   }
 }
@@ -13019,7 +13099,7 @@ textarea.form-control-lg {
 }
 @media only screen and (min-width: 0px) and (max-width: 1384px) {
   .services-item-details__channels .services-item-details__paragraph {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/2_page_about_us/picture/Mask_Groupfon.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/3_page_services/picture/services-details4.jpg);
     background-size: cover;
   }
 }
@@ -13034,7 +13114,7 @@ textarea.form-control-lg {
 }
 @media only screen and (min-width: 0px) and (max-width: 1384px) {
   .services-item-details__children .services-item-details__paragraph {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/2_page_about_us/picture/Mask_Groupfon.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/3_page_services/picture/services-details5.jpg);
     background-size: cover;
   }
 }
@@ -13049,7 +13129,7 @@ textarea.form-control-lg {
 }
 @media only screen and (min-width: 0px) and (max-width: 1384px) {
   .services-item-details__surgery .services-item-details__paragraph {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/2_page_about_us/picture/Mask_Groupfon.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/3_page_services/picture/services-details6.jpg);
     background-size: cover;
   }
 }
@@ -13064,7 +13144,7 @@ textarea.form-control-lg {
 }
 @media only screen and (min-width: 0px) and (max-width: 1384px) {
   .services-item-details__orthodontics .services-item-details__paragraph {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/2_page_about_us/picture/Mask_Groupfon.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/3_page_services/picture/services-details7.jpg);
     background-size: cover;
   }
 }
@@ -13079,7 +13159,7 @@ textarea.form-control-lg {
 }
 @media only screen and (min-width: 0px) and (max-width: 1384px) {
   .services-item-details__emax .services-item-details__paragraph {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/2_page_about_us/picture/Mask_Groupfon.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/3_page_services/picture/services-details8.jpg);
     background-size: cover;
   }
 }
@@ -13094,7 +13174,7 @@ textarea.form-control-lg {
 }
 @media only screen and (min-width: 0px) and (max-width: 1384px) {
   .services-item-details__denture .services-item-details__paragraph {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/2_page_about_us/picture/Mask_Groupfon.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/3_page_services/picture/services-details9.jpg);
     background-size: cover;
   }
 }
@@ -13103,6 +13183,15 @@ textarea.form-control-lg {
   padding-top: 82px;
 }
 
+@media (max-width: 575.98px) {
+  .services-title {
+    justify-content: center;
+  }
+
+  .services-item-details__paragraph {
+    border-radius: 0;
+  }
+}
 .prices {
   background-color: #f3f3f3;
 }
@@ -13149,6 +13238,7 @@ textarea.form-control-lg {
   background-color: #ffffff;
   box-shadow: 0px 14px 23px rgba(0, 0, 0, 0.05);
   padding: 31px 109px;
+  margin: 6.9rem 0;
 }
 @media only screen and (max-width: 767px) {
   .prices-attention {
@@ -13220,6 +13310,40 @@ textarea.form-control-lg {
   background-image: url("../img/icons/arrow-white.png");
 }
 
+@media (max-width: 575.98px) {
+  .prices .collage img {
+    height: 250px;
+  }
+  .prices-attention {
+    padding: 16px;
+    margin: 3rem 0;
+  }
+  .prices-attention p {
+    font-size: 1em;
+  }
+  .prices-list {
+    padding: 56px 0 0;
+  }
+  .prices-list .d-flex.align-items-center {
+    flex-direction: column;
+  }
+  .prices-list .heading {
+    font-size: 1.5em;
+  }
+  .prices-list .accordion-body {
+    font-size: 16px;
+  }
+  .prices-list .accordion-body__title {
+    flex: 2;
+  }
+  .prices-list .accordion-body__price {
+    text-align: right;
+    flex: 1;
+  }
+  .prices-list .accordion-button {
+    font-size: 18px;
+  }
+}
 .contacts-gallery .col:nth-last-child(n+2) {
   padding-right: 2px;
 }
