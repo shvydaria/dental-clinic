@@ -68,7 +68,7 @@
   justify-content: center;
   background-repeat: no-repeat;
   background-size: contain;
-  @include responsive(0px, 1384px) {
+  @include responsive(0px, 1199px) {
     margin-bottom: 36px;
     padding: 0;
   }
@@ -78,7 +78,7 @@
     font-weight: 500;
     letter-spacing: 0.04em;
     color: $black;
-    @include responsive(0px, 1384px) {
+    @include responsive(0px, 1199px) {
       color: $white;
     }
   }
@@ -91,7 +91,8 @@
     border-radius: 10px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
     transform: translateX(-360px);
-    @include responsive(0px, 1384px) {
+    @include responsive(0px, 1199px) {
+      padding: 30px;
       color: $white;
       background-color: rgba(0, 0, 0, 0.2);
       transform: none;
@@ -99,7 +100,7 @@
 
     &--reverse {
       transform: translateX(360px);
-      @include responsive(0px, 1384px) {
+      @include responsive(0px, 1199px) {
         transform: none;
       }
     }
@@ -110,7 +111,7 @@
     line-height: 17px;
     letter-spacing: 0.04em;
     color: $black;
-    @include responsive(0px, 1384px) {
+    @include responsive(0px, 1199px) {
       color: $white;
     }
 
@@ -121,12 +122,12 @@
 
   &__diagnostics {
     background-image: url(../img/3_page_services/picture/services-details1.jpg);
-    background-position: left calc(30% + 300px) center;
-    @include responsive(0px, 1384px) {
+    background-position: left calc(50% + 300px) center;
+    @include responsive(0px, 1199px) {
       background: none;
     }
     .services-item-details__paragraph {
-      @include responsive(0px, 1384px) {
+      @include responsive(0px, 1199px) {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url(../img/3_page_services/picture/services-details1.jpg);
         background-size: cover;
@@ -135,12 +136,12 @@
   }
   &__caries {
     background-image: url(../img/3_page_services/picture/services-details2.jpg);
-    background-position: right calc(30% + 300px) center;
-    @include responsive(0px, 1384px) {
+    background-position: right calc(50% + 300px) center;
+    @include responsive(0px, 1199px) {
       background: none;
     }
     .services-item-details__paragraph {
-      @include responsive(0px, 1384px) {
+      @include responsive(0px, 1199px) {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url(../img/3_page_services/picture/services-details2.jpg);
         background-size: cover;
@@ -149,12 +150,12 @@
   }
   &__whitening {
     background-image: url(../img/3_page_services/picture/services-details3.jpg);
-    background-position: left calc(30% + 300px) center;
-    @include responsive(0px, 1384px) {
+    background-position: left calc(50% + 300px) center;
+    @include responsive(0px, 1199px) {
       background: none;
     }
     .services-item-details__paragraph {
-      @include responsive(0px, 1384px) {
+      @include responsive(0px, 1199px) {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url(../img/3_page_services/picture/services-details3.jpg);
         background-size: cover;
@@ -163,12 +164,12 @@
   }
   &__channels {
     background-image: url(../img/3_page_services/picture/services-details4.jpg);
-    background-position: right calc(30% + 300px) center;
-    @include responsive(0px, 1384px) {
+    background-position: right calc(50% + 300px) center;
+    @include responsive(0px, 1199px) {
       background: none;
     }
     .services-item-details__paragraph {
-      @include responsive(0px, 1384px) {
+      @include responsive(0px, 1199px) {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url(../img/3_page_services/picture/services-details4.jpg);
         background-size: cover;
@@ -177,12 +178,12 @@
   }
   &__children {
     background-image: url(../img/3_page_services/picture/services-details5.jpg);
-    background-position: left calc(30% + 300px) center;
-    @include responsive(0px, 1384px) {
+    background-position: left calc(50% + 300px) center;
+    @include responsive(0px, 1199px) {
       background: none;
     }
     .services-item-details__paragraph {
-      @include responsive(0px, 1384px) {
+      @include responsive(0px, 1199px) {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url(../img/3_page_services/picture/services-details5.jpg);
         background-size: cover;
@@ -191,12 +192,12 @@
   }
   &__surgery {
     background-image: url(../img/3_page_services/picture/services-details6.jpg);
-    background-position: right calc(30% + 300px) center;
-    @include responsive(0px, 1384px) {
+    background-position: right calc(50% + 300px) center;
+    @include responsive(0px, 1199px) {
       background: none;
     }
     .services-item-details__paragraph {
-      @include responsive(0px, 1384px) {
+      @include responsive(0px, 1199px) {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url(../img/3_page_services/picture/services-details6.jpg);
         background-size: cover;
@@ -205,12 +206,12 @@
   }
   &__orthodontics {
     background-image: url(../img/3_page_services/picture/services-details7.jpg);
-    background-position: left calc(30% + 300px) center;
-    @include responsive(0px, 1384px) {
+    background-position: left calc(50% + 300px) center;
+    @include responsive(0px, 1199px) {
       background: none;
     }
     .services-item-details__paragraph {
-      @include responsive(0px, 1384px) {
+      @include responsive(0px, 1199px) {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url(../img/3_page_services/picture/services-details7.jpg);
         background-size: cover;
@@ -219,12 +220,12 @@
   }
   &__emax {
     background-image: url(../img/3_page_services/picture/services-details8.jpg);
-    background-position: right calc(30% + 300px) center;
-    @include responsive(0px, 1384px) {
+    background-position: right calc(50% + 300px) center;
+    @include responsive(0px, 1199px) {
       background: none;
     }
     .services-item-details__paragraph {
-      @include responsive(0px, 1384px) {
+      @include responsive(0px, 1199px) {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url(../img/3_page_services/picture/services-details8.jpg);
         background-size: cover;
@@ -233,12 +234,12 @@
   }
   &__denture {
     background-image: url(../img/3_page_services/picture/services-details9.jpg);
-    background-position: left calc(30% + 300px) center;
-    @include responsive(0px, 1384px) {
+    background-position: left calc(50% + 300px) center;
+    @include responsive(0px, 1199px) {
       background: none;
     }
     .services-item-details__paragraph {
-      @include responsive(0px, 1384px) {
+      @include responsive(0px, 1199px) {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url(../img/3_page_services/picture/services-details9.jpg);
         background-size: cover;

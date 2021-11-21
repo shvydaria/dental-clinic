@@ -19,12 +19,14 @@
 
 .number {
   width: 97px;
+  margin-bottom: 45px;
+
   img {
     height: 140px;
     width: auto;
   }
   &-text {
-    font-size: 1.9em;
+    font-size: 1.7em;
     font-weight: 300;
   }
 }
@@ -293,14 +295,14 @@
     display: none;
     &--mobile {
       display: block;
-      margin: 24px 0 67px;
+      margin: 68px 0;
     }
   }
 }
 
 @include media-breakpoint-down(lg) {
   .absolute-wrapper {
-    top: 50px;
+    top: 20%;
   }
 
   .benefits__card {

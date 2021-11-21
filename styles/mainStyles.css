@@ -11464,13 +11464,14 @@ textarea.form-control-lg {
   position: fixed;
   bottom: 20px;
   right: 30px;
-  z-index: 99;
+  z-index: 99999;
   border: none;
   outline: none;
   cursor: pointer;
   background: transparent;
   height: 50px;
   width: 50px;
+  opacity: 0.7;
 }
 
 .header-social img {
@@ -11509,18 +11510,19 @@ textarea.form-control-lg {
     display: inline-block;
     width: 45px;
     height: 3px;
-    color: #63666C;
+    color: #63666c;
     font: bold 14px/0.4 Helvetica;
     text-transform: uppercase;
     text-indent: -55px;
-    background: #63666C;
+    background: #63666c;
     transition: all 0.2s ease-out;
   }
-  .navbar-toggler i::before, .navbar-toggler i::after {
+  .navbar-toggler i::before,
+.navbar-toggler i::after {
     content: "";
     width: 45px;
     height: 3px;
-    background: #63666C;
+    background: #63666c;
     position: absolute;
     left: 0;
     transition: all 0.2s ease-out;
@@ -11557,12 +11559,13 @@ textarea.form-control-lg {
     transform: rotateZ(-45deg);
   }
 
-  .nav-link {
+  .header_wraper .navbar .nav-link {
+    color: #62666c;
     font-size: 30px !important;
   }
 
   .navbar-nav .nav-item:first-child {
-    margin-top: 39px;
+    margin-top: 39px !important;
   }
   .navbar-nav .nav-item:last-child {
     margin-bottom: 39px;
@@ -11570,7 +11573,7 @@ textarea.form-control-lg {
 }
 @media (max-width: 991.98px) {
   .navbar .btn {
-    padding: 12.5px 14.5px;
+    padding: 11px 14.5px;
   }
 
   .number-text {
@@ -11845,13 +11848,14 @@ textarea.form-control-lg {
 
 .number {
   width: 97px;
+  margin-bottom: 45px;
 }
 .number img {
   height: 140px;
   width: auto;
 }
 .number-text {
-  font-size: 1.9em;
+  font-size: 1.7em;
   font-weight: 300;
 }
 
@@ -12104,12 +12108,12 @@ textarea.form-control-lg {
   }
   .contacts-block--mobile {
     display: block;
-    margin: 24px 0 67px;
+    margin: 68px 0;
   }
 }
 @media (max-width: 991.98px) {
   .absolute-wrapper {
-    top: 50px;
+    top: 20%;
   }
 }
 .promo {
@@ -12125,7 +12129,7 @@ textarea.form-control-lg {
 }
 .promo__text {
   position: absolute;
-  bottom: 0;
+  bottom: 40px;
   font-family: "Avenir Next Cyr", sans-serif;
   font-size: 36px;
   font-weight: 500;
@@ -12133,11 +12137,13 @@ textarea.form-control-lg {
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .promo__text {
+    bottom: 0;
     font-size: 28px;
   }
 }
 @media only screen and (max-width: 767px) {
   .promo__text {
+    bottom: 0;
     font-size: 20px;
   }
 }
@@ -12158,6 +12164,7 @@ textarea.form-control-lg {
   }
 }
 .team__title {
+  margin-top: 57px;
   margin-bottom: 32px;
   display: flex;
   align-items: center;
@@ -12649,8 +12656,8 @@ textarea.form-control-lg {
 }
 @media only screen and (max-width: 767px) {
   .service-card {
-    padding: 16px;
-    min-height: 165px;
+    padding: 30px 16px;
+    min-height: 198px;
   }
 }
 .service-card__title {
@@ -12682,7 +12689,7 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   background-size: contain;
 }
-@media only screen and (min-width: 0px) and (max-width: 1384px) {
+@media only screen and (min-width: 0px) and (max-width: 1199px) {
   .advantage {
     margin-bottom: 36px;
     padding: 0;
@@ -12695,12 +12702,12 @@ textarea.form-control-lg {
   background-image: url(../img/2_page_about_us/picture/4.jpg);
   background-position: left calc(50% + 300px) center;
 }
-@media only screen and (min-width: 0px) and (max-width: 1384px) {
+@media only screen and (min-width: 0px) and (max-width: 1199px) {
   .advantage--laboratory {
     background: none;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 1384px) {
+@media only screen and (min-width: 0px) and (max-width: 1199px) {
   .advantage--laboratory .advantage__paragraph {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/2_page_about_us/picture/Mask_Groupfon.jpg);
     background-size: cover;
@@ -12710,12 +12717,12 @@ textarea.form-control-lg {
   background-image: url(../img/2_page_about_us/picture/3.jpg);
   background-position: right calc(50% + 300px) center;
 }
-@media only screen and (min-width: 0px) and (max-width: 1384px) {
+@media only screen and (min-width: 0px) and (max-width: 1199px) {
   .advantage--sterilization {
     background: none;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 1384px) {
+@media only screen and (min-width: 0px) and (max-width: 1199px) {
   .advantage--sterilization .advantage__paragraph {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/2_page_about_us/picture/Mask_Groupfon2.jpg);
     background-size: cover;
@@ -12725,12 +12732,12 @@ textarea.form-control-lg {
   background-image: url(../img/2_page_about_us/picture/2.jpg);
   background-position: left calc(50% + 300px) center;
 }
-@media only screen and (min-width: 0px) and (max-width: 1384px) {
+@media only screen and (min-width: 0px) and (max-width: 1199px) {
   .advantage--orthodontics {
     background: none;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 1384px) {
+@media only screen and (min-width: 0px) and (max-width: 1199px) {
   .advantage--orthodontics .advantage__paragraph {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/2_page_about_us/picture/Mask_Groupfon3.jpg);
     background-size: cover;
@@ -12751,7 +12758,7 @@ textarea.form-control-lg {
     padding: 56px 24px;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 1384px) {
+@media only screen and (min-width: 0px) and (max-width: 1199px) {
   .advantage__paragraph {
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.2);
@@ -12761,7 +12768,7 @@ textarea.form-control-lg {
 .advantage__paragraph--reverse {
   transform: translateX(300px);
 }
-@media only screen and (min-width: 0px) and (max-width: 1384px) {
+@media only screen and (min-width: 0px) and (max-width: 1199px) {
   .advantage__paragraph--reverse {
     transform: none;
   }
@@ -12772,7 +12779,7 @@ textarea.form-control-lg {
   letter-spacing: 0.04em;
   color: #62666c;
 }
-@media only screen and (min-width: 0px) and (max-width: 1384px) {
+@media only screen and (min-width: 0px) and (max-width: 1199px) {
   .advantage__title {
     color: #ffffff;
   }
@@ -12783,7 +12790,7 @@ textarea.form-control-lg {
   letter-spacing: 0.04em;
   color: #333333;
 }
-@media only screen and (min-width: 0px) and (max-width: 1384px) {
+@media only screen and (min-width: 0px) and (max-width: 1199px) {
   .advantage__text {
     color: #ffffff;
   }
@@ -12804,16 +12811,16 @@ textarea.form-control-lg {
   box-shadow: 0 14px 23px rgba(28, 37, 44, 0.08);
   transition: background-color 0.3s;
 }
-@media only screen and (min-width: 0px) and (max-width: 1384px) {
+@media only screen and (min-width: 0px) and (max-width: 1199px) {
   .advantage__button {
     color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.4);
   }
 }
 .advantage__button:hover {
   background-color: #f3f3f3;
 }
-@media only screen and (min-width: 0px) and (max-width: 1384px) {
+@media only screen and (min-width: 0px) and (max-width: 1199px) {
   .advantage__button:hover {
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.9);
@@ -12971,7 +12978,7 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   background-size: contain;
 }
-@media only screen and (min-width: 0px) and (max-width: 1384px) {
+@media only screen and (min-width: 0px) and (max-width: 1199px) {
   .services-item-details {
     margin-bottom: 36px;
     padding: 0;
@@ -12983,7 +12990,7 @@ textarea.form-control-lg {
   letter-spacing: 0.04em;
   color: #333333;
 }
-@media only screen and (min-width: 0px) and (max-width: 1384px) {
+@media only screen and (min-width: 0px) and (max-width: 1199px) {
   .services-item-details__title {
     color: #ffffff;
   }
@@ -12997,8 +13004,9 @@ textarea.form-control-lg {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   transform: translateX(-360px);
 }
-@media only screen and (min-width: 0px) and (max-width: 1384px) {
+@media only screen and (min-width: 0px) and (max-width: 1199px) {
   .services-item-details__paragraph {
+    padding: 30px;
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.2);
     transform: none;
@@ -13007,7 +13015,7 @@ textarea.form-control-lg {
 .services-item-details__paragraph--reverse {
   transform: translateX(360px);
 }
-@media only screen and (min-width: 0px) and (max-width: 1384px) {
+@media only screen and (min-width: 0px) and (max-width: 1199px) {
   .services-item-details__paragraph--reverse {
     transform: none;
   }
@@ -13018,7 +13026,7 @@ textarea.form-control-lg {
   letter-spacing: 0.04em;
   color: #333333;
 }
-@media only screen and (min-width: 0px) and (max-width: 1384px) {
+@media only screen and (min-width: 0px) and (max-width: 1199px) {
   .services-item-details__text {
     color: #ffffff;
   }
@@ -13028,14 +13036,14 @@ textarea.form-control-lg {
 }
 .services-item-details__diagnostics {
   background-image: url(../img/3_page_services/picture/services-details1.jpg);
-  background-position: left calc(30% + 300px) center;
+  background-position: left calc(50% + 300px) center;
 }
-@media only screen and (min-width: 0px) and (max-width: 1384px) {
+@media only screen and (min-width: 0px) and (max-width: 1199px) {
   .services-item-details__diagnostics {
     background: none;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 1384px) {
+@media only screen and (min-width: 0px) and (max-width: 1199px) {
   .services-item-details__diagnostics .services-item-details__paragraph {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/3_page_services/picture/services-details1.jpg);
     background-size: cover;
@@ -13043,14 +13051,14 @@ textarea.form-control-lg {
 }
 .services-item-details__caries {
   background-image: url(../img/3_page_services/picture/services-details2.jpg);
-  background-position: right calc(30% + 300px) center;
+  background-position: right calc(50% + 300px) center;
 }
-@media only screen and (min-width: 0px) and (max-width: 1384px) {
+@media only screen and (min-width: 0px) and (max-width: 1199px) {
   .services-item-details__caries {
     background: none;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 1384px) {
+@media only screen and (min-width: 0px) and (max-width: 1199px) {
   .services-item-details__caries .services-item-details__paragraph {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/3_page_services/picture/services-details2.jpg);
     background-size: cover;
@@ -13058,14 +13066,14 @@ textarea.form-control-lg {
 }
 .services-item-details__whitening {
   background-image: url(../img/3_page_services/picture/services-details3.jpg);
-  background-position: left calc(30% + 300px) center;
+  background-position: left calc(50% + 300px) center;
 }
-@media only screen and (min-width: 0px) and (max-width: 1384px) {
+@media only screen and (min-width: 0px) and (max-width: 1199px) {
   .services-item-details__whitening {
     background: none;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 1384px) {
+@media only screen and (min-width: 0px) and (max-width: 1199px) {
   .services-item-details__whitening .services-item-details__paragraph {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/3_page_services/picture/services-details3.jpg);
     background-size: cover;
@@ -13073,14 +13081,14 @@ textarea.form-control-lg {
 }
 .services-item-details__channels {
   background-image: url(../img/3_page_services/picture/services-details4.jpg);
-  background-position: right calc(30% + 300px) center;
+  background-position: right calc(50% + 300px) center;
 }
-@media only screen and (min-width: 0px) and (max-width: 1384px) {
+@media only screen and (min-width: 0px) and (max-width: 1199px) {
   .services-item-details__channels {
     background: none;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 1384px) {
+@media only screen and (min-width: 0px) and (max-width: 1199px) {
   .services-item-details__channels .services-item-details__paragraph {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/3_page_services/picture/services-details4.jpg);
     background-size: cover;
@@ -13088,14 +13096,14 @@ textarea.form-control-lg {
 }
 .services-item-details__children {
   background-image: url(../img/3_page_services/picture/services-details5.jpg);
-  background-position: left calc(30% + 300px) center;
+  background-position: left calc(50% + 300px) center;
 }
-@media only screen and (min-width: 0px) and (max-width: 1384px) {
+@media only screen and (min-width: 0px) and (max-width: 1199px) {
   .services-item-details__children {
     background: none;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 1384px) {
+@media only screen and (min-width: 0px) and (max-width: 1199px) {
   .services-item-details__children .services-item-details__paragraph {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/3_page_services/picture/services-details5.jpg);
     background-size: cover;
@@ -13103,14 +13111,14 @@ textarea.form-control-lg {
 }
 .services-item-details__surgery {
   background-image: url(../img/3_page_services/picture/services-details6.jpg);
-  background-position: right calc(30% + 300px) center;
+  background-position: right calc(50% + 300px) center;
 }
-@media only screen and (min-width: 0px) and (max-width: 1384px) {
+@media only screen and (min-width: 0px) and (max-width: 1199px) {
   .services-item-details__surgery {
     background: none;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 1384px) {
+@media only screen and (min-width: 0px) and (max-width: 1199px) {
   .services-item-details__surgery .services-item-details__paragraph {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/3_page_services/picture/services-details6.jpg);
     background-size: cover;
@@ -13118,14 +13126,14 @@ textarea.form-control-lg {
 }
 .services-item-details__orthodontics {
   background-image: url(../img/3_page_services/picture/services-details7.jpg);
-  background-position: left calc(30% + 300px) center;
+  background-position: left calc(50% + 300px) center;
 }
-@media only screen and (min-width: 0px) and (max-width: 1384px) {
+@media only screen and (min-width: 0px) and (max-width: 1199px) {
   .services-item-details__orthodontics {
     background: none;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 1384px) {
+@media only screen and (min-width: 0px) and (max-width: 1199px) {
   .services-item-details__orthodontics .services-item-details__paragraph {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/3_page_services/picture/services-details7.jpg);
     background-size: cover;
@@ -13133,14 +13141,14 @@ textarea.form-control-lg {
 }
 .services-item-details__emax {
   background-image: url(../img/3_page_services/picture/services-details8.jpg);
-  background-position: right calc(30% + 300px) center;
+  background-position: right calc(50% + 300px) center;
 }
-@media only screen and (min-width: 0px) and (max-width: 1384px) {
+@media only screen and (min-width: 0px) and (max-width: 1199px) {
   .services-item-details__emax {
     background: none;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 1384px) {
+@media only screen and (min-width: 0px) and (max-width: 1199px) {
   .services-item-details__emax .services-item-details__paragraph {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/3_page_services/picture/services-details8.jpg);
     background-size: cover;
@@ -13148,14 +13156,14 @@ textarea.form-control-lg {
 }
 .services-item-details__denture {
   background-image: url(../img/3_page_services/picture/services-details9.jpg);
-  background-position: left calc(30% + 300px) center;
+  background-position: left calc(50% + 300px) center;
 }
-@media only screen and (min-width: 0px) and (max-width: 1384px) {
+@media only screen and (min-width: 0px) and (max-width: 1199px) {
   .services-item-details__denture {
     background: none;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 1384px) {
+@media only screen and (min-width: 0px) and (max-width: 1199px) {
   .services-item-details__denture .services-item-details__paragraph {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/3_page_services/picture/services-details9.jpg);
     background-size: cover;
@@ -13190,11 +13198,6 @@ textarea.form-control-lg {
 @media only screen and (max-width: 767px) {
   .prices .collage img {
     height: 376px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .prices .collage .absolute-wrapper {
-    top: 56px;
   }
 }
 .prices .collage__content .heading {
@@ -13294,24 +13297,24 @@ textarea.form-control-lg {
   background-image: url("../img/icons/arrow-white.png");
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 1199.98px) {
   .prices .collage img {
     height: 250px;
   }
   .prices-attention {
     padding: 16px;
-    margin: 3rem 0;
+    margin: 3rem 0 0;
   }
   .prices-attention p {
     font-size: 1em;
+    margin-bottom: 0;
   }
   .prices-list {
-    padding: 56px 0 0;
-  }
-  .prices-list .d-flex.align-items-center {
-    flex-direction: column;
+    padding: 56px 0;
+    margin-bottom: 0;
   }
   .prices-list .heading {
+    margin: 0;
     font-size: 1.5em;
   }
   .prices-list .accordion-body {
@@ -13386,7 +13389,7 @@ video {
 
 .btn {
   border-radius: 15px;
-  padding: 14.5px 27.5px;
+  padding: 11px 27.5px;
 }
 .btn-outline-success {
   color: #333333;
@@ -13421,7 +13424,7 @@ video {
 }
 
 .parallax {
-  min-height: 400px;
+  min-height: 350px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -13449,6 +13452,10 @@ video {
 }
 
 @media (max-width: 575.98px) {
+  .parallax {
+    min-height: 500px;
+  }
+
   .parallax-image--1 {
     background-image: url("../img/1_page/photos/46-mob.jpg");
   }

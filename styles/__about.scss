@@ -35,15 +35,17 @@
 
   &__text {
     position: absolute;
-    bottom: 0;
+    bottom: 40px;
     font-family: "Avenir Next Cyr", sans-serif;
     font-size: 36px;
     font-weight: 500;
     color: $white;
     @include responsive_tab() {
+      bottom: 0;
       font-size: 28px;
     }
     @include responsive_mobile() {
+      bottom: 0;
       font-size: 20px;
     }
     @include responsive(0px, 428px) {
@@ -61,6 +63,7 @@
   }
 
   &__title {
+    margin-top: 57px;
     margin-bottom: 32px;
     display: flex;
     align-items: center;
@@ -421,8 +424,8 @@
   background-color: $white;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   @include responsive_mobile() {
-    padding: 16px;
-    min-height: 165px;
+    padding: 30px 16px;
+    min-height: 198px;
   }
 
   &__title {
@@ -451,7 +454,7 @@
   justify-content: center;
   background-repeat: no-repeat;
   background-size: contain;
-  @include responsive(0px, 1384px) {
+  @include responsive(0px, 1199px) {
     margin-bottom: 36px;
     padding: 0;
   }
@@ -463,12 +466,12 @@
   &--laboratory {
     background-image: url(../img/2_page_about_us/picture/4.jpg);
     background-position: left calc(50% + 300px) center;
-    @include responsive(0px, 1384px) {
+    @include responsive(0px, 1199px) {
       background: none;
     }
 
     .advantage__paragraph {
-      @include responsive(0px, 1384px) {
+      @include responsive(0px, 1199px) {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
           url(../img/else/mob/2_page_about_us/picture/Mask_Groupfon.jpg);
         background-size: cover;
@@ -479,12 +482,12 @@
   &--sterilization {
     background-image: url(../img/2_page_about_us/picture/3.jpg);
     background-position: right calc(50% + 300px) center;
-    @include responsive(0px, 1384px) {
+    @include responsive(0px, 1199px) {
       background: none;
     }
 
     .advantage__paragraph {
-      @include responsive(0px, 1384px) {
+      @include responsive(0px, 1199px) {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
           url(../img/else/mob/2_page_about_us/picture/Mask_Groupfon2.jpg);
         background-size: cover;
@@ -495,12 +498,12 @@
   &--orthodontics {
     background-image: url(../img/2_page_about_us/picture/2.jpg);
     background-position: left calc(50% + 300px) center;
-    @include responsive(0px, 1384px) {
+    @include responsive(0px, 1199px) {
       background: none;
     }
 
     .advantage__paragraph {
-      @include responsive(0px, 1384px) {
+      @include responsive(0px, 1199px) {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
           url(../img/else/mob/2_page_about_us/picture/Mask_Groupfon3.jpg);
         background-size: cover;
@@ -520,7 +523,7 @@
     @include responsive_mobile() {
       padding: 56px 24px;
     }
-    @include responsive(0px, 1384px) {
+    @include responsive(0px, 1199px) {
       color: $white;
       background-color: rgba(0, 0, 0, 0.2);
       transform: none;
@@ -528,7 +531,7 @@
 
     &--reverse {
       transform: translateX(300px);
-      @include responsive(0px, 1384px) {
+      @include responsive(0px, 1199px) {
         transform: none;
       }
     }
@@ -539,7 +542,7 @@
     font-weight: 500;
     letter-spacing: 0.04em;
     color: $dark-gray;
-    @include responsive(0px, 1384px) {
+    @include responsive(0px, 1199px) {
       color: $white;
     }
   }
@@ -549,7 +552,7 @@
     line-height: 17px;
     letter-spacing: 0.04em;
     color: $black;
-    @include responsive(0px, 1384px) {
+    @include responsive(0px, 1199px) {
       color: $white;
     }
 
@@ -570,14 +573,14 @@
     border-radius: 15px;
     box-shadow: 0 14px 23px rgba(28, 37, 44, 0.08);
     transition: background-color 0.3s;
-    @include responsive(0px, 1384px) {
+    @include responsive(0px, 1199px) {
       color: $white;
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: rgba(0, 0, 0, 0.4);
     }
 
     &:hover {
       background-color: $beige;
-      @include responsive(0px, 1384px) {
+      @include responsive(0px, 1199px) {
         color: $white;
         background-color: rgba(0, 0, 0, 0.9);
       }

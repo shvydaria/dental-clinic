@@ -12,11 +12,6 @@
         height: 376px;
       }
     }
-    .absolute-wrapper {
-      @include responsive_mobile() {
-        top: 56px;
-      }
-    }
     &__content {
       .heading {
         color: $white;
@@ -113,7 +108,7 @@
   }
 }
 
-@include media-breakpoint-down(sm) {
+@include media-breakpoint-down(xl) {
   .prices {  
     .collage {
       img {
@@ -122,17 +117,17 @@
     }
     &-attention {
       padding: 16px;
-      margin: 3rem 0;
+      margin: 3rem 0 0;
       p {
         font-size: 1em;
+        margin-bottom: 0;
       }
     }
     &-list {
-      padding: 56px 0 0;
-      .d-flex.align-items-center {
-        flex-direction: column;
-      }
+      padding: 56px 0;
+      margin-bottom: 0;
       .heading {
+        margin: 0;
         font-size: 1.5em;
       }
       .accordion {

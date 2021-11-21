@@ -69,7 +69,7 @@ video {
 // buttons
 .btn {
   border-radius: 15px;
-  padding: 14.5px 27.5px;
+  padding: 11px 27.5px;
 
   &-outline-success {
     color: $black;
@@ -110,7 +110,7 @@ video {
 
 // parallax
 .parallax {
-  min-height: 400px;
+  min-height: 350px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -134,6 +134,9 @@ video {
 }
 
 @include media-breakpoint-down(sm) {
+  .parallax {
+    min-height: 500px;
+  }
   .parallax-image--1 {
     background-image: url("../img/1_page/photos/46-mob.jpg");
   }
