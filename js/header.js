@@ -56,7 +56,7 @@ class Header extends HTMLElement {
       <div class="modal-content doctor-modal__content">
         <button
           type="button"
-          class="btn-close doctor-modal__close-btn"
+          class="btn-close-white doctor-modal__close-btn"
           data-bs-dismiss="modal"
           aria-label="Close"
         ></button>

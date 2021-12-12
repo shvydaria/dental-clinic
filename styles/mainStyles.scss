@@ -88,8 +88,10 @@ video {
   min-height: calc(100vh - 212px);
 
   img {
-    height: 284px;
-    width: auto;
+    // height: 284px;
+    // width: auto;
+    width: 100%;
+    height: auto;
   }
 
   .heading,
@@ -133,7 +135,7 @@ video {
   background-image: url("../img/4_page_price/prices-form.jpg");
 }
 
-@include media-breakpoint-down(sm) {
+@include media-breakpoint-down(lg) {
   .parallax {
     min-height: 500px;
   }
@@ -147,7 +149,7 @@ video {
     background-image: url("../img/1_page/photos/dentals-mob.jpg");
   }
   .parallax-image--4 {
-    background-image: url("../img/4_page_price/prices-heading.jpg");
+    background-image: url("../img/else/mob/4_page_price/picture/ph.jpg");
   }
   .parallax-image--5 {
     background-image: url("../img/4_page_price/prices-form.jpg");

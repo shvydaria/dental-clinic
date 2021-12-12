@@ -11682,7 +11682,7 @@ textarea.form-control-lg {
     left: 35%;
   }
 }
-@media only screen and (max-width: 575.98px) and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 575.98px) and (max-width: 1024px) {
   .carousel-control-prev {
     left: 32%;
   }
@@ -11703,7 +11703,7 @@ textarea.form-control-lg {
     right: 35%;
   }
 }
-@media only screen and (max-width: 575.98px) and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 575.98px) and (max-width: 1024px) {
   .carousel-control-next {
     right: 32%;
   }
@@ -11737,7 +11737,7 @@ textarea.form-control-lg {
   background-color: #ffffff;
   border-radius: 15px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
   .form {
     padding: 32px;
     max-width: 416px;
@@ -11751,7 +11751,7 @@ textarea.form-control-lg {
   text-align: center;
   color: #333333;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
   .form__title {
     margin-bottom: 24px;
     font-size: 1em;
@@ -11770,7 +11770,7 @@ textarea.form-control-lg {
   box-shadow: 0 4px 8px rgba(28, 37, 44, 0.08);
   transition: border-color 0.3s;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
   .form__input {
     margin-bottom: 16px;
     padding: 8px 32px;
@@ -11799,7 +11799,7 @@ textarea.form-control-lg {
   overflow: hidden;
   transition: background-color 0.3s;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
   .form__submit {
     margin-top: 8px;
     padding: 12px 32px;
@@ -11974,7 +11974,7 @@ textarea.form-control-lg {
     padding: 0 8px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .form-container {
     justify-content: center;
     padding: 0 8px;
@@ -11983,7 +11983,7 @@ textarea.form-control-lg {
 .form-container--reverse {
   justify-content: flex-start;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .form-container--reverse {
     justify-content: flex-start;
     padding: 0 60px;
@@ -12060,7 +12060,7 @@ textarea.form-control-lg {
 @media (max-width: 575.98px) {
   .number {
     flex: 1;
-    margin-bottom: 24px;
+    margin-bottom: 74px;
   }
   .number-text {
     flex: 2;
@@ -12135,7 +12135,7 @@ textarea.form-control-lg {
   font-weight: 500;
   color: #ffffff;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .promo__text {
     bottom: 0;
     font-size: 28px;
@@ -12334,7 +12334,7 @@ textarea.form-control-lg {
   width: 50%;
   background-repeat: no-repeat;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .doctor-modal__article {
     padding: 60px;
     width: 100%;
@@ -12353,7 +12353,7 @@ textarea.form-control-lg {
   color: #62666c;
   letter-spacing: 0.04em;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .doctor-modal__article h3, .doctor-modal__article .h3 {
     color: #ffffff;
   }
@@ -12370,7 +12370,7 @@ textarea.form-control-lg {
   letter-spacing: 0.04em;
   color: #333333;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .doctor-modal__article p {
     color: #ffffff;
   }
@@ -12385,7 +12385,7 @@ textarea.form-control-lg {
   background-size: 242px;
   background-position: 55% 95%;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .doctor-modal__article--1 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/2_page_about_us/picture/modal/doc1-4.jpg");
     background-size: cover;
@@ -12404,7 +12404,7 @@ textarea.form-control-lg {
   background-size: 350px;
   background-position: -25% 115%;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .doctor-modal__article--2 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/2_page_about_us/picture/modal/doc1-7.jpg");
     background-size: cover;
@@ -12423,7 +12423,7 @@ textarea.form-control-lg {
   background-size: 382px;
   background-position: 2% 0%;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .doctor-modal__article--3 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/2_page_about_us/picture/modal/doc1-1.jpg");
     background-size: cover;
@@ -12448,7 +12448,7 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   transform: scaleX(-1);
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .doctor-modal__article--3:before {
     content: none;
   }
@@ -12463,7 +12463,7 @@ textarea.form-control-lg {
   background-size: 350px, 300px;
   background-position: 128% -21%, 128% 118%;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .doctor-modal__article--4 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/2_page_about_us/picture/modal/doc1.jpg");
     background-size: cover;
@@ -12482,7 +12482,7 @@ textarea.form-control-lg {
   background-size: 420px, 375px;
   background-position: 153% 30%, -53% 121%;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .doctor-modal__article--5 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/2_page_about_us/picture/modal/doc1-2.jpg");
     background-size: cover;
@@ -12501,7 +12501,7 @@ textarea.form-control-lg {
   background-size: 350px;
   background-position: 90% 102%;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .doctor-modal__article--6 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/2_page_about_us/picture/modal/doc1-6.jpg");
     background-size: cover;
@@ -12520,7 +12520,7 @@ textarea.form-control-lg {
   background-size: 400px;
   background-position: -50% -44px;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .doctor-modal__article--7 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/2_page_about_us/picture/modal/doc1-3.jpg");
     background-size: cover;
@@ -12545,7 +12545,7 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   transform: rotate(-150deg);
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .doctor-modal__article--7:before {
     content: none;
   }
@@ -12560,7 +12560,7 @@ textarea.form-control-lg {
   background-size: 382px;
   background-position: 2% 0%;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .doctor-modal__article--8 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/2_page_about_us/picture/modal/doc1-5.jpg");
     background-size: cover;
@@ -12585,7 +12585,7 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   transform: scaleX(-1);
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .doctor-modal__article--8:before {
     content: none;
   }
@@ -12598,7 +12598,7 @@ textarea.form-control-lg {
 .doctor-modal__photo {
   width: 50%;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .doctor-modal__photo {
     display: none;
   }
@@ -12620,6 +12620,7 @@ textarea.form-control-lg {
   font-family: "Avenir Next Cyr", sans-serif;
 }
 .services__title {
+  margin-top: 54px;
   margin-bottom: 54px;
   font-size: 40px;
   font-weight: 500;
@@ -12906,12 +12907,15 @@ textarea.form-control-lg {
     justify-content: center;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .map__form {
     justify-content: center;
   }
 }
 
+.services-title {
+  margin-top: 132px;
+}
 .services-title .heading {
   color: #62666c;
   font-size: 2.2em;
@@ -13045,7 +13049,7 @@ textarea.form-control-lg {
 }
 @media only screen and (min-width: 0px) and (max-width: 1199px) {
   .services-item-details__diagnostics .services-item-details__paragraph {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/3_page_services/picture/services-details1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/3_page_services/picture/services-details1.jpg);
     background-size: cover;
   }
 }
@@ -13060,7 +13064,7 @@ textarea.form-control-lg {
 }
 @media only screen and (min-width: 0px) and (max-width: 1199px) {
   .services-item-details__caries .services-item-details__paragraph {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/3_page_services/picture/services-details2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/3_page_services/picture/services-details2.jpg);
     background-size: cover;
   }
 }
@@ -13075,7 +13079,7 @@ textarea.form-control-lg {
 }
 @media only screen and (min-width: 0px) and (max-width: 1199px) {
   .services-item-details__whitening .services-item-details__paragraph {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/3_page_services/picture/services-details3.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/3_page_services/picture/services-details3.jpg);
     background-size: cover;
   }
 }
@@ -13090,7 +13094,7 @@ textarea.form-control-lg {
 }
 @media only screen and (min-width: 0px) and (max-width: 1199px) {
   .services-item-details__channels .services-item-details__paragraph {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/3_page_services/picture/services-details4.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/3_page_services/picture/services-details4.jpg);
     background-size: cover;
   }
 }
@@ -13105,7 +13109,7 @@ textarea.form-control-lg {
 }
 @media only screen and (min-width: 0px) and (max-width: 1199px) {
   .services-item-details__children .services-item-details__paragraph {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/3_page_services/picture/services-details5.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/3_page_services/picture/services-details5.jpg);
     background-size: cover;
   }
 }
@@ -13120,7 +13124,7 @@ textarea.form-control-lg {
 }
 @media only screen and (min-width: 0px) and (max-width: 1199px) {
   .services-item-details__surgery .services-item-details__paragraph {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/3_page_services/picture/services-details6.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/3_page_services/picture/services-details6.jpg);
     background-size: cover;
   }
 }
@@ -13135,7 +13139,7 @@ textarea.form-control-lg {
 }
 @media only screen and (min-width: 0px) and (max-width: 1199px) {
   .services-item-details__orthodontics .services-item-details__paragraph {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/3_page_services/picture/services-details7.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/3_page_services/picture/services-details7.jpg);
     background-size: cover;
   }
 }
@@ -13150,7 +13154,7 @@ textarea.form-control-lg {
 }
 @media only screen and (min-width: 0px) and (max-width: 1199px) {
   .services-item-details__emax .services-item-details__paragraph {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/3_page_services/picture/services-details8.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/3_page_services/picture/services-details8.jpg);
     background-size: cover;
   }
 }
@@ -13165,9 +13169,16 @@ textarea.form-control-lg {
 }
 @media only screen and (min-width: 0px) and (max-width: 1199px) {
   .services-item-details__denture .services-item-details__paragraph {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/3_page_services/picture/services-details9.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/3_page_services/picture/services-details9.jpg);
     background-size: cover;
   }
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -50px;
+  visibility: hidden;
 }
 
 .anchor:nth-child(n+2) {
@@ -13303,7 +13314,7 @@ textarea.form-control-lg {
   }
   .prices-attention {
     padding: 16px;
-    margin: 3rem 0 0;
+    margin: 3rem 0 3rem 0;
   }
   .prices-attention p {
     font-size: 1em;
@@ -13381,7 +13392,7 @@ video {
 .tab_hidden {
   display: block;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .tab_hidden {
     display: none;
   }
@@ -13405,8 +13416,8 @@ video {
   min-height: calc(100vh - 212px);
 }
 .page-wrapper img {
-  height: 284px;
-  width: auto;
+  width: 100%;
+  height: auto;
 }
 .page-wrapper .heading,
 .page-wrapper p {
@@ -13451,7 +13462,7 @@ video {
   background-image: url("../img/4_page_price/prices-form.jpg");
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
   .parallax {
     min-height: 500px;
   }
@@ -13469,7 +13480,7 @@ video {
   }
 
   .parallax-image--4 {
-    background-image: url("../img/4_page_price/prices-heading.jpg");
+    background-image: url("../img/else/mob/4_page_price/picture/ph.jpg");
   }
 
   .parallax-image--5 {
