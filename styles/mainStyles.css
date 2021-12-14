@@ -12308,14 +12308,20 @@ textarea.form-control-lg {
 }
 .doctor-modal__close-btn {
   position: absolute;
-  top: -40px;
-  right: -40px;
-  font-size: 24px;
+  top: -24px;
+  right: -32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  overflow: hidden;
 }
 @media only screen and (max-width: 767px) {
   .doctor-modal__close-btn {
-    top: 10px;
-    right: 32px;
+    top: 8px;
+    right: 8px;
     z-index: 10001;
   }
 }
@@ -12833,16 +12839,25 @@ textarea.form-control-lg {
     z-index: 10000;
   }
 }
+.advantage-modal .modal-content {
+  top: 0;
+}
 .advantage-modal__close-btn {
   position: absolute;
-  top: -40px;
-  right: -40px;
-  font-size: 24px;
+  top: -24px;
+  right: -32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  overflow: hidden;
 }
 @media only screen and (max-width: 767px) {
   .advantage-modal__close-btn {
-    top: 10px;
-    right: 32px;
+    top: 8px;
+    right: 8px;
     z-index: 10001;
   }
 }
