@@ -12335,6 +12335,11 @@ textarea.form-control-lg {
   border-radius: 10px;
   overflow: hidden;
 }
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .doctor-modal__body {
+    border-radius: 0;
+  }
+}
 .doctor-modal__article {
   padding: 60px;
   width: 50%;
