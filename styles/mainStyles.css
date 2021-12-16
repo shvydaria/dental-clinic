@@ -11453,7 +11453,7 @@ textarea.form-control-lg {
 }
 
 #formModal .modal-content {
-  min-width: 628px;
+  width: auto;
   background-color: #ffffff;
   border-radius: 15px;
   box-shadow: 0 14px 23px rgba(28, 37, 44, 0.08);
@@ -12308,14 +12308,20 @@ textarea.form-control-lg {
 }
 .doctor-modal__close-btn {
   position: absolute;
-  top: -40px;
-  right: -40px;
-  font-size: 24px;
+  top: -24px;
+  right: -32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  overflow: hidden;
 }
 @media only screen and (max-width: 767px) {
   .doctor-modal__close-btn {
-    top: 10px;
-    right: 32px;
+    top: 8px;
+    right: 8px;
     z-index: 10001;
   }
 }
@@ -12328,6 +12334,11 @@ textarea.form-control-lg {
   display: flex;
   border-radius: 10px;
   overflow: hidden;
+}
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .doctor-modal__body {
+    border-radius: 0;
+  }
 }
 .doctor-modal__article {
   padding: 60px;
@@ -12833,16 +12844,25 @@ textarea.form-control-lg {
     z-index: 10000;
   }
 }
+.advantage-modal .modal-content {
+  top: 0;
+}
 .advantage-modal__close-btn {
   position: absolute;
-  top: -40px;
-  right: -40px;
-  font-size: 24px;
+  top: -24px;
+  right: -32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  overflow: hidden;
 }
 @media only screen and (max-width: 767px) {
   .advantage-modal__close-btn {
-    top: 10px;
-    right: 32px;
+    top: 8px;
+    right: 8px;
     z-index: 10001;
   }
 }

@@ -1,6 +1,6 @@
 // Submit form
 const forms = document.querySelectorAll(".form");
-const url = "https://www.test.com/";
+const url = "../php/mail.php";
 
 forms.forEach((form) => {
   form.addEventListener("submit", handleSubmit);
@@ -13,16 +13,14 @@ async function handleSubmit(e) {
   const formData = new FormData(form);
 
   // send a request by fetch or axios
-
-  // const response = await fetch(url, {
-  //   method: "POST",
-  //   body: formData,
-  // });
+  const response = await fetch(url, {
+    method: "POST",
+    body: formData,
+  });
 
   showSuccessMessage(form);
 
-  // const result = await response.json();
-  // console.log(result);
+  const result = await response.json();
 }
 
 function showSuccessMessage(form) {
