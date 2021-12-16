@@ -1,38 +1,46 @@
 <?php
+    require 'PHPMailer.php';
+    require 'SMTP.php';
+    require 'Exception.php';
 
-if ( isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message']) ) {
-
-    $leadData = $_POST;
-
-    // get _POST data
-    $postData = array(
-        'Name: ' => $leadData['name'],
-        'E-Mail: ' => $leadData['email'],
-        'Message: ' => $leadData['message']
-    );
-
-    $strPostData = '';
-    foreach ($postData as $key => $value)
-    $strPostData .= ($strPostData == '' ? '' : ' ').$key.' '.($value)."<br>";
-    $str .= "<p><strong>Питання з форми сайту</strong> <br/> ".($strPostData)."</p>\r\n";
-    require 'class.phpmailer.php'; // phpmailer script
-    $mail = new PHPMailer();
-    $mail->From = 'info@gmail.com';      // from email
-    $mail->FromName = 'Info';   // from name
-    $mail->AddAddress('dariashvydka@gmail.com', 'DS'); // change to work e-mail
+    $name = $_POST['name'];
+    $phone = $_POST['phone'];
 
 
-    $mail->IsHTML(true);        // email format HTML
-    $mail->Subject = "Повідомлення з контактної форми";  // subject
+    $title = 'Повідомлення з контактної форми';
+    $body = "
+        <h2>Питання з форми сайту</h2>
+        <p><b>Iм'я:</b> $name</p>
+        <p><b>Номер телефону:</b> $phone</p>
+    ";
 
-    $mail->Body = $str;
-    // send mail
-    if (!$mail->Send()) die ('Mailer Error: '.$mail->ErrorInfo);
-    else
-    {
-        header('http://clients.pp.ua');
-        echo('Your message has been sent!');
-        exit();
+    $mail = new PHPMailer\PHPMailer\PHPMailer();
+    try {
+        $mail->isSMTP();
+        $mail->CharSet = "UTF-8";
+        $mail->SMTPAuth = true;
+        // $mail->SMTPDebug = 2;
+        $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
+
+        $mail->Host       = 'smtp.gmail.com';
+        $mail->Username   = 'marsel.aloha@gmail.com';
+        $mail->Password   = 'winh dvzh qfof yrfq';
+        $mail->SMTPSecure = 'ssl';
+        $mail->Port       = 465;
+        $mail->setFrom('marsel.aloha@gmail.com', 'Marseille');
+
+        $mail->addAddress('dariashvydka@gmail.com');
+
+        $mail->isHTML(true);
+        $mail->Subject = $title;
+        $mail->Body = $body;
+
+        if ($mail->send()) {$result = 'success';}
+        else {$result = 'error';}
+    } catch (Exception $e) {
+        $result = "error";
+        $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
     }
-}
+
+    echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
 ?>

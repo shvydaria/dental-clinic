@@ -11453,7 +11453,7 @@ textarea.form-control-lg {
 }
 
 #formModal .modal-content {
-  min-width: 628px;
+  width: auto;
   background-color: #ffffff;
   border-radius: 15px;
   box-shadow: 0 14px 23px rgba(28, 37, 44, 0.08);
