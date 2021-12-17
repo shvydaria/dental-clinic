@@ -11438,6 +11438,7 @@ textarea.form-control-lg {
   backdrop-filter: saturate(180%) blur(20px);
 }
 .header_wraper .navbar .navbar-brand {
+  flex-basis: 137px;
   padding: 0;
 }
 .header_wraper .navbar .navbar-brand img {
@@ -11595,8 +11596,11 @@ textarea.form-control-lg {
   bottom: 0;
   right: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 100;
   padding: 20px 0;
+}
+.footer_wraper .navbar-brand {
+  flex-basis: 137px;
 }
 .footer_wraper .navbar .nav-link {
   color: #ffffff;
@@ -11621,6 +11625,11 @@ textarea.form-control-lg {
   font-size: 12px;
 }
 
+@media (max-width: 991.98px) {
+  .footer_wraper {
+    height: auto;
+  }
+}
 .carousel {
   padding: 3rem;
   padding-bottom: 80px;
@@ -12057,7 +12066,7 @@ textarea.form-control-lg {
   display: none;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .number {
     flex: 1;
     margin-bottom: 74px;
@@ -12090,6 +12099,10 @@ textarea.form-control-lg {
     left: 0 !important;
   }
 
+  .accordion-wrapper {
+    padding: 0;
+  }
+
   .accordion-icon {
     margin-right: 10px;
   }
@@ -12100,7 +12113,7 @@ textarea.form-control-lg {
 
   .heading-accordion {
     padding-left: 0;
-    padding: 40px 0;
+    padding: 30px 0 0;
   }
 
   .contacts-block {
@@ -12933,6 +12946,10 @@ textarea.form-control-lg {
   }
 }
 
+.bi-x::before {
+  content: none;
+}
+
 .services-title {
   margin-top: 132px;
 }
@@ -13205,7 +13222,11 @@ textarea.form-control-lg {
   padding-top: 82px;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
+  .services-item {
+    margin: 0 0 0.5px 0;
+  }
+
   .services-title {
     justify-content: center;
   }
@@ -13334,7 +13355,7 @@ textarea.form-control-lg {
   }
   .prices-attention {
     padding: 16px;
-    margin: 3rem 0 3rem 0;
+    margin: 3rem 0 0;
   }
   .prices-attention p {
     font-size: 1em;

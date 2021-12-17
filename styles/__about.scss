@@ -671,3 +671,8 @@
     }
   }
 }
+
+// reset bootstrap style
+.bi-x::before {
+  content: none;
+}
