@@ -128,9 +128,14 @@
       background: none;
     }
     .services-item-details__paragraph {
-      @include responsive(0px, 1199px) {
+      @include responsive(0px, 768px) {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url(../img/else/mob/3_page_services/picture/services-details1.jpg);
+        background-size: cover;
+     }
+     @include responsive(769px, 1199px) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(../img/else/tablet/3_page_services/picture/services-details1.jpg);
         background-size: cover;
      }
    }
@@ -142,9 +147,14 @@
       background: none;
     }
     .services-item-details__paragraph {
-      @include responsive(0px, 1199px) {
+      @include responsive(0px, 768px) {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url(../img/else/mob/3_page_services/picture/services-details2.jpg);
+        background-size: cover;
+     }
+     @include responsive(769px, 1199px) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(../img/else/tablet/3_page_services/picture/services-details2.jpg);
         background-size: cover;
      }
    }
@@ -156,10 +166,15 @@
       background: none;
     }
     .services-item-details__paragraph {
-      @include responsive(0px, 1199px) {
+      @include responsive(0px, 768px) {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url(../img/else/mob/3_page_services/picture/services-details3.jpg);
         background-size: cover;
+     }
+     @include responsive(769px, 1199px) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../img/else/tablet/3_page_services/picture/services-details3.jpg);
+      background-size: cover;
      }
    }
   }
@@ -170,10 +185,15 @@
       background: none;
     }
     .services-item-details__paragraph {
-      @include responsive(0px, 1199px) {
+      @include responsive(0px, 768px) {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url(../img/else/mob/3_page_services/picture/services-details4.jpg);
         background-size: cover;
+     }
+     @include responsive(769px, 1199px) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../img/else/tablet/3_page_services/picture/services-details4.jpg);
+      background-size: cover;
      }
    }
   }
@@ -184,10 +204,15 @@
       background: none;
     }
     .services-item-details__paragraph {
-      @include responsive(0px, 1199px) {
+      @include responsive(0px, 768px) {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url(../img/else/mob/3_page_services/picture/services-details5.jpg);
         background-size: cover;
+     }
+     @include responsive(769px, 1199px) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../img/else/tablet/3_page_services/picture/services-details5.jpg);
+      background-size: cover;
      }
    }
   }
@@ -198,10 +223,15 @@
       background: none;
     }
     .services-item-details__paragraph {
-      @include responsive(0px, 1199px) {
+      @include responsive(0px, 768px) {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url(../img/else/mob/3_page_services/picture/services-details6.jpg);
         background-size: cover;
+     }
+     @include responsive(769px, 1199px) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../img/else/tablet/3_page_services/picture/services-details6.jpg);
+      background-size: cover;
      }
    }
   }
@@ -212,10 +242,15 @@
       background: none;
     }
     .services-item-details__paragraph {
-      @include responsive(0px, 1199px) {
+      @include responsive(0px, 768px) {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url(../img/else/mob/3_page_services/picture/services-details7.jpg);
         background-size: cover;
+     }
+     @include responsive(769px, 1199px) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../img/else/tablet/3_page_services/picture/services-details7.jpg);
+      background-size: cover;
      }
    }
   }
@@ -226,10 +261,15 @@
       background: none;
     }
     .services-item-details__paragraph {
-      @include responsive(0px, 1199px) {
+      @include responsive(0px, 768px) {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url(../img/else/mob/3_page_services/picture/services-details8.jpg);
         background-size: cover;
+     }
+     @include responsive(769px, 1199px) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../img/else/tablet/3_page_services/picture/services-details8.jpg);
+      background-size: cover;
      }
    }
   }
@@ -240,9 +280,14 @@
       background: none;
     }
     .services-item-details__paragraph {
-      @include responsive(0px, 1199px) {
+      @include responsive(0px, 768px) {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url(../img/else/mob/3_page_services/picture/services-details9.jpg);
+        background-size: cover;
+     }
+     @include responsive(769px, 1199px) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(../img/else/tablet/3_page_services/picture/services-details9.jpg);
         background-size: cover;
      }
    }

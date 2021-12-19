@@ -6,7 +6,7 @@ class Header extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <div class="header_wraper">
-      <nav class="navbar navbar-expand-sm">
+      <nav class="navbar navbar-expand-md">
         <div class="container justify-content-between align-items-center">
           <a class="navbar-brand" href="/">
             <img src="img/logo/logo-gray.png" alt="logo">
@@ -97,6 +97,7 @@ $(document).ready(function () {
   });
 });
 
+// changing color
 customElements.define("header-component", Header);
 document.addEventListener(
   "DOMContentLoaded",

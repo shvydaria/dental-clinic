@@ -11573,6 +11573,9 @@ textarea.form-control-lg {
   }
 }
 @media (max-width: 991.98px) {
+  .navbar-brand {
+    flex-basis: 115px !important;
+  }
   .navbar .btn {
     padding: 11px 14.5px;
   }
@@ -11837,13 +11840,6 @@ textarea.form-control-lg {
 }
 .form__success i {
   margin-right: 8px;
-}
-
-.navbar-brand {
-  padding: 0;
-}
-.navbar-brand img {
-  max-height: 48px;
 }
 
 .nav-link {
@@ -13084,9 +13080,15 @@ textarea.form-control-lg {
     background: none;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 1199px) {
+@media only screen and (min-width: 0px) and (max-width: 768px) {
   .services-item-details__diagnostics .services-item-details__paragraph {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/3_page_services/picture/services-details1.jpg);
+    background-size: cover;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1199px) {
+  .services-item-details__diagnostics .services-item-details__paragraph {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/tablet/3_page_services/picture/services-details1.jpg);
     background-size: cover;
   }
 }
@@ -13099,9 +13101,15 @@ textarea.form-control-lg {
     background: none;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 1199px) {
+@media only screen and (min-width: 0px) and (max-width: 768px) {
   .services-item-details__caries .services-item-details__paragraph {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/3_page_services/picture/services-details2.jpg);
+    background-size: cover;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1199px) {
+  .services-item-details__caries .services-item-details__paragraph {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/tablet/3_page_services/picture/services-details2.jpg);
     background-size: cover;
   }
 }
@@ -13114,9 +13122,15 @@ textarea.form-control-lg {
     background: none;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 1199px) {
+@media only screen and (min-width: 0px) and (max-width: 768px) {
   .services-item-details__whitening .services-item-details__paragraph {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/3_page_services/picture/services-details3.jpg);
+    background-size: cover;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1199px) {
+  .services-item-details__whitening .services-item-details__paragraph {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/tablet/3_page_services/picture/services-details3.jpg);
     background-size: cover;
   }
 }
@@ -13129,9 +13143,15 @@ textarea.form-control-lg {
     background: none;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 1199px) {
+@media only screen and (min-width: 0px) and (max-width: 768px) {
   .services-item-details__channels .services-item-details__paragraph {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/3_page_services/picture/services-details4.jpg);
+    background-size: cover;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1199px) {
+  .services-item-details__channels .services-item-details__paragraph {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/tablet/3_page_services/picture/services-details4.jpg);
     background-size: cover;
   }
 }
@@ -13144,9 +13164,15 @@ textarea.form-control-lg {
     background: none;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 1199px) {
+@media only screen and (min-width: 0px) and (max-width: 768px) {
   .services-item-details__children .services-item-details__paragraph {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/3_page_services/picture/services-details5.jpg);
+    background-size: cover;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1199px) {
+  .services-item-details__children .services-item-details__paragraph {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/tablet/3_page_services/picture/services-details5.jpg);
     background-size: cover;
   }
 }
@@ -13159,9 +13185,15 @@ textarea.form-control-lg {
     background: none;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 1199px) {
+@media only screen and (min-width: 0px) and (max-width: 768px) {
   .services-item-details__surgery .services-item-details__paragraph {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/3_page_services/picture/services-details6.jpg);
+    background-size: cover;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1199px) {
+  .services-item-details__surgery .services-item-details__paragraph {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/tablet/3_page_services/picture/services-details6.jpg);
     background-size: cover;
   }
 }
@@ -13174,9 +13206,15 @@ textarea.form-control-lg {
     background: none;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 1199px) {
+@media only screen and (min-width: 0px) and (max-width: 768px) {
   .services-item-details__orthodontics .services-item-details__paragraph {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/3_page_services/picture/services-details7.jpg);
+    background-size: cover;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1199px) {
+  .services-item-details__orthodontics .services-item-details__paragraph {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/tablet/3_page_services/picture/services-details7.jpg);
     background-size: cover;
   }
 }
@@ -13189,9 +13227,15 @@ textarea.form-control-lg {
     background: none;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 1199px) {
+@media only screen and (min-width: 0px) and (max-width: 768px) {
   .services-item-details__emax .services-item-details__paragraph {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/3_page_services/picture/services-details8.jpg);
+    background-size: cover;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1199px) {
+  .services-item-details__emax .services-item-details__paragraph {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/tablet/3_page_services/picture/services-details8.jpg);
     background-size: cover;
   }
 }
@@ -13204,9 +13248,15 @@ textarea.form-control-lg {
     background: none;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 1199px) {
+@media only screen and (min-width: 0px) and (max-width: 768px) {
   .services-item-details__denture .services-item-details__paragraph {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/3_page_services/picture/services-details9.jpg);
+    background-size: cover;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1199px) {
+  .services-item-details__denture .services-item-details__paragraph {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/tablet/3_page_services/picture/services-details9.jpg);
     background-size: cover;
   }
 }
@@ -13355,7 +13405,7 @@ textarea.form-control-lg {
   }
   .prices-attention {
     padding: 16px;
-    margin: 3rem 0 0;
+    margin: 3rem 0 3rem;
   }
   .prices-attention p {
     font-size: 1em;
