@@ -13506,6 +13506,7 @@ video {
 @media (max-width: 991.98px) {
   .parallax {
     min-height: 500px;
+    background-attachment: scroll;
   }
 
   .parallax-image--1 {

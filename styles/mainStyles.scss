@@ -138,6 +138,7 @@ video {
 @include media-breakpoint-down(lg) {
   .parallax {
     min-height: 500px;
+    background-attachment: scroll;
   }
   .parallax-image--1 {
     background-image: url("../img/1_page/photos/46-mob.jpg");
