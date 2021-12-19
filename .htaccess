@@ -3,4 +3,4 @@
 Header set Access-Control-Allow-Origin "*"
 </IfModule>
 </FilesMatch>
-ErrorDocument 404 http://daqtgmjf.beget.tech/404.html
+ErrorDocument 404 https://www.vdc.com.ua/404.html
