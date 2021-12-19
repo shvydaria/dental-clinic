@@ -105,19 +105,13 @@ document.addEventListener(
     (function () {
       let nav = document.getElementById("nav");
       let anchor = nav.getElementsByTagName("a");
-      let current = window.location.pathname;
-      // let current = window.location.pathname.split('/Users/dariashvydka/DashaShv/dental-clinic')[1];
-
-      let correct = current.replace(
-        "/Users/dariashvydka/DashaShv/dental-clinic/",
-        "file:///Users/dariashvydka/DashaShv/dental-clinic/"
-      );
+      let current = window.location.href;
 
       for (var i = 0; i < anchor.length; i++) {
-        if (anchor[i].href == correct) {
+        if (anchor[i].href === current) {
           anchor[i].className = "nav-link active";
-        } else {
-          console.log("FALSE");
+        } else if (location.pathname === "/") {
+          anchor[0].className = "nav-link active";
         }
       }
     })();
