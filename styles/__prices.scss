@@ -1,8 +1,5 @@
 .prices {
   background-color: $bg-gray;
-  @include responsive_mobile() {
-    background-color: $white;
-  }
 
   .collage {
     img {

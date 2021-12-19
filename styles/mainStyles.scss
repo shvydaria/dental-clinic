@@ -160,3 +160,13 @@ input {
     background-image: url("../img/4_page_price/prices-form.jpg");
   }
 }
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .parallax {
+    min-height: 600px;
+    background-attachment: scroll;
+  }
+  .d-xl-block {
+    display: block;
+  }
+}

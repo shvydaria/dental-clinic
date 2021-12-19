@@ -78,6 +78,10 @@
     font-weight: 500;
     color: $dark-gray;
     white-space: nowrap;
+    
+    @include responsive_mobile() {
+      margin-top: 0;
+    }
 
     h1 {
       @include responsive_mobile() {

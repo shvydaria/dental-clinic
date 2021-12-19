@@ -12184,6 +12184,11 @@ textarea.form-control-lg {
   white-space: nowrap;
 }
 @media only screen and (max-width: 767px) {
+  .team__title {
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 767px) {
   .team__title h1, .team__title .h1 {
     font-size: 24px;
   }
@@ -13288,11 +13293,6 @@ textarea.form-control-lg {
 .prices {
   background-color: #f3f3f3;
 }
-@media only screen and (max-width: 767px) {
-  .prices {
-    background-color: #ffffff;
-  }
-}
 .prices .collage img {
   height: 632px;
   object-fit: cover;
@@ -13581,6 +13581,16 @@ input {
 
   .parallax-image--5 {
     background-image: url("../img/4_page_price/prices-form.jpg");
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .parallax {
+    min-height: 600px;
+    background-attachment: scroll;
+  }
+
+  .d-xl-block {
+    display: block;
   }
 }
 
