@@ -27,9 +27,9 @@
         $mail->Password   = 'winh dvzh qfof yrfq';
         $mail->SMTPSecure = 'ssl';
         $mail->Port       = 465;
-        $mail->setFrom('marsel.aloha@gmail.com', 'Marseille');
+        $mail->setFrom('marsel.aloha@gmail.com', 'Test');
 
-        $mail->addAddress('dariashvydka@gmail.com');
+        $mail->addAddress('vitadentclinic@ukr.net ');
 
         $mail->isHTML(true);
         $mail->Subject = $title;
