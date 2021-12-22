@@ -139,9 +139,7 @@
   bottom: 0;
   right: 0;
   padding: 0 80px;
-  width: 100%;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
   @include responsive_mobile() {
     justify-content: center;
