@@ -64,7 +64,7 @@ class Header extends HTMLElement {
         <div class="modal-body">
     
             <form class="form">
-            <h2 class="form__title">Залиште Ваші контактні дані, і&nbsp;наш адміністратор зв'яжеться з&nbsp;вами</h2>
+            <h2 class="form__title">Залиште ваші контактні дані, і&nbsp;наш адміністратор зв'яжеться з&nbsp;вами</h2>
             <input name="name" type="text" class="form__input" placeholder="Ваше ім’я" minlength="2" required />
             <input
               name="phone"
