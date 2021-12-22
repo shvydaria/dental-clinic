@@ -138,6 +138,14 @@ input {
 .parallax-image--5 {
   background-image: url("../img/4_page_price/prices-form.jpg");
 }
+.parallax-image--6 {
+  background-image: url("../img/else/mob/2_page_about_us/picture/Mask_Groupph.jpg");
+  min-height: 500px;
+  background-position: 100% 10%;
+}
+.parallax-image--7 {
+  background-image: url("../img/2_page_about_us/picture/5.jpg");
+}
 
 @include media-breakpoint-down(lg) {
   .parallax {
@@ -159,6 +167,13 @@ input {
   .parallax-image--5 {
     background-image: url("../img/4_page_price/prices-form.jpg");
   }
+  .parallax-image--6 {
+    background-image: url("../img/else/mob/2_page_about_us/picture/Mask_Groupdoc1.jpg");
+  }
+  .parallax-image--7 {
+    background-image: url("../img/2_page_about_us/picture/5.jpg");
+  }
+
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
