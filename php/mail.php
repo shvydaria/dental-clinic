@@ -22,14 +22,14 @@
         // $mail->SMTPDebug = 2;
         $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
-        $mail->Host       = 'smtp.gmail.com';
-        $mail->Username   = 'marsel.aloha@gmail.com';
-        $mail->Password   = 'winh dvzh qfof yrfq';
+        $mail->Host       = 'smtp.meta.ua';
+        $mail->Username   = 'vitadentcenter@meta.ua';
+        $mail->Password   = 'kzWcxp39tfM';
         $mail->SMTPSecure = 'ssl';
         $mail->Port       = 465;
-        $mail->setFrom('marsel.aloha@gmail.com', 'Test');
+        $mail->setFrom('vitadentcenter@meta.ua', 'Test');
 
-        $mail->addAddress('vitadentclinic@ukr.net ');
+        $mail->addAddress('vitadentclinic@ukr.net');
 
         $mail->isHTML(true);
         $mail->Subject = $title;
