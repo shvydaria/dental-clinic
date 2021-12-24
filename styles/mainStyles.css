@@ -11809,7 +11809,7 @@ textarea.form-control-lg {
   border-radius: 15px;
   box-shadow: 0 14px 23px rgba(28, 37, 44, 0.08);
   overflow: hidden;
-  transition: background-color 0.3s;
+  transition: background-color 0.5s;
 }
 @media only screen and (max-width: 1024px) {
   .form__submit {
@@ -11819,8 +11819,8 @@ textarea.form-control-lg {
   }
 }
 .form__submit:hover {
-  background-color: #97BDAD;
-  border-color: #97BDAD;
+  background-color: #469B76;
+  border-color: #469B76;
   color: #ffffff;
 }
 .form__success {
@@ -13508,6 +13508,7 @@ input {
 .btn {
   border-radius: 15px;
   padding: 11px 27.5px;
+  transition: 0.5s;
 }
 .btn-outline-success {
   color: #333333;
@@ -13515,12 +13516,13 @@ input {
   border-color: rgba(3, 125, 72, 0.7);
 }
 .btn-outline-success:hover {
-  background-color: #97BDAD;
-  border-color: #97BDAD;
+  background-color: #469B76;
+  border-color: #469B76;
 }
 .btn-outline-success:focus {
   background-color: #469B76;
   border-color: #469B76;
+  box-shadow: none;
   color: #ffffff;
 }
 
