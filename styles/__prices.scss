@@ -1,6 +1,10 @@
 .prices {
   background-color: $bg-gray;
 
+  .form-container {
+    display: flex!important;
+  }
+
   .collage {
     img {
       height: 632px;

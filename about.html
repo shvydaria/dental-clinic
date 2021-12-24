@@ -39,7 +39,7 @@
     </section>
 
     <!-- Про команду -->
-    <section class="container team">
+    <section class="container team mb-5">
       <hgroup class="team__title">
         <h1>Про нас та команду</h1>
         <img src="./img/logo/logo-gray.png" />
@@ -61,7 +61,7 @@
       <div class="parallax parallax-image--7 d-none d-xs-none d-sm-none d-md-none d-lg-none d-xl-block"></div>
     </div>
 
-    <section class="container team">
+    <section class="container team mt-5">
       <p class="team__text">
         У популярній книзі «Генії і&nbsp;аутсайдери. Чому одним&nbsp;все, а&nbsp;іншим нічого?» Малкольм Гладуелл
         популяризував теорію: щоб&nbsp;стати професіоналом потрібно витратити на&nbsp;її&nbsp;вивчення близько
@@ -733,12 +733,31 @@
 
     <section>
       <div class="container-fluid about-video p-0">
-        <video src="./img/about.mp4" loop autoplay muted>We're sorry; your browser doesn't support HTML5 video.</video>
+        <video src="./img/about.mp4" playsinline loop autoplay muted>We're sorry; your browser doesn't support HTML5 video.</video>
+      </div>
+
+      <div class="form-container--mobile">
+        <form class="form">
+          <h2 class="form__title">Залиште ваші контактні дані, і&nbsp;наш адміністратор зв'яжеться з&nbsp;вами</h2>
+          <input name="name" type="text" class="form__input" placeholder="Ваше ім’я" minlength="2" required />
+          <input
+            name="phone"
+            type="tel"
+            class="form__input"
+            placeholder="Номер телефону"
+            pattern="\+380\s\(\d{2}\)\s\d{3}-\d{2}-\d{2}"
+            required
+          />
+          <button type="submit" class="form__submit">
+            <span>Зв’язатися з нами</span>
+            <div class="btn-outline-success form__success"><i class="bi bi-check-circle"></i> Дякуємо!</div>
+          </button>
+        </form>
       </div>
 
       <div class="position-relative">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.814542960276!2d31.3026047!3d51.4982707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDI5JzUzLjgiTiAzMcKwMTgnMDkuNCJF!5e0!3m2!1sru!2sua!4v1636174364974!5m2!1sru!2sua"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9935.116459866871!2d31.3041791!3d51.4989208!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x81b998326283b12!2sV%D1%96tadent%20Center!5e0!3m2!1sru!2sua!4v1640312121204!5m2!1sru!2sua"
           width="100%"
           height="640"
           style="border: 0"
@@ -760,7 +779,7 @@
             />
             <button type="submit" class="form__submit">
               <span>Зв’язатися з нами</span>
-              <div class="form__success"><i class="bi bi-check-circle"></i> Дякуємо!</div>
+              <div class="btn-outline-success form__success"><i class="bi bi-check-circle"></i> Дякуємо!</div>
             </button>
           </form>
         </div>

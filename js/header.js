@@ -76,7 +76,7 @@ class Header extends HTMLElement {
             />
             <button type="submit" class="form__submit">
               <span>Зв’язатися з нами</span>
-              <div class="form__success"><i class="bi bi-check-circle"></i> Дякуємо! </div>
+              <div class="btn-outline-success form__success"><i class="bi bi-check-circle"></i> Дякуємо! </div>
             </button>
           </form>
         </div>

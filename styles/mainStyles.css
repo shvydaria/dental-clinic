@@ -11907,7 +11907,9 @@ textarea.form-control-lg {
   }
 }
 .form__submit:hover {
-  background-color: #f3f3f3;
+  background-color: #97BDAD;
+  border-color: #97BDAD;
+  color: #ffffff;
 }
 .form__success {
   position: absolute;
@@ -12087,6 +12089,9 @@ textarea.form-control-lg {
     padding: 0 16px;
   }
 }
+.form-container--mobile {
+  display: none;
+}
 .form-container .map-form {
   width: 100%;
   display: flex;
@@ -12178,6 +12183,13 @@ textarea.form-control-lg {
     font-size: 1.2em;
   }
 
+  .form-container {
+    display: none;
+  }
+  .form-container--mobile {
+    display: block;
+    margin: 68px 0;
+  }
   .form-container .map-form {
     left: 0 !important;
   }
@@ -12219,7 +12231,6 @@ textarea.form-control-lg {
 }
 @media only screen and (max-width: 767px) {
   .promo {
-    margin-top: 143px;
     margin-bottom: 56px;
   }
 }
@@ -12460,7 +12471,7 @@ textarea.form-control-lg {
 }
 .doctor-modal__article h3, .doctor-modal__article .h3 {
   margin-bottom: 32px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   color: #62666c;
   letter-spacing: 0.04em;
@@ -12476,7 +12487,7 @@ textarea.form-control-lg {
   }
 }
 .doctor-modal__article p {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 128%;
   letter-spacing: 0.04em;
@@ -12722,7 +12733,6 @@ textarea.form-control-lg {
 }
 .doctor-modal__photo img {
   height: 100%;
-  object-fit: cover;
 }
 .doctor-modal__content {
   border-radius: 10px;
@@ -13380,6 +13390,9 @@ textarea.form-control-lg {
 .prices {
   background-color: #f3f3f3;
 }
+.prices .form-container {
+  display: flex !important;
+}
 .prices .collage img {
   height: 632px;
   object-fit: cover;
@@ -13589,6 +13602,15 @@ input {
   font-weight: 500;
   border-color: rgba(3, 125, 72, 0.7);
 }
+.btn-outline-success:hover {
+  background-color: #97BDAD;
+  border-color: #97BDAD;
+}
+.btn-outline-success:focus {
+  background-color: #469B76;
+  border-color: #469B76;
+  color: #ffffff;
+}
 
 .position-relative {
   max-height: 640px;
@@ -13645,9 +13667,7 @@ input {
 }
 
 .parallax-image--6 {
-  background-image: url("../img/else/mob/2_page_about_us/picture/Mask_Groupph.jpg");
-  min-height: 500px;
-  background-position: 100% 10%;
+  background-image: url("../img/2_page_about_us/picture/about.jpg");
 }
 
 .parallax-image--7 {
@@ -13681,11 +13701,12 @@ input {
   }
 
   .parallax-image--6 {
-    background-image: url("../img/else/mob/2_page_about_us/picture/Mask_Groupdoc1.jpg");
+    background-image: url("../img/else/mob/2_page_about_us/picture/Mask_Groupph.jpg");
+    min-height: 300px;
   }
 
   .parallax-image--7 {
-    background-image: url("../img/2_page_about_us/picture/5.jpg");
+    background-image: url("../img/else/mob/2_page_about_us/picture/Mask_Groupph1.jpg");
   }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {

@@ -79,6 +79,15 @@ input {
     color: $black;
     font-weight: 500;
     border-color: $green;
+    &:hover {
+      background-color: #97BDAD;
+      border-color: #97BDAD;
+    }
+    &:focus {
+      background-color: #469B76;
+      border-color: #469B76;
+      color: $white;
+    }
   }
 }
 
@@ -139,9 +148,7 @@ input {
   background-image: url("../img/4_page_price/prices-form.jpg");
 }
 .parallax-image--6 {
-  background-image: url("../img/else/mob/2_page_about_us/picture/Mask_Groupph.jpg");
-  min-height: 500px;
-  background-position: 100% 10%;
+  background-image: url("../img/2_page_about_us/picture/about.jpg");
 }
 .parallax-image--7 {
   background-image: url("../img/2_page_about_us/picture/5.jpg");
@@ -168,10 +175,11 @@ input {
     background-image: url("../img/4_page_price/prices-form.jpg");
   }
   .parallax-image--6 {
-    background-image: url("../img/else/mob/2_page_about_us/picture/Mask_Groupdoc1.jpg");
+    background-image: url("../img/else/mob/2_page_about_us/picture/Mask_Groupph.jpg");
+    min-height: 300px;
   }
   .parallax-image--7 {
-    background-image: url("../img/2_page_about_us/picture/5.jpg");
+    background-image: url("../img/else/mob/2_page_about_us/picture/Mask_Groupph1.jpg");
   }
 
 }

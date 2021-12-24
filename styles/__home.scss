@@ -162,6 +162,10 @@
     }
   }
 
+  &--mobile {
+    display: none;
+  }
+
   .map-form {
     width: 100%;
     display: flex;
@@ -264,6 +268,11 @@
   }
 
   .form-container {
+    display: none;
+    &--mobile {
+      display: block;
+      margin: 68px 0;
+    }
     .map-form {
       left: 0 !important;
     }
