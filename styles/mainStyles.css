@@ -12136,6 +12136,10 @@ textarea.form-control-lg {
     top: 20%;
   }
 }
+img-comparison-slider.rendered {
+  outline: none;
+}
+
 .promo {
   position: relative;
   margin-top: 95px;
