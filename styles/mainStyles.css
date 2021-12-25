@@ -12268,8 +12268,14 @@ textarea.form-control-lg {
 }
 @media only screen and (max-width: 767px) {
   .doctors-carousel .carousel {
+    min-height: 454px;
     padding-bottom: 0;
   }
+}
+.doctors-carousel .carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .doctors-carousel .carousel .carousel-inner {
   overflow: visible;
@@ -12279,6 +12285,21 @@ textarea.form-control-lg {
 }
 .doctors-carousel .carousel .carousel-item-next:not(.carousel-item-start) {
   transform: translateX(100%) scale(0.9);
+}
+.doctors-carousel .carousel .carousel-control-prev {
+  position: static;
+}
+.doctors-carousel .carousel .carousel-control-next {
+  position: static;
+}
+@media only screen and (max-width: 767px) {
+  .doctors-carousel .carousel .carousel-indicators {
+    position: static;
+    margin-bottom: 0;
+    margin-left: 16px;
+    margin-right: 16px;
+    transform: none;
+  }
 }
 .doctors-carousel .doctor-card {
   margin: 0 8px;
