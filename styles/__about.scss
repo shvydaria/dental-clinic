@@ -78,7 +78,7 @@
     font-weight: 500;
     color: $dark-gray;
     white-space: nowrap;
-    
+
     @include responsive_mobile() {
       margin-top: 0;
     }
@@ -144,7 +144,14 @@
   .carousel {
     padding: 40px;
     @include responsive_mobile() {
+      min-height: 454px;
       padding-bottom: 0;
+    }
+
+    &-controls {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .carousel-inner {
@@ -157,6 +164,24 @@
 
     .carousel-item-next:not(.carousel-item-start) {
       transform: translateX(100%) scale(0.9);
+    }
+
+    .carousel-control-prev {
+      position: static;
+    }
+
+    .carousel-control-next {
+      position: static;
+    }
+
+    .carousel-indicators {
+      @include responsive_mobile() {
+        position: static;
+        margin-bottom: 0;
+        margin-left: 16px;
+        margin-right: 16px;
+        transform: none;
+      }
     }
   }
 
