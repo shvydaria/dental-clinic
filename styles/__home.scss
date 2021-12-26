@@ -141,13 +141,10 @@
   padding: 0 80px;
   display: flex;
   align-items: center;
-  @include responsive_mobile() {
-    justify-content: center;
-    padding: 0 8px;
-  }
   @include responsive_tab() {
     justify-content: center;
     padding: 0 8px;
+    width: 100%;
   }
 
   &--reverse {
@@ -268,7 +265,7 @@
   }
 
   .form-container {
-    display: none;
+    // display: none;
     &--mobile {
       display: block;
       margin: 68px 0;

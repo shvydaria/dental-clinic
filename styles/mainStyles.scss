@@ -100,6 +100,9 @@ button {
 //for maps
 .position-relative {
   max-height: 640px;
+  @include responsive_tab() {
+    .form-container { display: none; }
+  }
 }
 
 // 404

@@ -11762,6 +11762,7 @@ textarea.form-control-lg {
   .form {
     padding: 32px;
     max-width: 416px;
+    margin: 0 auto;
   }
 }
 .form__title {
@@ -11983,16 +11984,11 @@ textarea.form-control-lg {
   display: flex;
   align-items: center;
 }
-@media only screen and (max-width: 767px) {
-  .form-container {
-    justify-content: center;
-    padding: 0 8px;
-  }
-}
 @media only screen and (max-width: 1024px) {
   .form-container {
     justify-content: center;
     padding: 0 8px;
+    width: 100%;
   }
 }
 .form-container--reverse {
@@ -12104,9 +12100,6 @@ textarea.form-control-lg {
     font-size: 1.2em;
   }
 
-  .form-container {
-    display: none;
-  }
   .form-container--mobile {
     display: block;
     margin: 68px 0;
@@ -12713,6 +12706,7 @@ img-comparison-slider.rendered {
 }
 
 .service-card {
+  margin: 0 1rem 1rem 0;
   padding: 60px 34px 0;
   min-height: 252px;
   display: flex;
@@ -13335,6 +13329,7 @@ img-comparison-slider.rendered {
 
   .services-title {
     justify-content: center;
+    margin-top: 82px;
   }
 
   .services-item-details__paragraph {
@@ -13574,6 +13569,11 @@ button {
 
 .position-relative {
   max-height: 640px;
+}
+@media only screen and (max-width: 1024px) {
+  .position-relative .form-container {
+    display: none;
+  }
 }
 
 .page-wrapper {
