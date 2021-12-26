@@ -250,7 +250,7 @@
     overflow: hidden;
     @include responsive_tab() {
       border-radius: 0;
-      overflow: inherit;
+      overflow: unset!important;
     }
   }
 

@@ -12389,7 +12389,7 @@ img-comparison-slider.rendered {
 @media only screen and (max-width: 1024px) {
   .doctor-modal__body {
     border-radius: 0;
-    overflow: inherit;
+    overflow: unset !important;
   }
 }
 .doctor-modal__article {
