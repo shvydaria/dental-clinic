@@ -64,7 +64,7 @@
   @include responsive_mobile() {
     padding: 0 16px;
   }
-  @include responsive(0px, 540px) {
+  @include responsive(0px, 767px) {
     overflow: hidden;
   }
 
@@ -248,7 +248,7 @@
     display: flex;
     border-radius: 10px;
     overflow: hidden;
-    @include responsive_tab() {
+    @include responsive_mobile() {
       border-radius: 0;
       overflow: unset!important;
     }

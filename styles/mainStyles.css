@@ -12183,7 +12183,7 @@ img-comparison-slider.rendered {
     padding: 0 16px;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 540px) {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
   .team {
     overflow: hidden;
   }
@@ -12386,7 +12386,7 @@ img-comparison-slider.rendered {
   border-radius: 10px;
   overflow: hidden;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 767px) {
   .doctor-modal__body {
     border-radius: 0;
     overflow: unset !important;
