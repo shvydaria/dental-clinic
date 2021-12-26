@@ -11740,6 +11740,15 @@ textarea.form-control-lg {
     transform: translateX(-50%);
   }
 }
+.slider-carousel {
+  margin: 3rem 0 6rem;
+}
+@media only screen and (max-width: 767px) {
+  .slider-carousel {
+    margin: 3rem 0 3rem;
+  }
+}
+
 .form {
   padding: 88px 72px;
   max-width: 624px;
@@ -12384,9 +12393,10 @@ img-comparison-slider.rendered {
   border-radius: 10px;
   overflow: hidden;
 }
-@media only screen and (min-width: 0px) and (max-width: 576px) {
+@media only screen and (max-width: 1024px) {
   .doctor-modal__body {
     border-radius: 0;
+    overflow: inherit;
   }
 }
 .doctor-modal__article {
@@ -12869,7 +12879,7 @@ img-comparison-slider.rendered {
   border: 2px solid rgba(3, 125, 72, 0.7);
   border-radius: 15px;
   box-shadow: 0 14px 23px rgba(28, 37, 44, 0.08);
-  transition: background-color 0.3s;
+  transition: background-color 0.5s;
 }
 @media only screen and (min-width: 0px) and (max-width: 1199px) {
   .advantage__button {
@@ -12878,13 +12888,20 @@ img-comparison-slider.rendered {
   }
 }
 .advantage__button:hover {
-  background-color: #f3f3f3;
+  background-color: #469B76;
+  border-color: #469B76;
 }
 @media only screen and (min-width: 0px) and (max-width: 1199px) {
   .advantage__button:hover {
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.9);
   }
+}
+.advantage__button:focus {
+  background-color: #469B76;
+  border-color: #469B76;
+  box-shadow: none;
+  color: #ffffff;
 }
 
 @media only screen and (max-width: 767px) {
@@ -13119,13 +13136,13 @@ img-comparison-slider.rendered {
     background: none;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 768px) {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
   .services-item-details__diagnostics .services-item-details__paragraph {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/3_page_services/picture/services-details1.jpg);
     background-size: cover;
   }
 }
-@media only screen and (min-width: 769px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
   .services-item-details__diagnostics .services-item-details__paragraph {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/tablet/3_page_services/picture/services-details1.jpg);
     background-size: cover;
@@ -13140,13 +13157,13 @@ img-comparison-slider.rendered {
     background: none;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 768px) {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
   .services-item-details__caries .services-item-details__paragraph {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/3_page_services/picture/services-details2.jpg);
     background-size: cover;
   }
 }
-@media only screen and (min-width: 769px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
   .services-item-details__caries .services-item-details__paragraph {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/tablet/3_page_services/picture/services-details2.jpg);
     background-size: cover;
@@ -13161,13 +13178,13 @@ img-comparison-slider.rendered {
     background: none;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 768px) {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
   .services-item-details__whitening .services-item-details__paragraph {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/3_page_services/picture/services-details3.jpg);
     background-size: cover;
   }
 }
-@media only screen and (min-width: 769px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
   .services-item-details__whitening .services-item-details__paragraph {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/tablet/3_page_services/picture/services-details3.jpg);
     background-size: cover;
@@ -13182,13 +13199,13 @@ img-comparison-slider.rendered {
     background: none;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 768px) {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
   .services-item-details__channels .services-item-details__paragraph {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/3_page_services/picture/services-details4.jpg);
     background-size: cover;
   }
 }
-@media only screen and (min-width: 769px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
   .services-item-details__channels .services-item-details__paragraph {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/tablet/3_page_services/picture/services-details4.jpg);
     background-size: cover;
@@ -13203,13 +13220,13 @@ img-comparison-slider.rendered {
     background: none;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 768px) {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
   .services-item-details__children .services-item-details__paragraph {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/3_page_services/picture/services-details5.jpg);
     background-size: cover;
   }
 }
-@media only screen and (min-width: 769px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
   .services-item-details__children .services-item-details__paragraph {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/tablet/3_page_services/picture/services-details5.jpg);
     background-size: cover;
@@ -13224,13 +13241,13 @@ img-comparison-slider.rendered {
     background: none;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 768px) {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
   .services-item-details__surgery .services-item-details__paragraph {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/3_page_services/picture/services-details6.jpg);
     background-size: cover;
   }
 }
-@media only screen and (min-width: 769px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
   .services-item-details__surgery .services-item-details__paragraph {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/tablet/3_page_services/picture/services-details6.jpg);
     background-size: cover;
@@ -13245,13 +13262,13 @@ img-comparison-slider.rendered {
     background: none;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 768px) {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
   .services-item-details__orthodontics .services-item-details__paragraph {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/3_page_services/picture/services-details7.jpg);
     background-size: cover;
   }
 }
-@media only screen and (min-width: 769px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
   .services-item-details__orthodontics .services-item-details__paragraph {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/tablet/3_page_services/picture/services-details7.jpg);
     background-size: cover;
@@ -13266,13 +13283,13 @@ img-comparison-slider.rendered {
     background: none;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 768px) {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
   .services-item-details__emax .services-item-details__paragraph {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/3_page_services/picture/services-details8.jpg);
     background-size: cover;
   }
 }
-@media only screen and (min-width: 769px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
   .services-item-details__emax .services-item-details__paragraph {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/tablet/3_page_services/picture/services-details8.jpg);
     background-size: cover;
@@ -13287,13 +13304,13 @@ img-comparison-slider.rendered {
     background: none;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 768px) {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
   .services-item-details__denture .services-item-details__paragraph {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/mob/3_page_services/picture/services-details9.jpg);
     background-size: cover;
   }
 }
-@media only screen and (min-width: 769px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
   .services-item-details__denture .services-item-details__paragraph {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/else/tablet/3_page_services/picture/services-details9.jpg);
     background-size: cover;
@@ -13506,6 +13523,10 @@ video {
 
 input {
   -webkit-appearance: none;
+}
+
+button {
+  outline: none;
 }
 
 .modal-content {

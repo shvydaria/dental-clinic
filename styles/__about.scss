@@ -248,8 +248,9 @@
     display: flex;
     border-radius: 10px;
     overflow: hidden;
-    @include responsive(0px, 576px) {
+    @include responsive_tab() {
       border-radius: 0;
+      overflow: inherit;
     }
   }
 
@@ -610,18 +611,25 @@
     border: 2px solid $green;
     border-radius: 15px;
     box-shadow: 0 14px 23px rgba(28, 37, 44, 0.08);
-    transition: background-color 0.3s;
+    transition: background-color 0.5s;
     @include responsive(0px, 1199px) {
       color: $white;
       background-color: rgba(0, 0, 0, 0.4);
     }
 
     &:hover {
-      background-color: $beige;
+      background-color: #469B76;
+      border-color: #469B76;
       @include responsive(0px, 1199px) {
         color: $white;
         background-color: rgba(0, 0, 0, 0.9);
       }
+    }
+    &:focus {
+      background-color: #469B76;
+      border-color: #469B76;
+      box-shadow: none;
+      color: $white;
     }
   }
 }

@@ -105,3 +105,11 @@
     }
   }
 }
+
+.slider-carousel {
+  margin: 3rem 0 6rem;
+  @include responsive_mobile() {
+    margin: 3rem 0 3rem;
+ }
+
+}
